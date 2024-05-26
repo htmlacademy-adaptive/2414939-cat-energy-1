@@ -90,43 +90,35 @@
 
         <fieldset class="fieldset owner-contacts question-form__owner-contacts title-decor">
           <div class="container">
-            <legend class="subtitle question-form__subtitle question-form__subtitle--contacts">
+            <h2 class="subtitle question-form__subtitle question-form__subtitle--contacts">
               Контактные данные (владельца кота)
-              </l>
-              <div class="owner-contacts__wrapper">
-                <label class="owner-contacts__item">
-                  <div class="owner-contacts__content">
-                    <span class="owner-contacts__property">E-mail:
-                      <sup class="question-form__req">*</sup>
-                    </span>
-                    <input class="input owner-contacts__value" type="email" required placeholder="kuklachev@gmail.com">
-                  </div>
-                </label>
-                <label class="owner-contacts__item">
-                  <div class="owner-contacts__content">
-                    <span class="owner-contacts__property owner-contacts__property--phone">Телефон:
-                      <sup class="question-form__req">*</sup>
-                    </span>
-                    <input class="input owner-contacts__value" type="tel" required placeholder="8 (960) 900-60-90"
-                      pattern="[0-9,+]{11,12}">
-                  </div>
-                </label>
+            </h2>
+            <div class="owner-contacts__wrapper">
+              <div class="owner-contacts__item owner-contacts__content">
+                <span class="owner-contacts__property">E-mail:
+                  <sup class="question-form__req">*</sup>
+                </span>
+                <input class="input owner-contacts__value" type="email" required placeholder="kuklachev@gmail.com">
               </div>
+              <div class="owner-contacts__item owner-contacts__content">
+                <span class="owner-contacts__property owner-contacts__property--phone">Телефон:
+                  <sup class="question-form__req">*</sup>
+                </span>
+                <input class="input owner-contacts__value" type="tel" required placeholder="8 (960) 900-60-90"
+                  pattern="[0-9,+]{11,12}">
+              </div>
+            </div>
           </div>
         </fieldset>
         <fieldset class="fieldset comment question-form__comment title-decor">
           <div class="container">
-            <legend class="subtitle question-form__subtitle question-form__subtitle--comment">
-              <span class="title-decor__back">Комментарий</span>
-            </legend>
+            <h2 class="subtitle question-form__subtitle question-form__subtitle--comment">Комментарий</h2>
             <textarea class="input comment__value" placeholder="Расскажите обо всех повадках кота"></textarea>
           </div>
         </fieldset>
         <fieldset class="fieldset add-info question-form__add-info title-decor">
           <div class="container">
-            <legend class="subtitle question-form__subtitle question-form__subtitle--add">
-              <span class="title-decor__back">Дополнительно</span>
-            </legend>
+            <h2 class="subtitle question-form__subtitle question-form__subtitle--add">Дополнительно</h2>
             <div class="add-info__container">
               <label class="add-info__item">
                 <input class="add-info__checkbox visually-hidden" type="checkbox" name="sweetener" checked="checked">
@@ -160,14 +152,14 @@
   <footer class="footer body__footer">
     <section class="address footer__address">
       <h2 class="visually-hidden">Адрес Cat Energy</h2>
-      <header class="address__header">
+      <div class="address__header">
         <div class="container address__wrapper">
           <h3 class="subtitle address__subtitle">приглашаем к сотрудничеству дилеров!</h3>
           <address class="address__text">ул. Большая Конюшенная, д. 19/8
             <span class="address__city">Санкт-Петербург</span>
           </address>
         </div>
-      </header>
+      </div>
       <div class="address__map-wrapper">
         <img class="advantages__icon" src="./img/location.png" width="320" height="362"
           alt="Расположение магазина на карте города">
