@@ -48,46 +48,40 @@
       <div class="container container--form">
         <h2 class="title question-form__title">Заполните анкету, и мы подберем программу питания для
           вашего кота</h2>
-        <div class="question-form__top">
-          <fieldset class="fieldset person-data question-form__person-data">
-            <label class="person-data__item">
-              <span class="person-data__property">имя:
-                <sup class="question-form__req">*</sup>
-              </span>
-              <input class="input person-data__value" pattern="[A-Za-zА-Яа-яЁё]{3,8}" type="text" required
-                placeholder="БАРСИК">
-            </label>
-            <label class="person-data__item">
-              <span class="person-data__property">Вес (кг):
-                <sup class="question-form__req">*</sup>
-              </span>
-              <input class="input person-data__value" type="text" pattern="[0-9]{1,2}" required placeholder="7">
-            </label>
-            <label class="person-data__item">
-              <span class="person-data__property">Возраст (лет):</span>
-              <input class="input person-data__value" type="text" pattern="[0-9]{1,2}" placeholder="7">
-            </label>
-          </fieldset>
-          <fieldset class="fieldset program-choice question-form__program-choice">
-            <legend class="visually-hidden">Выберите программу</legend>
-            <label class="program-choice__item">
-              <input class="program-choice__radio-button visually-hidden" type="radio" name="program"
-                value="losing-weight" checked="checked">
-              <span class="program-choice__property">похудение</span>
-            </label>
-            <label class="program-choice__item">
-              <input class="program-choice__radio-button visually-hidden" type="radio" name="program"
-                value="weight-gain">
-              <span class="program-choice__property">Набор массы</span>
-            </label>
-            <label class="program-choice__item">
-              <input class="program-choice__radio-button visually-hidden" type="radio" name="program"
-                value="need-advice">
-              <span class="program-choice__property">Не знаю (Нужен ваш совет)</span>
-            </label>
-          </fieldset>
-        </div>
-
+        <fieldset class="fieldset person-data question-form__person-data">
+          <label class="person-data__item">
+            <span class="person-data__property">имя:
+              <sup class="question-form__req">*</sup>
+            </span>
+            <input class="input person-data__value" pattern="[A-Za-zА-Яа-яЁё]{3,8}" type="text" required
+              placeholder="БАРСИК">
+          </label>
+          <label class="person-data__item">
+            <span class="person-data__property">Вес (кг):
+              <sup class="question-form__req">*</sup>
+            </span>
+            <input class="input person-data__value" type="text" pattern="[0-9]{1,2}" required placeholder="7">
+          </label>
+          <label class="person-data__item">
+            <span class="person-data__property">Возраст (лет):</span>
+            <input class="input person-data__value" type="text" pattern="[0-9]{1,2}" placeholder="7">
+          </label>
+        </fieldset>
+        <fieldset class="fieldset program-choice question-form__program-choice">
+          <label class="program-choice__item">
+            <input class="program-choice__radio-button visually-hidden" type="radio" name="program"
+              value="losing-weight" checked="checked">
+            <span class="program-choice__property">похудение</span>
+          </label>
+          <label class="program-choice__item">
+            <input class="program-choice__radio-button visually-hidden" type="radio" name="program" value="weight-gain">
+            <span class="program-choice__property">Набор массы</span>
+          </label>
+          <label class="program-choice__item">
+            <input class="program-choice__radio-button visually-hidden" type="radio" name="program" value="need-advice">
+            <span class="program-choice__property">Не знаю (Нужен ваш совет)</span>
+          </label>
+        </fieldset>
         <fieldset class="fieldset owner-contacts question-form__owner-contacts title-decor">
           <div class="container">
             <h2 class="subtitle question-form__subtitle question-form__subtitle--contacts">
