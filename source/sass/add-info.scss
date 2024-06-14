@@ -1,0 +1,78 @@
+.add-info {
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+    margin-bottom: 34px;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  &__checkbox:not(:checked),
+  &__checkbox:checked {
+    position: absolute;
+    left: 0;
+    opacity: 0;
+  }
+
+  &__checkbox:not(:checked) + label,
+  &__checkbox:checked + label {
+    position: relative;
+    padding-left: 55px;
+    cursor: pointer;
+  }
+
+  &__checkbox:not(:checked) + label:before,
+  &__checkbox:checked + label:before {
+  content: '';
+    position: absolute;
+    left: 0;
+    top: -2px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #cdcdcd;
+    background: $white-color;
+  }
+
+  &__checkbox:not(:checked) + label:after,
+  &__checkbox:checked + label:after {
+    content: '';
+    position: absolute;
+    width: 18px;
+    height: 14px;
+    top: 7px;
+    left: 6px;
+    background-image: url("../img/check.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+  }
+
+  &__checkbox:not(:checked) + label:after {
+    opacity: 0;
+  }
+
+  &__checkbox:checked + label:after {
+    opacity: 1;
+  }
+
+  &__checkbox:disabled:not(:checked) + label:before,
+  &__checkbox:disabled:checked + label:before {
+    box-shadow: none;
+    border-color: #bbb;
+    background-color: $white-color;
+  }
+
+  &__checkbox:disabled:checked + label:after {
+    color: #777;
+  }
+
+  &__checkbox:disabled + label {
+    opacity: 0.3;
+  }
+}

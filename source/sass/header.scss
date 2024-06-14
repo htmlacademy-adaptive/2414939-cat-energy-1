@@ -1,0 +1,15 @@
+.header {
+  background-color: $white-color;
+  margin: 0 auto 14px;
+  width: $block-width;
+  position: relative;
+  padding-top: 13px;
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    align-items: center;
+  }
+
+}

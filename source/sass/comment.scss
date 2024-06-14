@@ -1,0 +1,21 @@
+.comment {
+  &__value-wrapper {
+    width: $block-width;
+    height: 150px;
+    border: 1px solid #e7e7e7;
+  }
+
+  &__value {
+    font-family: $title-font;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: #444444;
+    text-align: left;
+    width: 100%;
+    height: 100%;
+    padding: 14px;
+  }
+
+}

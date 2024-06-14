@@ -1,0 +1,35 @@
+.advantages {
+  margin-bottom: 49px;
+  &__title {
+    margin-bottom: 40px;
+  }
+
+  &__icon {
+    position: relative;
+    display: inline-block;
+    min-width: 60px;
+    min-height: 60px;
+    background-color: $green-color;
+    text-align: center;
+    align-content: center;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  &__item {
+    display: flex;
+    gap: 20px;
+  }
+
+  &__text-wrapper {
+    font-family: $content-font;
+    font-size: 14px;
+    line-height: 18px;
+    color: #444444;
+  }
+
+}

@@ -1,1 +1,69 @@
-body { background: rgb(178, 206, 184); }
+$title-font: "Oswald", sans-serif;
+$content-font: "Lato", sans-serif;
+$block-color: #d9d9d9;
+$green-color:#68b738;
+$white-color: #ffffff;
+$grey-background: #f2f2f2;
+
+$block-width: 280px;
+
+@font-face {
+  font-family: "Lato";
+  src: url("../fonts/lato/Lato-Regular.woff") format("woff");
+  src: url("../fonts/lato/Lato-Regular.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Oswald";
+  src: url("../fonts/oswald/oswaldregular.woff") format("woff");
+  src: url("../fonts/oswald/oswaldregular.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  border: none;
+  outline-offset: -1px;
+}
+
+.visually-hidden {
+  display: none;
+}
+
+@import "body.scss";
+@import "title.scss";
+@import "entry.scss";
+@import "header.scss";
+@import "button.scss";
+@import "programs.scss";
+@import "list.scss";
+@import "link.scss";
+@import "subtitle.scss";
+@import "advantages.scss";
+@import "example.scss";
+@import "address.scss";
+@import "contacts.scss";
+@import "academy__logo-text.scss";
+@import "navigation.scss";
+@import "main-catalog";
+@import "catalog";
+@import "table-property.scss";
+@import "extra-products.scss";
+@import "promo.scss";
+@import "main-form";
+@import "question-form";
+@import "owner-contacts";
+@import "person-data";
+@import "comment";
+@import "add-info";
+@import "program-choice";
+@import "container";
+@import "footer";

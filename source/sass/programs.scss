@@ -1,0 +1,54 @@
+.programs {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  &__subtitle-wrapper {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 18px;
+  }
+
+  &__item {
+    background-color: $grey-background;
+    margin-bottom: 20px;
+    padding: 20px;
+  }
+
+  &__text-wrapper {
+    font-family:$content-font;
+    font-size: 14px;
+    line-height: 18px;
+    color: #444444;
+    padding-bottom: 23px;
+  }
+
+  &__button {
+    font-family: $title-font;
+    font-size: 16px;
+    line-height: 16px;
+    text-transform: uppercase;
+    color: #000000;
+  }
+
+  &__item-decor {
+    width: 240px;
+    height: 1px;
+    background-color: #d9d9d9;
+    margin: 0 auto 15px;
+    text-align: center;
+  }
+
+  &__button-wrapper {
+    position: relative;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+  }
+
+   &__button-decor {
+    cursor: pointer;
+  }
+
+}

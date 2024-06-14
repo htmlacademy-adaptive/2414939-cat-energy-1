@@ -1,0 +1,27 @@
+.address {
+
+  &__header {
+    padding: 26px 20px;
+  }
+
+  &__wrapper {
+    display: flex;
+  }
+
+  &__subtitle {
+    font-family: $title-font;
+    font-size: 16px;
+    line-height: 20px;
+    min-width: 140px;
+    color: #111111;
+  }
+
+  &__text         {
+    font-family: $content-font;
+    font-size: 14px;
+    line-height: 20px;
+    color: #444444;
+    font-style: normal;
+  }
+
+}

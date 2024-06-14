@@ -1,0 +1,40 @@
+.promo {
+  &__image-wrapper {
+    position: relative;
+    width: $block-width;
+    height: 290px;
+    background-color: $green-color;
+
+  &::before {
+   content: "";
+   position: absolute;
+   width: 78px;
+   height: 80px;
+   top: 59px;
+   left: 50%;
+   color: $white-color;
+   transform: translateX(-50%);
+   background-image: url("../img/icon-gift.svg");
+   z-index: 4;
+  }
+
+  &::after {
+    content: "Закажите все и получите чехол для кота в подарок!";
+    position: absolute;
+    width: 161px;
+    height: 60px;
+    top: 187px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: $white-color;
+    z-index: 2;
+    text-align: center;
+    font-family: $content-font;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: $white-color;
+  }
+}
+
+}

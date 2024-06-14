@@ -1,0 +1,33 @@
+
+.contacts {
+
+  &__container {
+    padding-top: 40px;
+    margin: 0 auto;
+  }
+
+  &__logo {
+    display: block;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  &__social-list {
+    display: flex;
+    padding: 20px 74px;
+    border-top: 1px solid #d9d9d9;
+    border-bottom: 1px solid #d9d9d9;
+    margin-bottom: 20px;
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    justify-content: center
+  }
+
+  &__promo-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+}
