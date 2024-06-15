@@ -18,10 +18,9 @@
     border-top: 1px solid #d9d9d9;
     border-bottom: 1px solid #d9d9d9;
     margin-bottom: 20px;
-    display: flex;
     gap: 24px;
     align-items: center;
-    justify-content: center
+    justify-content: center;
   }
 
   &__promo-wrapper {
@@ -29,5 +28,4 @@
     justify-content: space-between;
     align-items: center;
   }
-
 }

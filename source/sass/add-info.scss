@@ -7,12 +7,6 @@
     margin-bottom: 34px;
   }
 
-  &__container {
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-  }
-
   &__checkbox:not(:checked),
   &__checkbox:checked {
     position: absolute;
@@ -29,7 +23,7 @@
 
   &__checkbox:not(:checked) + label:before,
   &__checkbox:checked + label:before {
-  content: '';
+    content: "";
     position: absolute;
     left: 0;
     top: -2px;
@@ -41,7 +35,7 @@
 
   &__checkbox:not(:checked) + label:after,
   &__checkbox:checked + label:after {
-    content: '';
+    content: "";
     position: absolute;
     width: 18px;
     height: 14px;
@@ -63,13 +57,11 @@
 
   &__checkbox:disabled:not(:checked) + label:before,
   &__checkbox:disabled:checked + label:before {
-    box-shadow: none;
-    border-color: #bbb;
-    background-color: $white-color;
+    opacity: 0.3;
   }
 
   &__checkbox:disabled:checked + label:after {
-    color: #777;
+    opacity: 0.3;
   }
 
   &__checkbox:disabled + label {

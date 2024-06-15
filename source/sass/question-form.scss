@@ -46,7 +46,6 @@
   }
 
   &__program-choice {
-    margin-bottom: 9px;
     display: flex;
     flex-direction: column;
     gap: 13px;
@@ -65,9 +64,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: &top-font;
+    font-family: "&top-font";
     text-transform: none;
     text-align: center;
   }
-
 }

@@ -4,7 +4,7 @@
     margin-bottom: 13px;
   }
 
-  &__radio input[type=radio] {
+  &__radio input[type="radio"] {
 	  display: none;
  }
 
@@ -18,7 +18,7 @@
 	  user-select: none;
  }
 
-  &__radio label:before {
+  &__radio label::before {
 	  content: "";
 	  display: block;
 	  width: 30px;
@@ -30,19 +30,16 @@
     bottom: -6px;
   }
 
-  &__radio input[type=radio]:checked + label:before {
+  &__radio input[type="radio"]:checked + label:before {
 	  background: url("/img/radiobutton-checked.svg") 0 0 no-repeat;
     background-position: center;
   }
 
-
-  &__radio label:hover:before {
+  &__radio label:hover::before {
 	  border: 1px solid #bababa;
   }
 
-
-  &__radio input[type=radio]:disabled + label:before {
+  &__radio input[type="radio"]:disabled + label::before {
 	  filter: grayscale(100%);
   }
-  
 }

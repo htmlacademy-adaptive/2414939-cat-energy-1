@@ -13,9 +13,10 @@
 
   &__property {
     text-align: center;
+    text-wrap: nowrap;
   }
 
-  &__value{
+  &__value {
     padding-top: 14px;
     padding-left: 15px;
     padding-bottom: 14px;
@@ -26,10 +27,6 @@
     font-size: 14px;
     line-height: 16px;
     text-transform: uppercase;
-  }
-
-  &__property {
-    text-wrap: nowrap;
   }
 
   &__wrapper {
@@ -61,5 +58,4 @@
     transform: translateY(-50%);
     background-repeat: no-repeat;
   }
-
 }

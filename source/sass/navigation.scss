@@ -4,13 +4,13 @@
    width: 24px;
  }
 
- &__button{
+ &__button {
    display: flex;
    align-items: center;
    position: absolute;
    top: 50%;
    transform: translateY(-50%);
-   right:0;
+   right: 0;
    width: 26px;
    height: 26px;
    cursor: pointer;
@@ -29,16 +29,16 @@
  }
 
  &__button > span::before {
-   content: '';
+   content: "";
    top: -8px;
  }
 
  &__button > span::after {
-   content: '';
+   content: "";
    top: 8px;
  }
 
- &__list{
+ &__list {
    display: block;
    position: absolute;
    visibility: hidden;
@@ -56,7 +56,7 @@
    display: block;
    padding: 12px 24px;
    color: #000000;
-   font-family: &title-font;
+   font-family: "&title-font";
    font-size: 20px;
    font-weight: 600;
    text-decoration: none;
@@ -64,7 +64,7 @@
  }
 
  &__item {
-   font-family: $title-font;
+   font-family: "&title-font";
    font-size: 20px;
    line-height: 20px;
    color: #000000;
@@ -73,27 +73,26 @@
    background-color: $white-color;
  }
 
- &__toggle{
+ &__toggle {
    opacity: 0;
  }
 
- &__toggle:checked ~ .navigation__button > span{
+ &__toggle:checked ~ .navigation__button > span {
    transform: rotate(45deg);
  }
 
- & __toggle:checked ~ .navigation__button > span::before{
+ & __toggle:checked ~ .navigation__button > span::before {
    top: 0;
    transform: rotate(0);
  }
 
- &__toggle:checked ~ .navigation__button > span::after{
+ &__toggle:checked ~ .navigation__button > span::after {
    top: 0;
    transform: rotate(90deg);
  }
 
- &__toggle:checked ~ .navigation__list{
+ &__toggle:checked ~ .navigation__list {
    visibility: visible;
    left: -20px;
  }
-
 }

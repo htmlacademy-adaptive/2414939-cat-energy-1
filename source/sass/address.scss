@@ -1,5 +1,4 @@
 .address {
-
   &__header {
     padding: 26px 20px;
   }
@@ -16,12 +15,11 @@
     color: #111111;
   }
 
-  &__text         {
+  &__text {
     font-family: $content-font;
     font-size: 14px;
     line-height: 20px;
     color: #444444;
     font-style: normal;
   }
-
 }
