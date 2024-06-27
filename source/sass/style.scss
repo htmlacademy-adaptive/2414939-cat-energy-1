@@ -1,68 +1,27 @@
-$title-font: "Oswald", sans-serif;
-$content-font: "Lato", sans-serif;
-$block-color: #d9d9d9;
-$green-color:#68b738;
-$white-color: #ffffff;
-$grey-background: #f2f2f2;
-$block-width: 280px;
 
-@font-face {
-  font-family: "Lato";
-  src: url("../fonts/lato/Lato-Regular.woff") format("woff");
-  src: url("../fonts/lato/Lato-Regular.woff2") format("woff2");
-  font-style: normal;
-  font-weight: 400;
-}
-
-@font-face {
-  font-family: "Oswald";
-  src: url("../fonts/oswald/oswaldregular.woff") format("woff");
-  src: url("../fonts/oswald/oswaldregular.woff2") format("woff2");
-  font-style: normal;
-  font-weight: 400;
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  background: transparent;
-  border: none;
-  outline-offset: -1px;
-}
-
-.visually-hidden {
-  display: none;
-}
-
-@import "body.scss";
-@import "title.scss";
-@import "entry.scss";
-@import "header.scss";
-@import "button.scss";
-@import "programs.scss";
-@import "list.scss";
-@import "link.scss";
-@import "subtitle.scss";
-@import "advantages.scss";
-@import "example.scss";
-@import "address.scss";
-@import "contacts.scss";
-@import "academy__logo-text.scss";
-@import "navigation.scss";
-@import "main-catalog";
-@import "catalog";
-@import "table-property.scss";
-@import "extra-products.scss";
-@import "promo.scss";
-@import "main-form";
-@import "question-form";
-@import "owner-contacts";
-@import "person-data";
-@import "comment";
-@import "add-info";
-@import "program-choice";
-@import "container";
-@import "footer";
+@import "fonts.scss";
+@import "variables.scss";
+@import "visually-hidden.scss";
+@import "global.scss";
+@import "./blocks/entry.scss";
+@import "./blocks/header.scss";
+@import "./blocks/programs.scss";
+@import "./blocks/advantages.scss";
+@import "./blocks/example.scss";
+@import "./blocks/address.scss";
+@import "./blocks/contacts.scss";
+@import "./blocks/academy__logo-text.scss";
+@import "./blocks/navigation.scss";
+@import "./blocks/main-catalog.scss";
+@import "./blocks/catalog.scss";
+@import "./blocks/table-property.scss";
+@import "./blocks/extra-products.scss";
+@import "./blocks/promo.scss";
+@import "./blocks/main-form.scss";
+@import "./blocks/question-form.scss";
+@import "./blocks/owner-contacts";
+@import "./blocks/person-data.scss";
+@import "./blocks/comment.scss";
+@import "./blocks/add-info.scss";
+@import "./blocks/program-choice.scss";
+@import "./blocks/footer.scss";

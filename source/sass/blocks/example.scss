@@ -1,5 +1,7 @@
+@import "variables.scss";
+
 .example {
-  background-color: #eaeaea;
+  background-color: $background-block-example;
 
   &__title {
     margin-bottom: 40px;
@@ -9,7 +11,7 @@
     font-family: $content-font;
     font-size: 14px;
     line-height: 18px;
-    color: #444444;
+    color: $color-text-primary;
     margin-bottom: 20px;
     text-align: justify;
   }
@@ -43,18 +45,18 @@
     font-family: $content-font;
     font-size: 12px;
     line-height: 12px;
-    color: #444444;
+    color: $color-text-primary;
     text-align: center;
     width: 77px;
     margin-bottom: -11px;
-    background-color: #eaeaea;
+    background-color: $background-block-example;
   }
 
   &__item {
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 1px solid #cdcdcd;
+    border: $border-example-item;
     border-radius: 5px;
     min-width: 124px;
     width: 100%;

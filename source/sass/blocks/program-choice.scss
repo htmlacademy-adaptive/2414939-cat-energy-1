@@ -1,7 +1,8 @@
+@import "variables.scss";
+
 .program-choice {
   &__radio {
     display: flex;
-    margin-bottom: 13px;
   }
 
   &__radio input[type="radio"] {
@@ -16,6 +17,7 @@
 	  margin-right: 0;
 	  line-height: 18px;
 	  user-select: none;
+
  }
 
   &__radio label::before {
@@ -25,12 +27,14 @@
 	  height: 30px;
 	  position: absolute;
     border-radius: 50%;
-    border: 1px solid #cdcdcd;
+    border: $border-program-choice;
 	  left: 0;
     bottom: -6px;
   }
 
-  &__radio input[type="radio"]:checked + label:before {
+  &__radio input[type="radio"]:checked + label::before {
+    width: 30px;
+    height: 30px;
 	  background: url("/img/radiobutton-checked.svg") 0 0 no-repeat;
     background-position: center;
   }

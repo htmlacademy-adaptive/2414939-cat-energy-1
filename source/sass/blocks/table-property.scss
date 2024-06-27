@@ -1,8 +1,10 @@
+@import "variables.scss";
+
 .table-property {
   font-family: $content-font;
   font-size: 12px;
   line-height: 16px;
-  color: #444444;
+  color: $color-text-primary;
 
   &__row {
     display: flex;
@@ -14,7 +16,7 @@
     font-size: 14px;
     line-height: 14px;
     font-weight: 400;
-    color: #444444;
+    color: $color-text-primary;
   }
 
   &__value--extra {

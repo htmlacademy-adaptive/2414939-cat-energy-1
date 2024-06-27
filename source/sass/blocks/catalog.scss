@@ -1,13 +1,15 @@
+@import "variables.scss";
+
 .catalog {
+  &__item {
+    border-top: $border-catalog-item;
+    margin-bottom: 25px;
+  }
+
 
   &__list {
     display: flex;
     flex-direction: column;
-  }
-
-  &__content-card {
-    border-top: 1px solid #d9d9d9;
-    margin-bottom: 25px;
   }
 
   &__image-wrapper {
@@ -21,11 +23,10 @@
 
   &__subtitle {
     min-width: 140px;
-    color: #222222;
   }
 
   &__link {
-    color: $white-color;
+    color: $color-text-secondary;
   }
 
   &__content-wrapper {
@@ -36,18 +37,15 @@
 
   &__item--all {
     text-align: center;
-    padding-top: 25px;
-  }
-
-  &__img {
-    margin-bottom: 23px;
+    padding: 25px 0 24px;
   }
 
   &__subtitle--all {
     font-size: 14px;
     line-height: 20px;
-    color: #111111;
+    color: $color-subtitle-special;
     margin-bottom: 8px;
+    padding-top: 23px;
   }
 
   &__text {
@@ -55,7 +53,7 @@
     font-size: 12px;
     font-weight: 400;
     line-height: 16px;
-    color: #444444;
+    color: $color-text-primary;
   }
 
   &__text-wrapper--all {
@@ -63,13 +61,19 @@
   }
 
   &__link--all {
-    color: #444444;
-    margin: 0 auto;
-    background-color: $grey-background;
+    color: $color-text-primary;
+    background-color: $background-button-show-all;
   }
 
   &__address {
-    background-color: $grey-background;
+    background-color: $background-block;
   }
+
+  &__item-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
 }
 

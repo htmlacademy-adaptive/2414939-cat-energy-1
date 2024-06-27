@@ -1,10 +1,12 @@
+@import "variables.scss";
+
 .main-catalog {
   width: $block-width;
   margin: 0 auto;
+  border-top: $border-block;
 
- &__catalog-title {
+  &__catalog-title {
    margin-bottom: 41px;
    padding-top: 27px;
-   border-top: 1px solid #d9d9d9;
  }
 }

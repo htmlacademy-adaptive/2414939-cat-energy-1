@@ -1,12 +1,14 @@
+@import "variables.scss";
+
 .person-data {
   padding-bottom: 24px;
-  border-bottom: 1px solid #e7e7e7;
+  border-bottom: $border-person-data;
 
   &__value {
     padding-top: 14px;
     padding-left: 15px;
     padding-bottom: 14px;
-    border: 1px solid #e7e7e7;
+    border: $border-person-data;
     width: 100%;
   }
 

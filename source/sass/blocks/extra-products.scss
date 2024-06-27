@@ -1,3 +1,5 @@
+@import "variables.scss";
+
 .extra-products {
   margin-bottom: 35px;
   position: relative;
@@ -6,24 +8,24 @@
     font-weight: 400;
     font-size: 24px;
     line-height: 24px;
-    color: #000000;
-    padding-top: 25px;
-    padding-bottom: 36px;
-    border-top: 1px solid #ebebeb;
+    color: $color-text-special;
     text-wrap: nowrap;
   }
 
   &__item {
-    padding: 15px 0 0;
-    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding-top: 13px;
+    padding-bottom: 19px;
+    border-top: $border-extra-products;
+
   }
 
   &__content {
     display: flex;
     flex-direction: column;
     gap: 13px;
-    margin-bottom: 15px;
-    border-top: 1px solid #cdcdcd;
   }
 
   &__row {
@@ -33,7 +35,7 @@
 
   &__list {
     padding-bottom: 20px;
-    border-bottom: 1px solid #cdcdcd;
+    border-bottom: $border-extra-products;
     margin-bottom: 35px;
   }
 
@@ -41,11 +43,18 @@
     display: flex;
     gap: 20px;
     align-items: center;
+    padding-top: 25px;
+    padding-bottom: 36px;
+    border-top: $border-extra-products__title;
   }
 
   &__title-decor {
     width: 100%;
     height: 2px;
-    background-color: $green-color;
+    background-color: $background-block-special;
+  }
+
+  &__promo {
+    position: relative;
   }
 }

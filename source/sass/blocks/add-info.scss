@@ -1,9 +1,10 @@
-.add-info {
+@import "variables.scss";
 
+.add-info {
   &__container {
     display: flex;
     flex-direction: column;
-    gap: 13px;
+    gap: 31px;
     margin-bottom: 34px;
   }
 
@@ -29,8 +30,7 @@
     top: -2px;
     width: 30px;
     height: 30px;
-    border: 1px solid #cdcdcd;
-    background: $white-color;
+    border: $border-checkbox;
   }
 
   &__checkbox:not(:checked) + label:after,

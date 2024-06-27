@@ -1,0 +1,63 @@
+@import "variables.scss";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  border: none;
+  outline-offset: -1px;
+}
+
+.subtitle {
+  font-family: $title-font;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: $color-text-special;
+}
+
+.title {
+  font-family: $title-font;
+  font-size: 36px;
+  line-height: 40px;
+  color: $color-text-special;
+
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+  color: $color-text-special;
+}
+
+.body {
+  background-color: $background-body;
+  font-family: "Lato";
+  width: 320px;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.button {
+  background-color: $background-button;
+  color: $color-text-secondary;
+  font-family: $title-font;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  margin: 0 auto;
+  text-decoration: none;
+  display: block;
+  text-transform: uppercase;
+  width: $block-width;
+  min-height: 40px;
+  padding: 10px 0 10px;
+  cursor: pointer;
+}
+

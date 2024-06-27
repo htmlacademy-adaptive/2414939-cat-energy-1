@@ -1,3 +1,5 @@
+@import "variables.scss";
+
 .programs {
   display: flex;
   flex-direction: column;
@@ -11,7 +13,7 @@
   }
 
   &__item {
-    background-color: $grey-background;
+    background-color: $background-block;
     margin-bottom: 20px;
     padding: 20px;
   }
@@ -20,8 +22,11 @@
     font-family: $content-font;
     font-size: 14px;
     line-height: 18px;
-    color: #444444;
+    color: $color-text-primary;
     padding-bottom: 23px;
+    border-bottom: $border-block;
+    margin-bottom: 15px;
+
   }
 
   &__button {
@@ -29,16 +34,19 @@
     font-size: 16px;
     line-height: 16px;
     text-transform: uppercase;
-    color: #000000;
+    position: relative;
   }
 
-  &__item-decor {
-    width: 240px;
-    height: 1px;
-    background-color: #d9d9d9;
-    margin: 0 auto 15px;
-    text-align: center;
-  }
+  &__button::after {
+    content: "";
+    display: inline-block;
+    width: 32px;
+    height: 12px;
+    background-image: url("../img/programs-arrow.svg");
+    position: relative;
+    top: 50%;
+    left: 15px;
+}
 
   &__button-wrapper {
     position: relative;
@@ -47,7 +55,4 @@
     align-items: center;
   }
 
-   &__button-decor {
-    cursor: pointer;
-  }
 }

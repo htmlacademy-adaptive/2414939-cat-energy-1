@@ -1,3 +1,5 @@
+@import "variables.scss";
+
 .address {
   &__header {
     padding: 26px 20px;
@@ -8,18 +10,17 @@
   }
 
   &__subtitle {
-    font-family: $title-font;
     font-size: 16px;
     line-height: 20px;
     min-width: 140px;
-    color: #111111;
+    color: $color-subtitle-special;
   }
 
   &__text {
     font-family: $content-font;
     font-size: 14px;
     line-height: 20px;
-    color: #444444;
+    color: $color-text-primary;
     font-style: normal;
   }
 }

@@ -1,5 +1,6 @@
-.navigation {
+@import "variables.scss";
 
+.navigation {
  &__wrapper {
    width: 24px;
  }
@@ -7,15 +8,14 @@
  &__button {
    display: flex;
    align-items: center;
-   position: absolute;
+   position: relative;
    top: 50%;
    transform: translateY(-50%);
    right: 0;
    width: 26px;
    height: 26px;
    cursor: pointer;
-   z-index: 1;
- }
+  }
 
  &__button > span,
  &__button > span::before,
@@ -45,54 +45,47 @@
    top: 55px;
    width: 320px;
    height: 100%;
-   margin: 0;
    padding: 0;
    list-style: none;
-   background-color: #ececf1;
-   z-index: 3;
+   z-index: 1;
  }
 
  &__link {
    display: block;
    padding: 22px 24px;
-   color: #000000;
    font-family: "Oswald", sans-serif;
    font-size: 20px;
    font-weight: 600;
-   text-decoration: none;
-   border-top: 1px solid #e6e6e6;
+   border-top: $border-navigation__link;
  }
 
  &__item {
-   font-family: "&title-font";
-   font-size: 20px;
    line-height: 20px;
-   color: #000000;
    text-transform: uppercase;
    text-align: center;
-   background-color: $white-color;
+   background-color: $background-body;
  }
 
  &__toggle {
    opacity: 0;
  }
 
- &__toggle:checked ~ .navigation__button > span {
-   transform: rotate(45deg);
- }
+//  &__toggle:checked ~ .navigation__button > span {
+//   //  transform: rotate(45deg);
+//  }
 
- & __toggle:checked ~ .navigation__button > span::before {
-   top: 0;
-   transform: rotate(0);
- }
+//  &__toggle:checked ~ .navigation__button > span::before {
+//    top: 0;
+//   //  transform: rotate(0);
+//  }
 
- &__toggle:checked ~ .navigation__button > span::after {
-   top: 0;
-   transform: rotate(90deg);
- }
+//  &__toggle:checked ~ .navigation__button > span::after {
+//    top: 0;
+//   //  transform: rotate(90deg);
+//  }
 
- &__toggle:checked ~ .navigation__list {
-   visibility: visible;
-   left: -20px;
- }
+//  &__toggle:checked ~ .navigation__list {
+//    visibility: visible;
+//    left: 0px;
+//  }
 }
