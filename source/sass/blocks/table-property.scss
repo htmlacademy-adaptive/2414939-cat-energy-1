@@ -1,0 +1,25 @@
+@import "variables.scss";
+
+.table-property {
+  font-family: $content-font;
+  font-size: 12px;
+  line-height: 16px;
+  color: $color-text-primary;
+
+  &__row {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__property--extra {
+    font-family: $content-font;
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 400;
+    color: $color-text-primary;
+  }
+
+  &__value--extra {
+    text-align: right;
+  }
+}
