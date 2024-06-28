@@ -2,10 +2,9 @@
 
 .entry {
   position: relative;
+  padding-bottom: 20px;
 
-  &__container {
-    margin-bottom: 20px;
-  }
+  &__container {}
 
   &__header {
     color: $color-text-secondary;
@@ -55,7 +54,4 @@
     margin: 0 auto;
   }
 
-  &__button {
-    margin-bottom: 20px;
-  }
 }

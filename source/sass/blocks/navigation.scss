@@ -70,22 +70,22 @@
    opacity: 0;
  }
 
-//  &__toggle:checked ~ .navigation__button > span {
-//   //  transform: rotate(45deg);
-//  }
+ &__toggle:checked ~ .navigation__button > span {
+   transform: rotate(45deg);
+ }
 
-//  &__toggle:checked ~ .navigation__button > span::before {
-//    top: 0;
-//   //  transform: rotate(0);
-//  }
+ &__toggle:checked ~ .navigation__button > span::before {
+   top: 0;
+   transform: rotate(0);
+ }
 
-//  &__toggle:checked ~ .navigation__button > span::after {
-//    top: 0;
-//   //  transform: rotate(90deg);
-//  }
+ &__toggle:checked ~ .navigation__button > span::after {
+   top: 0;
+   transform: rotate(90deg);
+ }
 
-//  &__toggle:checked ~ .navigation__list {
-//    visibility: visible;
-//    left: 0px;
-//  }
+ &__toggle:checked ~ .navigation__list {
+   visibility: visible;
+   left: 0px;
+ }
 }

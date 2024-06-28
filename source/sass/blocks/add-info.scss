@@ -8,22 +8,19 @@
     margin-bottom: 34px;
   }
 
-  &__checkbox:not(:checked),
-  &__checkbox:checked {
+  &__checkbox {
     position: absolute;
     left: 0;
     opacity: 0;
   }
 
-  &__checkbox:not(:checked) + label,
-  &__checkbox:checked + label {
+    &__checkbox + label {
     position: relative;
     padding-left: 55px;
     cursor: pointer;
   }
 
-  &__checkbox:not(:checked) + label:before,
-  &__checkbox:checked + label:before {
+    &__checkbox + label:before {
     content: "";
     position: absolute;
     left: 0;
@@ -33,8 +30,7 @@
     border: $border-checkbox;
   }
 
-  &__checkbox:not(:checked) + label:after,
-  &__checkbox:checked + label:after {
+    &__checkbox + label:after {
     content: "";
     position: absolute;
     width: 18px;
@@ -55,12 +51,11 @@
     opacity: 1;
   }
 
-  &__checkbox:disabled:not(:checked) + label:before,
-  &__checkbox:disabled:checked + label:before {
+  &__checkbox:disabled + label:before {
     opacity: 0.3;
   }
 
-  &__checkbox:disabled:checked + label:after {
+  &__checkbox:disabled + label:after {
     opacity: 0.3;
   }
 

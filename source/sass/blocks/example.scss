@@ -2,6 +2,7 @@
 
 .example {
   background-color: $background-block-example;
+  padding: 25px 20px 40px;
 
   &__title {
     margin-bottom: 40px;
@@ -60,5 +61,6 @@
     border-radius: 5px;
     min-width: 124px;
     width: 100%;
+    padding-top: 14px;
   }
 }
