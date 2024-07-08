@@ -11,6 +11,7 @@
     align-items: center;
     gap: 13px;
     position: relative;
+
   }
 
   &__property {
@@ -19,10 +20,6 @@
   }
 
   &__value {
-    padding-top: 14px;
-    padding-left: 15px;
-    padding-bottom: 14px;
-    border: $border-owner-contacts;
     width: 100%;
     font-family: $title-font;
     font-weight: 400;
@@ -37,7 +34,14 @@
     gap: 14px;
   }
 
-  &__email::before {
+  &__input-box {
+    position: relative;
+    width: 100%;
+    padding: 14px 45px 14px 13px;
+    border: $border-owner-contacts;
+  }
+
+  &__input-box-email::after {
     content: "";
     position: absolute;
     width: 20px;
@@ -49,7 +53,7 @@
     background-repeat: no-repeat;
   }
 
-  &__tel::before {
+  &__input-box-tel::before {
     content: "";
     position: absolute;
     width: 20px;

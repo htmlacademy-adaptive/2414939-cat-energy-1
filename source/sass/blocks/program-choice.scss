@@ -17,7 +17,6 @@
 	  margin-right: 0;
 	  line-height: 18px;
 	  user-select: none;
-
  }
 
   &__radio label::before {
@@ -32,11 +31,20 @@
     bottom: -6px;
   }
 
-  &__radio input[type="radio"]:checked + label::before {
-    width: 30px;
-    height: 30px;
-	  background: url("/img/radiobutton-checked.svg") 0 0 no-repeat;
-    background-position: center;
+  &__radio label::after {
+    content: "";
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background-color: $background-button;
+    top: 3px;
+    left: 9px;
+    visibility: hidden;
+  }
+
+  &__radio input[type="radio"]:checked + label::after {
+    visibility: visible;
   }
 
   &__radio label:hover::before {

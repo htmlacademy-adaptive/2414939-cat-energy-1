@@ -5,37 +5,27 @@
     position: relative;
     width: $block-width;
     height: 290px;
-    background-color: $background-block-special;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 48px;
     padding: 0 60px;
+    background-image: url("../img/promo-image.png");
   }
 
-    &__image-wrapper::before {
-      content: "";
-      position: absolute;
-      width: 280px;
-      height: 290px;
-      top: 0;
-      left: 0;
-      background-image: url("../img/promo-image.png");
-    }
-
-  &__icon {
-    position: relative;
-    width: 78px;
-    height: 80px;
-  }
-
-  &__icon::before {
+  &__image-wrapper::before {
     content: "";
     position: absolute;
-    width: 78px;
-    height: 80px;
-    background-image: url("../img/icon-gift.svg");
+    width: 280px;
+    height: 290px;
+    top: 0;
+    left: 0;
+    background-color: $background-block-special;
+    opacity: 0.85;
+  }
+
+  &__icon-image {
     z-index: 0;
   }
 
@@ -48,5 +38,4 @@
     color: $color-text-secondary;
     z-index: 0;
   }
-
 }

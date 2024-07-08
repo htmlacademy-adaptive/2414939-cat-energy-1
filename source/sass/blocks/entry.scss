@@ -4,8 +4,6 @@
   position: relative;
   padding-bottom: 20px;
 
-  &__container {}
-
   &__header {
     color: $color-text-secondary;
     text-align: center;
@@ -53,5 +51,4 @@
     display: block;
     margin: 0 auto;
   }
-
 }

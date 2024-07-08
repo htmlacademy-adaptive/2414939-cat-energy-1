@@ -6,7 +6,6 @@
     margin-bottom: 25px;
   }
 
-
   &__list {
     display: flex;
     flex-direction: column;
@@ -26,7 +25,20 @@
   }
 
   &__link {
+    background-color: $background-button;
     color: $color-text-secondary;
+    font-family: $title-font;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    margin: 0 auto;
+    text-decoration: none;
+    display: block;
+    text-transform: uppercase;
+    width: $block-width;
+    min-height: 40px;
+    padding: 10px 10px;
+    cursor: pointer;
   }
 
   &__content-wrapper {
@@ -74,6 +86,5 @@
     flex-direction: column;
     justify-content: space-between;
   }
-
 }
 

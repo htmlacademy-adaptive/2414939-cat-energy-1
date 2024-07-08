@@ -1,8 +1,36 @@
 @import "variables.scss";
 
 .footer {
-  &__contacts {
-    background-color: $background-footer;
+      background-color: $background-footer;
+
+  &__academy-logo-text {
+    font-family: $content-font;
+    font-size: 16px;
+    line-height: 20px;
+    color: $color-text-primary;
+  }
+
+  &__address-wrapper {
+    display: flex;
+    padding: 26px 20px;
+  }
+
+  &__index-address-wrapper {
+    background-color: $background-body;
+  }
+
+  &__address-subtitle {
+    font-size: 16px;
+    line-height: 20px;
+    min-width: 140px;
+    color: $color-subtitle-special;
+  }
+
+  &__address-text {
+    font-family: $content-font;
+    font-size: 14px;
+    line-height: 20px;
+    color: $color-text-primary;
+    font-style: normal;
   }
 }
-

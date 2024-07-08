@@ -1,11 +1,17 @@
 @import "variables.scss";
 
-.navigation {
+.header-navigation{
  &__wrapper {
    width: 24px;
+   display: flex;
  }
 
- &__button {
+ &__wrapper:focus-within &__list {
+  visibility: visible;
+  left: 0px;
+}
+
+ &__toggle {
    display: flex;
    align-items: center;
    position: relative;
@@ -17,23 +23,22 @@
    cursor: pointer;
   }
 
- &__button > span,
- &__button > span::before,
- &__button > span::after {
+ &__toggle > span,
+ &__toggle > span::before,
+ &__toggle > span::after {
    display: block;
    position: absolute;
    width: 100%;
    height: 2px;
    background-color: #000000;
-   transition-duration: .25s;
  }
 
- &__button > span::before {
+ &__toggle > span::before {
    content: "";
    top: -8px;
  }
 
- &__button > span::after {
+ &__toggle > span::after {
    content: "";
    top: 8px;
  }
@@ -66,26 +71,17 @@
    background-color: $background-body;
  }
 
- &__toggle {
-   opacity: 0;
- }
+  &__toggle:focus-within > span {
+    transform: rotate(45deg);
+  }
 
- &__toggle:checked ~ .navigation__button > span {
-   transform: rotate(45deg);
- }
+  &__toggle:focus-within > span::before {
+    display: none;
+  }
 
- &__toggle:checked ~ .navigation__button > span::before {
-   top: 0;
-   transform: rotate(0);
- }
-
- &__toggle:checked ~ .navigation__button > span::after {
-   top: 0;
-   transform: rotate(90deg);
- }
-
- &__toggle:checked ~ .navigation__list {
-   visibility: visible;
-   left: 0px;
- }
+  &__toggle:focus-within > span::after {
+    top: 0;
+    transform: rotate(90deg);
+    visibility: visible;
+  }
 }
