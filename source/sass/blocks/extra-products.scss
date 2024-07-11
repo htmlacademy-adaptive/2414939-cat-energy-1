@@ -1,0 +1,53 @@
+@import "variables.scss";
+
+.extra-products {
+  margin-bottom: 35px;
+  position: relative;
+
+  &__title {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 24px;
+    color: $color-text-special;
+    text-wrap: nowrap;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding-top: 13px;
+    padding-bottom: 19px;
+    border-top: $border-extra-products;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+  }
+
+  &__row {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__list {
+    padding-bottom: 20px;
+    border-bottom: $border-extra-products;
+    margin-bottom: 35px;
+  }
+
+  &__title-wrapper {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    padding-top: 25px;
+    padding-bottom: 36px;
+    border-top: $border-extra-products__title;
+  }
+
+  &__promo {
+    position: relative;
+  }
+}

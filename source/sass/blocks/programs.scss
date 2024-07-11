@@ -1,0 +1,64 @@
+@import "variables.scss";
+
+.programs {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+
+  &__subtitle-wrapper {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 18px;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  &__item {
+    background-color: $background-block;
+    padding: 20px;
+    width: $block-width;
+  }
+
+  &__text-wrapper {
+    font-family: $content-font;
+    font-size: 14px;
+    line-height: 18px;
+    color: $color-text-primary;
+    padding-bottom: 23px;
+    border-bottom: $border-block;
+    margin-bottom: 15px;
+  }
+
+  &__link {
+    font-family: $title-font;
+    font-size: 16px;
+    line-height: 16px;
+    text-transform: uppercase;
+    position: relative;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+  }
+
+  &__link::after {
+    content: "";
+    display: inline-block;
+    width: 32px;
+    height: 12px;
+    background-image: url("../img/programs-arrow.svg");
+    background-repeat: no-repeat;
+}
+
+  &__link-wrapper {
+    display: inline-block;
+  }
+}

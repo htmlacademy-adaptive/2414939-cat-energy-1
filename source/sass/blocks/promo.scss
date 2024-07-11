@@ -1,0 +1,41 @@
+@import "variables.scss";
+
+.promo {
+  &__image-wrapper {
+    position: relative;
+    width: $block-width;
+    height: 290px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 48px;
+    padding: 0 60px;
+    background-image: url("../img/promo-image.png");
+  }
+
+  &__image-wrapper::before {
+    content: "";
+    position: absolute;
+    width: 280px;
+    height: 290px;
+    top: 0;
+    left: 0;
+    background-color: $background-block-special;
+    opacity: 0.85;
+  }
+
+  &__icon-image {
+    z-index: 0;
+  }
+
+  &__text {
+    text-align: center;
+    font-family: $content-font;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: $color-text-secondary;
+    z-index: 0;
+  }
+}

@@ -1,0 +1,22 @@
+@import "variables.scss";
+
+.person-data {
+  padding-bottom: 24px;
+  border-bottom: $border-person-data;
+
+  &__value {
+    padding: 14px 15px;
+    border: $border-person-data;
+    width: 100%;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+  }
+
+  &__property {
+    text-wrap: nowrap;
+  }
+ }

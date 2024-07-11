@@ -1,0 +1,30 @@
+@import "variables.scss";
+
+.contacts {
+  &__container {
+    padding: 40px 20px;
+  }
+
+  &__logo {
+    display: block;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  &__social-list {
+    display: flex;
+    padding: 20px 0;
+    border-top: $border-block;
+    border-bottom: $border-block;
+    margin-bottom: 20px;
+    gap: 24px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__promo-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

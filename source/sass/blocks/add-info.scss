@@ -1,0 +1,63 @@
+@import "variables.scss";
+
+.add-info {
+  &__item {
+    display: flex;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: 31px;
+    margin-bottom: 34px;
+  }
+
+  &__checkbox {
+    position: absolute;
+    left: 0;
+    opacity: 0;
+  }
+
+  &__checkbox + label {
+    position: relative;
+    padding-left: 55px;
+    cursor: pointer;
+  }
+
+  &__checkbox + label:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: -2px;
+    width: 30px;
+    height: 30px;
+    border: $border-checkbox;
+  }
+
+  &__checkbox + label:after {
+    content: "";
+    position: absolute;
+    width: 18px;
+    height: 14px;
+    top: 7px;
+    left: 6px;
+    background-image: url("../img/check.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+  }
+
+  &__checkbox:not(:checked) + label:after {
+    opacity: 0;
+  }
+
+  &__checkbox:checked + label:after {
+    opacity: 1;
+  }
+
+  &__checkbox:disabled + label:before,
+  &__checkbox:disabled + label:after,
+  &__checkbox:disabled + label {
+    opacity: 0.3;
+  }
+}

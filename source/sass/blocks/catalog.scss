@@ -1,0 +1,90 @@
+@import "variables.scss";
+
+.catalog {
+  &__item {
+    border-top: $border-catalog-item;
+    margin-bottom: 25px;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__image-wrapper {
+    width: 140px;
+    height: 107px;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__subtitle {
+    min-width: 140px;
+  }
+
+  &__link {
+    background-color: $background-button;
+    color: $color-text-secondary;
+    font-family: $title-font;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    margin: 0 auto;
+    text-decoration: none;
+    display: block;
+    text-transform: uppercase;
+    width: $block-width;
+    min-height: 40px;
+    padding: 10px 10px;
+    cursor: pointer;
+  }
+
+  &__content-wrapper {
+    display: flex;
+    padding: 20px 0 20px;
+    justify-content: space-between;
+  }
+
+  &__item--all {
+    text-align: center;
+    padding: 25px 0 24px;
+  }
+
+  &__subtitle--all {
+    font-size: 14px;
+    line-height: 20px;
+    color: $color-subtitle-special;
+    margin-bottom: 8px;
+    padding-top: 23px;
+  }
+
+  &__text {
+    font-family: $content-font;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    color: $color-text-primary;
+  }
+
+  &__text-wrapper--all {
+    margin-bottom: 21px;
+  }
+
+  &__link--all {
+    color: $color-text-primary;
+    background-color: $background-button-show-all;
+  }
+
+  &__address {
+    background-color: $background-block;
+  }
+
+  &__item-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+

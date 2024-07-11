@@ -1,0 +1,14 @@
+@import "variables.scss";
+
+.header {
+  position: relative;
+
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    align-items: center;
+    padding: 13px 21px;
+  }
+}

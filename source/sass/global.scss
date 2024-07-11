@@ -1,0 +1,81 @@
+@import "variables.scss";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  border: none;
+  outline-offset: -1px;
+}
+
+.visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  width: 1px;
+  height: 1px;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+.subtitle {
+  font-family: $title-font;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: $color-text-special;
+}
+
+.title {
+  font-family: $title-font;
+  font-size: 36px;
+  line-height: 40px;
+  color: $color-text-special;
+
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+  color: $color-text-special;
+}
+
+.body {
+  background-color: $background-body;
+  font-family: "Lato";
+  width: 320px;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.button {
+  background-color: $background-button;
+  color: $color-text-secondary;
+  font-family: $title-font;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  margin: 0 auto;
+  text-decoration: none;
+  display: block;
+  text-transform: uppercase;
+  width: $block-width;
+  min-height: 40px;
+  padding: 10px 10px;
+  cursor: pointer;
+}
+
+.title-decor {
+  width: 100%;
+  height: 2px;
+  background-color: $background-title-decor;
+}

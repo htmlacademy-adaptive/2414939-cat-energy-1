@@ -1,0 +1,12 @@
+@import "variables.scss";
+
+.main-form {
+  width: $block-width;
+  margin: 0 auto;
+  margin-bottom: 32px;
+
+ &__form-title {
+  padding-top: 27px;
+  margin-bottom: 37px;
+ }
+}

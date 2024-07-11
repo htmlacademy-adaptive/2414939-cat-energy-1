@@ -1,0 +1,57 @@
+@import "variables.scss";
+
+.program-choice {
+  &__radio {
+    display: flex;
+  }
+
+  &__radio input[type="radio"] {
+	  display: none;
+ }
+
+  &__radio label {
+	  display: inline-block;
+	  cursor: pointer;
+	  position: relative;
+	  padding-left: 45px;
+	  margin-right: 0;
+	  line-height: 18px;
+	  user-select: none;
+ }
+
+  &__radio label::before {
+	  content: "";
+	  display: block;
+	  width: 30px;
+	  height: 30px;
+	  position: absolute;
+    border-radius: 50%;
+    border: $border-program-choice;
+	  left: 0;
+    bottom: -6px;
+  }
+
+  &__radio label::after {
+    content: "";
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background-color: $background-button;
+    top: 3px;
+    left: 9px;
+    visibility: hidden;
+  }
+
+  &__radio input[type="radio"]:checked + label::after {
+    visibility: visible;
+  }
+
+  &__radio label:hover::before {
+	  border: 1px solid #bababa;
+  }
+
+  &__radio input[type="radio"]:disabled + label::before {
+	  filter: grayscale(100%);
+  }
+}
