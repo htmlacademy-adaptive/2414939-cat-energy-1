@@ -27,6 +27,15 @@
     }
   }
 
+  &__header {
+
+    @media (min-width: $desktop-width) {
+      display: flex;
+      gap: 80px;
+    }
+
+  }
+
   &__person-data {
     display: flex;
     flex-direction: column;
@@ -36,6 +45,10 @@
     @media (min-width: $tablet-width) {
       gap: 20px;
       margin-bottom: 72px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 100%;
     }
   }
 
@@ -130,6 +143,12 @@
       padding: 27px;
       margin-bottom: 65px;
     }
+
+    @media (min-width: $desktop-width) {
+      min-width: 570px;
+      padding: 25px 28px;
+      justify-content: center;
+    }
   }
 
   &__comment {
@@ -143,7 +162,7 @@
       margin-bottom: 70px;
     }
   }
-  
+
   &__button {
     margin-bottom: 21px;
 
