@@ -89,7 +89,6 @@
       width: 70px;
       left: -110px;
     }
-
   }
 
   &__subtitle-wrapper::after {
@@ -116,7 +115,6 @@
     @media (min-width: $desktop-width) {
       right: -110px;
     }
-
   }
 
   &__program-choice {
@@ -143,11 +141,9 @@
 
     @media (min-width: $desktop-width) {
       margin-bottom: 70px;
-
     }
-
   }
-
+  
   &__button {
     margin-bottom: 21px;
 
