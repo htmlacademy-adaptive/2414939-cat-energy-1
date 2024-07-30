@@ -33,10 +33,12 @@
               <a class="link header-navigation__link" href="index.html" title="Перейти на главную страницу">Главная</a>
             </li>
             <li class="header-navigation__item">
-              <a class="link header-navigation__link" href="catalog.html" title="Перейти в каталог">Каталог продукции</a>
+              <a class="link header-navigation__link" href="catalog.html" title="Перейти в каталог">Каталог
+                продукции</a>
             </li>
             <li class="header-navigation__item">
-              <a class="link header-navigation__link header-navigation__link--active" href="#" title="Перейти страницу подбора программы" >Подбор программы</a>
+              <a class="link header-navigation__link header-navigation__link--active" href="#"
+                title="Перейти страницу подбора программы">Подбор программы</a>
             </li>
           </ul>
         </nav>
@@ -51,42 +53,44 @@
       <div class="container container--form">
         <h2 class="title question-form__title">Заполните анкету, и мы подберем программу питания для
           вашего кота</h2>
-        <fieldset class="fieldset person-data question-form__person-data">
-          <legend class="visually-hidden">Данные кота</legend>
-          <label class="person-data__item">
-            <span class="person-data__property">имя:
-              <sup class="question-form__req">*</sup>
-            </span>
-            <input class="input person-data__value" pattern="[A-Za-zА-Яа-яЁё]{3,8}" type="text" name="name"
-              placeholder="БАРСИК" required>
-          </label>
-          <label class="person-data__item">
-            <span class="person-data__property">Вес (кг):
-              <sup class="question-form__req">*</sup>
-            </span>
-            <input class="input person-data__value" type="text" pattern="[0-9]{1,2}" name="weight" placeholder="7"
-              required>
-          </label>
-          <label class="person-data__item">
-            <span class="person-data__property">Возраст (лет):</span>
-            <input class="input person-data__value" type="text" pattern="[0-9]{1,2}" name="age" placeholder="7">
-          </label>
-        </fieldset>
-        <fieldset class="fieldset program-choice question-form__program-choice">
-          <legend class="visually-hidden">Выбор программы</legend>
-          <div class="program-choice__radio">
-            <input id="losing-weight" type="radio" name="program" value="losing-weight" checked>
-            <label for="losing-weight">похудение</label>
-          </div>
-          <div class="program-choice__radio">
-            <input id="weight-gain" type="radio" name="program" value="weight-gain">
-            <label for="weight-gain">Набор массы</label>
-          </div>
-          <div class="program-choice__radio">
-            <input id="need-advice" type="radio" name="program" value="need-advice">
-            <label for="need-advice">Не знаю (Нужен ваш совет)</label>
-          </div>
-        </fieldset>
+        <div class="question-form__header">
+          <fieldset class="fieldset person-data question-form__person-data">
+            <legend class="visually-hidden">Данные кота</legend>
+            <label class="person-data__item">
+              <span class="person-data__property">имя:
+                <sup class="question-form__req">*</sup>
+              </span>
+              <input class="input person-data__value" pattern="[A-Za-zА-Яа-яЁё]{3,8}" type="text" name="name"
+                placeholder="БАРСИК" required>
+            </label>
+            <label class="person-data__item">
+              <span class="person-data__property">Вес (кг):
+                <sup class="question-form__req">*</sup>
+              </span>
+              <input class="input person-data__value" type="text" pattern="[0-9]{1,2}" name="weight" placeholder="7"
+                required>
+            </label>
+            <label class="person-data__item">
+              <span class="person-data__property">Возраст (лет):</span>
+              <input class="input person-data__value" type="text" pattern="[0-9]{1,2}" name="age" placeholder="7">
+            </label>
+          </fieldset>
+          <fieldset class="fieldset program-choice question-form__program-choice">
+            <legend class="visually-hidden">Выбор программы</legend>
+            <div class="program-choice__radio">
+              <input id="losing-weight" type="radio" name="program" value="losing-weight" checked>
+              <label for="losing-weight">похудение</label>
+            </div>
+            <div class="program-choice__radio">
+              <input id="weight-gain" type="radio" name="program" value="weight-gain">
+              <label for="weight-gain">Набор массы</label>
+            </div>
+            <div class="program-choice__radio">
+              <input id="need-advice" type="radio" name="program" value="need-advice">
+              <label for="need-advice">Не знаю (Нужен ваш совет)</label>
+            </div>
+          </fieldset>
+        </div>
         <div class="question-form__subtitle-wrapper">
           <h2 class="subtitle question-form__subtitle question-form__subtitle--contacts">
             Контактные данные<br> (владельца кота)
@@ -156,9 +160,9 @@
           </div>
         </fieldset>
         <div class="question-form__footer">
-            <button class="button question-form__button" type="submit" title="отправить заявку">отправить заявку</button>
-            <small class="question-form__note">
-              <sup class="question-form__req">*</sup> — Обязательные поля</small>
+          <button class="button question-form__button" type="submit" title="отправить заявку">отправить заявку</button>
+          <small class="question-form__note">
+            <sup class="question-form__req">*</sup> — Обязательные поля</small>
         </div>
       </div>
     </form>
@@ -174,8 +178,7 @@
       <picture class="address__map-wrapper">
         <source media="(min-width: 1200px)" srcset="./img/location-desktop.png" width="1440">
         <source media="(min-width: 768px)" srcset="./img/location-tablet.png" width="768">
-        <img class="address__map" src="./img/location.png" width="320"
-          alt="Расположение магазина на карте города">
+        <img class="address__map" src="./img/location.png" width="320" alt="Расположение магазина на карте города">
       </picture>
     </section>
     <section class="contacts footer__contacts">
@@ -216,7 +219,8 @@
           </li>
         </ul>
         <div class=contacts__promo-wrapper>
-          <a class="link footer__academy-logo-text" href="https://htmlacademy.ru/" title="Перейти в HTML Academy">HTML Academy</a>
+          <a class="link footer__academy-logo-text" href="https://htmlacademy.ru/" title="Перейти в HTML Academy">HTML
+            Academy</a>
           <a class="link footer__academy-logo-image" href="https://htmlacademy.ru/" title="Перейти в HTML Academy"><svg
               xmlns="http://www.w3.org/2000/svg" width="27" height="34" fill="none" viewBox="0 0 27 34">
               <path fill="#666"
