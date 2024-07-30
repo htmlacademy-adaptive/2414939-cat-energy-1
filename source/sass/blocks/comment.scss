@@ -5,6 +5,11 @@
     width: $block-width;
     height: 150px;
     border: $border-comment;
+
+    @media (min-width: $tablet-width) {
+      width: 100%;
+      height: 175px;
+    }
   }
 
   &__value {

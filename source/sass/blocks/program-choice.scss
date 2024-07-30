@@ -7,7 +7,7 @@
 
   &__radio input[type="radio"] {
 	  display: none;
- }
+  }
 
   &__radio label {
 	  display: inline-block;
@@ -17,7 +17,7 @@
 	  margin-right: 0;
 	  line-height: 18px;
 	  user-select: none;
- }
+  }
 
   &__radio label::before {
 	  content: "";

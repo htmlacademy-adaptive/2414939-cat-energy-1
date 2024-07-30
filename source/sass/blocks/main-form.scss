@@ -5,8 +5,26 @@
   margin: 0 auto;
   margin-bottom: 32px;
 
+  @media (min-width: $tablet-width) {
+   min-width: 768px;
+   padding: 0 70px;
+   margin-bottom: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 1440px;
+    padding: 0 110px;
+    margin-bottom: 79px;
+  }
+
  &__form-title {
   padding-top: 27px;
   margin-bottom: 37px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 54px;
+    padding: 0;
+
+  }
  }
 }

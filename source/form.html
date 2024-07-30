@@ -3,9 +3,11 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: CAT ENERGY. Подбор программы</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon-mobile.png">
+
 </head>
 
 <body class="body page__body">
@@ -27,13 +29,13 @@
           <button class="header-navigation__toggle" type="button"><span></span></button>
           <ul class="list header-navigation__list" id="header-navigation__list">
             <li class="header-navigation__item">
-              <a class="link header-navigation__link navigation__link--current" href="index.html" title="Перейти на главную страницу">Главная</a>
+              <a class="link header-navigation__link" href="index.html" title="Перейти на главную страницу">Главная</a>
             </li>
             <li class="header-navigation__item">
               <a class="link header-navigation__link" href="catalog.html" title="Перейти в каталог">Каталог продукции</a>
             </li>
             <li class="header-navigation__item">
-              <a class="link header-navigation__link navigation__link--current" href="#" title="Перейти страницу подбора программы" >Подбор программы</a>
+              <a class="link header-navigation__link header-navigation__link--active" href="#" title="Перейти страницу подбора программы" >Подбор программы</a>
             </li>
           </ul>
         </nav>
@@ -88,7 +90,6 @@
           <h2 class="subtitle question-form__subtitle question-form__subtitle--contacts">
             Контактные данные<br> (владельца кота)
           </h2>
-          <span class="title-decor"></span>
         </div>
         <fieldset class="fieldset owner-contacts question-form__owner-contacts">
           <legend class="visually-hidden">Контакты владельца</legend>
@@ -117,7 +118,6 @@
         </fieldset>
         <div class="question-form__subtitle-wrapper">
           <h2 class="subtitle question-form__subtitle question-form__subtitle--comment">Комментарий</h2>
-          <span class="title-decor"></span>
         </div>
         <fieldset class="fieldset comment question-form__comment">
           <legend class="visually-hidden">Комментарий</legend>
@@ -130,7 +130,6 @@
         </fieldset>
         <div class="question-form__subtitle-wrapper">
           <h2 class="subtitle question-form__subtitle question-form__subtitle--add">Дополнительно</h2>
-          <span class="title-decor"></span>
         </div>
         <fieldset class="fieldset add-info question-form__add-info">
           <legend class="visually-hidden">Дополнительные товары</legend>
@@ -156,11 +155,9 @@
           </div>
         </fieldset>
         <div class="question-form__footer">
-          <div class="container">
             <button class="button question-form__button" type="submit" title="отправить заявку">отправить заявку</button>
             <small class="question-form__note">
               <sup class="question-form__req">*</sup> — Обязательные поля</small>
-          </div>
         </div>
       </div>
     </form>
@@ -173,10 +170,12 @@
         <address class="footer__address-text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
         </address>
       </div>
-      <div class="address__map-wrapper">
-        <img class="address__map" src="./img/location.png" width="320" height="362"
+      <picture class="address__map-wrapper">
+        <source media="(min-width: 1200px)" srcset="./img/location-desktop.png" width="1440">
+        <source media="(min-width: 768px)" srcset="./img/location-tablet.png" width="768">
+        <img class="address__map" src="./img/location.png" width="320"
           alt="Расположение магазина на карте города">
-      </div>
+      </picture>
     </section>
     <section class="contacts footer__contacts">
       <h2 class="visually-hidden">Контактная информация</h2>
