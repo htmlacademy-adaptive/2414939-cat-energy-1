@@ -459,7 +459,7 @@
     top: 50%;
     transform: translateY(-50%);
     right: 30px;
-    background-image: url("/img/cat-slim-tablet.png");
+    background-image: url("../img/cat-slim-tablet.png");
   }
 }
 @media (min-width: 768px) {
@@ -471,7 +471,7 @@
     top: 50%;
     transform: translateY(-50%);
     right: -25px;
-    background-image: url("/img/cat-pro-tablet.png");
+    background-image: url("../img/cat-pro-tablet.png");
   }
 }
 
