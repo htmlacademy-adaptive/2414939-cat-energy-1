@@ -8,25 +8,9 @@
     @media (min-width: $tablet-width) {
       border: none;
       margin: 0;
-      padding: 10px 37px 0 37px;
+      padding: 10px 37px 40px 37px;
       position: relative;
-    }
-  }
-
-  &__item::after {
-    @media (min-width: $tablet-width) {
-      content: "";
-      position: absolute;
-      width: 324px;
-      height: 403px;
-      top: 81px;
-      left: 0;
-      background-color: $background-block;
-      z-index: -1;
-    }
-    @media (min-width: $desktop-width) {
-      width: 245px;
-      height: 403px;
+      background-image: linear-gradient($background-body 81px, $background-block 81px);
     }
   }
 
@@ -88,7 +72,7 @@
     text-decoration: none;
     display: block;
     text-transform: uppercase;
-    width: $block-width;
+    width: 100%;
     max-height: 40px;
     padding: 10px 10px;
     cursor: pointer;
@@ -110,7 +94,8 @@
 
     @media (min-width: $tablet-width) {
       flex-direction: column;
-      padding: 0 0 32px;
+      padding: 0;
+      margin-bottom: 32px;
     }
   }
 
@@ -125,11 +110,20 @@
       flex-direction: column;
       align-items: center;
       padding-top: 100px;
+      background-image: none;
     }
 
     @media (min-width: $desktop-width) {
       width: 245px;
       height: 431px;
+    }
+  }
+
+  &__item--all-icon {
+    margin-bottom: 23px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 50px;
     }
   }
 
@@ -156,13 +150,11 @@
     line-height: 20px;
     color: $color-subtitle-special;
     margin-bottom: 8px;
-    padding-top: 23px;
 
     @media (min-width: $tablet-width) {
       font-size: 20px;
       line-height: 24px;
       margin-bottom: 23px;
-      padding-top: 50px;
       max-width: 134px;
     }
   }

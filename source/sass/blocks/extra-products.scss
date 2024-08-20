@@ -14,20 +14,18 @@
     line-height: 24px;
     color: $color-text-special;
     text-wrap: nowrap;
+    padding-right: 20px;
+    background-color: $background-body;
 
     @media (min-width: $tablet-width) {
       font-size: 36px;
       line-height: 36px;
       padding-left: 40px;
-    }
-
-    @media (min-width: $desktop-width) {
-      padding: 0;
+      padding-right: 40px;
     }
   }
 
   &__subtitle {
-
     @media (min-width: $desktop-width) {
       width: 325px;
     }
@@ -67,7 +65,6 @@
     }
 
     @media (min-width: $desktop-width) {
-      justify-content: space-between;
       gap: 0;
     }
   }
@@ -123,46 +120,27 @@
   }
 
   &__title-wrapper::before {
+    content: "";
+    position: absolute;
+    width: 320px;
+    height: 2px;
+    background-color: $background-title-decor;
+    z-index: -1;
+
     @media (min-width: $tablet-width) {
       content: "";
       position: absolute;
-      width: 30px;
-      height: 2px;
-      background-color: $background-title-decor;
+      width: 768px;
       left: -30px;
       top: 50%;
       transform: translateY(-50%);
     }
 
     @media (min-width: $desktop-width) {
-      width: 70px;
-      left: -110px;
-    }
-  }
-
-  &__title-wrapper::after {
-    content: "";
-    position: relative;
-    width: 100%;
-    height: 2px;
-    background-color: $background-title-decor;
-    right: -20px;
-    top: 50%;
-    transform: translateY(-50%);
-
-    @media (min-width: $tablet-width) {
       content: "";
-      position: relative;
-      width: 100%;
-      height: 2px;
-      background-color: $background-title-decor;
-      right: -30px;
-      top: 50%;
-      transform: translateY(-50%);
-    }
-
-    @media (min-width: $desktop-width) {
-      right: -110px;
+      position: absolute;
+      width: 1440px;
+      left: -110px;
     }
   }
 
@@ -171,7 +149,6 @@
   }
 
   &__link {
-
     @media (min-width: $tablet-width) {
       width: 100%;
     }

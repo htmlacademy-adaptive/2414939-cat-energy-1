@@ -43,6 +43,14 @@
     }
   }
 
+  &__social-item {
+    display: flex;
+    width: 28px;
+    height: 22px;
+    align-items: center;
+    justify-content: center;
+  }
+
   &__promo-wrapper {
     display: flex;
     justify-content: space-between;

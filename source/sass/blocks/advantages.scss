@@ -9,7 +9,8 @@
   @media (min-width: $tablet-width) {
     align-items: flex-start;
     border-bottom: 1px solid #E6E6E6;
-    padding: 0 0 47px 0;
+    padding: 0 30px;
+    margin-bottom: 47px;
   }
 
   @media (min-width: $desktop-width) {
@@ -46,14 +47,15 @@
     gap: 20px;
 
     @media (min-width: $tablet-width) {
-      flex-direction: row;
-      flex-wrap: wrap;
+      display: grid;
+      grid: 1fr 1fr /1fr 1fr;
       row-gap: 37px;
       column-gap: 153px;
-      justify-content: space-between;
     }
 
     @media (min-width: $desktop-width) {
+      display: flex;
+      flex-direction: row;
       flex-wrap: nowrap;
       justify-content: space-between;
       margin-bottom: 69px;
@@ -71,10 +73,10 @@
       display: flex;
       flex-direction: column;
       align-items: flex-start;
+      justify-content: center;
       gap: 31px;
       max-width: 269px;
       height: 280px;
-      padding: 40px 26px 57px 0;
     }
   }
 
@@ -93,32 +95,31 @@
   &__item-1 {
     @media (min-width: $tablet-width) {
       background-image: url("/img/1.png");
-      background-repeat: no-repeat;
-      background-position: 126px 40px;
     }
   }
 
   &__item-2 {
     @media (min-width: $tablet-width) {
       background-image: url("/img/2.png");
-      background-repeat: no-repeat;
-      background-position: 126px 40px;
     }
   }
 
   &__item-3 {
     @media (min-width: $tablet-width) {
       background-image: url("/img/3.png");
-      background-repeat: no-repeat;
-      background-position: 126px 40px;
     }
   }
 
   &__item-4 {
     @media (min-width: $tablet-width) {
       background-image: url("/img/4.png");
+    }
+  }
+
+  @for $i from 1 through 4 {
+    &__item-#{$i} {
       background-repeat: no-repeat;
       background-position: 126px 40px;
-    }
+     }
   }
 }

@@ -61,7 +61,7 @@
    height: 100%;
    padding: 0;
    list-style: none;
-   z-index: 1;
+   z-index: 2;
 
    @media (min-width: $tablet-width) {
     visibility: visible;
@@ -71,7 +71,6 @@
     position: static;
    }
   }
-
  &__link {
    display: block;
    padding: 22px 24px;
@@ -89,11 +88,22 @@
    }
   }
 
+ &__link-index {
+  @media (min-width: $desktop-width) {
+    color: $color-text-secondary;
+    }
+ }
+
  &__link--active {
    @media (min-width: $tablet-width) {
     padding-bottom: 10px;
-    border-bottom: 2px solid #68B738;
+    box-shadow: 0 2px $background-button;
    }
+  }
+
+  &__link--active-index {
+    padding-bottom: 10px;
+    box-shadow: 0 2px $background-body ;
   }
 
  &__item {
@@ -101,6 +111,11 @@
    text-transform: uppercase;
    text-align: center;
    background-color: $background-body;
+
+   @media (min-width: $desktop-width) {
+    background: transparent;
+    z-index: 2;
+   }
   }
 
   &__toggle:focus-within > span {

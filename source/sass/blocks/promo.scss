@@ -3,7 +3,6 @@
 .promo {
   &__image-wrapper {
     position: relative;
-    width: $block-width;
     height: 290px;
     display: flex;
     flex-direction: column;
@@ -12,6 +11,8 @@
     gap: 48px;
     padding: 0 60px;
     background-image: url("../img/promo-image.png");
+    background-repeat: no-repeat;
+    background-position: center;
 
     @media (min-width: $tablet-width) {
       width: 100%;
@@ -36,10 +37,11 @@
   &__image-wrapper::before {
     content: "";
     position: absolute;
-    width: 280px;
-    height: 290px;
+    width: 100%;
+    height: 100%;
     top: 0;
-    left: 0;
+    left: 50%;
+    transform: translateX(-50%);
     background-color: $background-block-special;
     opacity: 0.85;
 
@@ -56,6 +58,9 @@
 
   &__icon-image {
     z-index: 0;
+    width: 78px;
+    height: 80px;
+    background-image: url("../img/icon-gift.svg");
   }
 
   &__text {

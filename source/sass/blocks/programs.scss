@@ -19,7 +19,6 @@
   }
 
   &__subtitle {
-
     @media (min-width: $tablet-width) {
      font-size: 36px;
      line-height: 36px;
@@ -105,37 +104,36 @@
   }
 
   &__image-wrapper {
-    position: relative;
-    padding: 3px 7px;
-    @media (min-width: $tablet-width) {
-      display: none;
-    }
-  }
-
-  &__image-wrapper::before {
-    content: "";
     width: 50px;
     height: 50px;
     border-radius: 50%;
     background-color: $background-block-special;
-    top: 50%;
-    transform: translateY(-50%);
-    left: 0;
-    position: absolute;
-    z-index: -1;
-  }
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-  &__icon-pro {
-    margin-left: -14px;
-   }
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+
+    @media (min-width: $desktop-width) {
+      display: flex;
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      background-color: $background-block-special;
+    }
+  }
 
   &__item-wrapper {
     position: relative;
    }
 
-  &__item-wrapper::before {
-   @media  (min-width: $tablet-width) {
-      content: "";
+  &__icon-wrapper {
+    display: none;
+
+    @media  (min-width: $tablet-width) {
+      display: flex;
       width: 200px;
       height: 200px;
       border-radius: 50%;
@@ -144,32 +142,12 @@
       top: 50%;
       transform: translateY(-50%);
       right: 10px;
+      align-items: center;
+      justify-content: center;
     }
-   }
 
-  &__item-slim::after {
-    @media  (min-width: $tablet-width) {
-      content: "";
-      width: 140px;
-      height: 194px;
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      right: 30px;
-      background-image: url("../img/cat-slim-tablet.png");
-    }
-  }
-
-  &__item-pro::after {
-    @media  (min-width: $tablet-width) {
-      content: "";
-      width: 268px;
-      height: 112px;
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      right: -25px;
-      background-image: url("../img/cat-pro-tablet.png")
+    @media (min-width: $desktop-width) {
+      display: none;
     }
   }
 }

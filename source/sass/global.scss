@@ -87,7 +87,7 @@
   text-decoration: none;
   display: block;
   text-transform: uppercase;
-  width: $block-width;
+  width: 100%;
   min-height: 40px;
   padding: 10px 10px;
   cursor: pointer;
@@ -104,6 +104,6 @@
   height: auto;
 }
 
-.price:after {
-	content: ' \20BD';
+.price::after {
+	content: "\20BD";
 }
