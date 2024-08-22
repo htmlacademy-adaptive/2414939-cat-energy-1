@@ -11,6 +11,18 @@
     gap: 20px;
     align-items: center;
     margin-bottom: 18px;
+
+    @media (min-width: $tablet-width) {
+     font-size: 36px;
+     line-height: 36px;
+    }
+  }
+
+  &__subtitle {
+    @media (min-width: $tablet-width) {
+     font-size: 36px;
+     line-height: 36px;
+    }
   }
 
   &__list {
@@ -20,12 +32,28 @@
     margin-bottom: 20px;
     padding-left: 20px;
     padding-right: 20px;
+
+    @media (min-width: $tablet-width) {
+      gap: 30px;
+    }
+
+    @media (min-width: $desktop-width) {
+      flex-direction: row;
+      justify-content: space-between;
+      margin-bottom: 71px;
+    }
   }
 
   &__item {
     background-color: $background-block;
     padding: 20px;
     width: $block-width;
+    z-index: -1;
+
+    @media (min-width: $tablet-width) {
+      width: 708px;
+      padding: 52px;
+    }
   }
 
   &__text-wrapper {
@@ -36,6 +64,13 @@
     padding-bottom: 23px;
     border-bottom: $border-block;
     margin-bottom: 15px;
+
+    @media (min-width: $tablet-width) {
+      font-size: 16px;
+      line-height: 24px;
+      max-width: 340px;
+      border: none;
+    }
   }
 
   &__link {
@@ -47,6 +82,12 @@
     display: flex;
     gap: 15px;
     align-items: center;
+
+    @media (min-width: $tablet-width) {
+      font-size: 20px;
+      line-height: 30px;
+      gap: 25px;
+    }
   }
 
   &__link::after {
@@ -56,9 +97,57 @@
     height: 12px;
     background-image: url("../img/programs-arrow.svg");
     background-repeat: no-repeat;
-}
+  }
 
   &__link-wrapper {
     display: inline-block;
+  }
+
+  &__image-wrapper {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: $background-block-special;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+
+    @media (min-width: $desktop-width) {
+      display: flex;
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      background-color: $background-block-special;
+    }
+  }
+
+  &__item-wrapper {
+    position: relative;
+   }
+
+  &__icon-wrapper {
+    display: none;
+
+    @media  (min-width: $tablet-width) {
+      display: flex;
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      background-color: $background-block-special;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 10px;
+      align-items: center;
+      justify-content: center;
+    }
+
+    @media (min-width: $desktop-width) {
+      display: none;
+    }
   }
 }

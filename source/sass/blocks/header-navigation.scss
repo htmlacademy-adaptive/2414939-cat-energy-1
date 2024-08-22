@@ -4,12 +4,17 @@
  &__wrapper {
    width: 24px;
    display: flex;
- }
+
+   @media (min-width: $tablet-width) {
+    width: auto;
+    margin-left: auto;
+   }
+  }
 
  &__wrapper:focus-within &__list {
-  visibility: visible;
-  left: 0px;
-}
+    visibility: visible;
+    left: 0px;
+  }
 
  &__toggle {
    display: flex;
@@ -21,6 +26,10 @@
    width: 26px;
    height: 26px;
    cursor: pointer;
+
+   @media (min-width: $tablet-width) {
+    display: none;
+   }
   }
 
  &__toggle > span,
@@ -31,17 +40,17 @@
    width: 100%;
    height: 2px;
    background-color: #000000;
- }
+  }
 
  &__toggle > span::before {
    content: "";
    top: -8px;
- }
+  }
 
  &__toggle > span::after {
    content: "";
    top: 8px;
- }
+  }
 
  &__list {
    display: block;
@@ -52,9 +61,16 @@
    height: 100%;
    padding: 0;
    list-style: none;
-   z-index: 1;
- }
+   z-index: 2;
 
+   @media (min-width: $tablet-width) {
+    visibility: visible;
+    display: flex;
+    width: 100%;
+    gap: 33px;
+    position: static;
+   }
+  }
  &__link {
    display: block;
    padding: 22px 24px;
@@ -62,14 +78,45 @@
    font-size: 20px;
    font-weight: 600;
    border-top: $border-navigation__link;
+
+   @media (min-width: $tablet-width) {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    padding: 0;
+    border: none;
+   }
+  }
+
+ &__link-index {
+  @media (min-width: $desktop-width) {
+    color: $color-text-secondary;
+    }
  }
+
+ &__link--active {
+   @media (min-width: $tablet-width) {
+    padding-bottom: 10px;
+    box-shadow: 0 2px $background-button;
+   }
+  }
+
+  &__link--active-index {
+    padding-bottom: 10px;
+    box-shadow: 0 2px $background-body ;
+  }
 
  &__item {
    line-height: 20px;
    text-transform: uppercase;
    text-align: center;
    background-color: $background-body;
- }
+
+   @media (min-width: $desktop-width) {
+    background: transparent;
+    z-index: 2;
+   }
+  }
 
   &__toggle:focus-within > span {
     transform: rotate(45deg);

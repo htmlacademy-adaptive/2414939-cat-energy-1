@@ -2,6 +2,7 @@
 
 .footer {
       background-color: $background-footer;
+      position: relative;
 
   &__academy-logo-text {
     font-family: $content-font;
@@ -13,6 +14,23 @@
   &__address-wrapper {
     display: flex;
     padding: 26px 20px;
+
+    @media (min-width: $tablet-width) {
+      display: flex;
+      justify-content: space-between;
+      padding: 60px 70px;
+    }
+
+    @media (min-width: $desktop-width) {
+      position: absolute;
+      top: 95px;
+      left: 110px;
+      z-index: 2;
+      width: 565px;
+      height: 199px;
+      background-color: $background-body;
+      padding: 60px 78px;
+    }
   }
 
   &__index-address-wrapper {
@@ -22,8 +40,14 @@
   &__address-subtitle {
     font-size: 16px;
     line-height: 20px;
-    min-width: 140px;
+    max-width: 140px;
     color: $color-subtitle-special;
+
+    @media (min-width: $tablet-width) {
+      font-size: 20px;
+      line-height: 26px;
+      max-width: 160px;
+    }
   }
 
   &__address-text {
@@ -32,5 +56,12 @@
     line-height: 20px;
     color: $color-text-primary;
     font-style: normal;
+    max-width: 140px;
+
+    @media (min-width: $tablet-width) {
+      font-size: 16px;
+      max-width: 160px;
+      text-align: right;
+    }
   }
 }

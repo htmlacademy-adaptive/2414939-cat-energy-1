@@ -4,9 +4,25 @@
   width: $block-width;
   margin: 0 auto;
   border-top: $border-block;
-  padding-top: 27px;
+  padding: 27px 20px;
+
+  @media (min-width: $tablet-width) {
+    min-width: 768px;
+    padding: 0 30px;
+    border: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 1440px;
+    padding: 0 110px;
+    margin: 0;
+  }
 
   &__catalog-title {
    margin-bottom: 41px;
- }
+
+   @media (min-width: $desktop-width) {
+    margin-bottom: 84px;
+   }
+  }
 }

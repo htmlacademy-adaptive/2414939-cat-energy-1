@@ -10,6 +10,22 @@
     flex-direction: column;
     gap: 31px;
     margin-bottom: 34px;
+
+    @media (min-width: $tablet-width) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      row-gap: 32px;
+      column-gap: 123px;
+      margin-bottom: 52px;
+    }
+
+    @media (min-width: $desktop-width) {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      text-wrap: nowrap;
+    }
   }
 
   &__checkbox {
