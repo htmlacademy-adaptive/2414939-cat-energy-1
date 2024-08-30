@@ -125,8 +125,7 @@
     width: 280px;
     height: 2px;
     background-color: $background-title-decor;
-
-
+    
     @media (min-width: $tablet-width) {
       content: "";
       position: absolute;

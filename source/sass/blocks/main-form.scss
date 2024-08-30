@@ -9,13 +9,11 @@
   @media (min-width: $tablet-width) {
    min-width: 768px;
    padding: 0 70px 60px;
-  //  margin-bottom: 60px;
   }
 
   @media (min-width: $desktop-width) {
     min-width: 1440px;
     padding: 0 110px 79px;
-    // margin-bottom: 79px;
   }
 
  &__form-title {

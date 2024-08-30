@@ -109,16 +109,16 @@
       }
   }
 
- &__item {
-   line-height: 20px;
-   text-transform: uppercase;
-   text-align: center;
-   background-color: $background-body;
+  &__item {
+    line-height: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: $background-body;
 
    @media (min-width: $desktop-width) {
     background: transparent;
     z-index: 2;
-   }
+    }
   }
 
   &__toggle:focus-within > span {
