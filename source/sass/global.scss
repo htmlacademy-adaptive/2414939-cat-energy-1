@@ -60,7 +60,7 @@
 }
 
 .body {
-  background-color: $background-body;
+  background-color: $background-body-1;
   font-family: "Lato";
   width: 320px;
   padding: 0;
@@ -105,5 +105,5 @@
 }
 
 .price::after {
-	content: "\20BD";
+	content: " \20BD";
 }

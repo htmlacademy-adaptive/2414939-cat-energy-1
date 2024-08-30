@@ -64,6 +64,8 @@
       font-size: 36px;
       line-height: 36px;
       padding: 0 40px;
+      position: relative;
+      left: -40px;
     }
 
     @media (min-width: $desktop-width) {
@@ -72,10 +74,10 @@
   }
 
   &__subtitle-wrapper {
-    display: flex;
-    margin-bottom: 34px;
-    align-items: center;
-    position: relative;
+      display: flex;
+      margin-bottom: 34px;
+      align-items: center;
+      position: relative;
 
     @media (min-width: $tablet-width) {
       margin-bottom: 87px;
@@ -86,40 +88,41 @@
     }
   }
 
-    &__subtitle-wrapper::before {
-      content: "";
-      position: absolute;
-      width: 320px;
-      height: 2px;
-      background-color: $background-title-decor;
-      z-index: -1;
+  &__subtitle-wrapper::before {
+    content: "";
+    position: absolute;
+    width: 300px;
+    height: 2px;
+    background-color: $background-title-decor;
+    // z-index: -1;
 
     @media (min-width: $tablet-width) {
       content: "";
       position: absolute;
       width: 768px;
-      left: -30px;
+      left: -70px;
       top: 50%;
       transform: translateY(-50%);
+      // z-index: 0;
     }
 
     @media (min-width: $desktop-width) {
       content: "";
       position: absolute;
       width: 1440px;
-      left: -110px;
+    left: -110px;
     }
   }
-  
-  &__program-choice {
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-    padding-bottom: 19px;
-    margin-bottom: 26px;
-    border-bottom: $border-block;
 
-    @media (min-width: $tablet-width) {
+  &__program-choice {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      padding-bottom: 19px;
+      margin-bottom: 26px;
+      border-bottom: $border-block;
+
+   @media (min-width: $tablet-width) {
       border: $border-block;
       padding: 27px;
       margin-bottom: 65px;
@@ -136,8 +139,8 @@
     margin-bottom: 23px;
 
     @media (min-width: $tablet-width) {
-      margin-bottom: 65px;
-    }
+     margin-bottom: 65px;
+   }
 
     @media (min-width: $desktop-width) {
       margin-bottom: 70px;
@@ -153,7 +156,7 @@
 
     @media (min-width: $desktop-width) {
       width: 570px;
-    }
+      }
   }
 
   &__note {
@@ -166,10 +169,11 @@
   }
 
   &__footer {
-    @media (min-width: $tablet-width) {
-      display: flex;
-      align-items: baseline;
-      gap: 60px;
-    }
+   @media (min-width: $tablet-width) {
+    display: flex;
+    align-items: baseline;
+    gap: 60px;
+   }
   }
 }
+

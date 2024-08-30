@@ -6,23 +6,47 @@
   background: linear-gradient(rgba(104, 183, 56, 0.85) 302px, rgba(255, 255, 255, 0.85) 302px),
               url("../img/entry-background.png") no-repeat;
 
-   @media (min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     margin-bottom: 0;
     background: none;
-   }
+  }
 
-   @media (min-width: $desktop-width) {
-    &::before {
-      content: "";
-      position: absolute;
-      width: 720px;
-      height: 694px;
-      right: -20px;
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+
+  &__desktop {
+    display: none;
+  }
+
+  &__desktop {
+    @media (min-width: $desktop-width) {
+      display: flex;
+      gap: 116px;
+      align-items:center;
+      justify-content: space-between;
+      position: relative;
       top: -170px;
-      background: linear-gradient(rgba(104, 183, 56, 0.85) 50%, rgba(104, 183, 56, 0.85) 50%),
-              url("../img/index-background-desktop.png") no-repeat;
+      z-index: 0;
+      padding-left: 160px;
+      padding-top: 55px;
+      margin-bottom: -82px;
+      background: linear-gradient(to right, #ffffff 50%, #68B738 50%);
     }
-   }
+  }
+
+  &__desktop::before {
+    @media (min-width: $desktop-width) {
+      content: "";
+      width: 552px;
+      height: 499px;
+      position: absolute;
+      background-image: url("../img/index-can-desktop.png");
+      top: 143px;
+      right: 331px;
+      z-index:5;
+    }
+  }
 
   &__header {
     color: $color-text-secondary;
@@ -37,20 +61,8 @@
       padding-left: 90px;
       padding-top: 0;
       text-align: left;
-      height: auto;
       display: flex;
       flex-direction: column;
-    }
-
-    @media (min-width: $desktop-width) {
-      display: flex;
-      flex-direction: column;
-      flex-wrap: wrap;
-      height: 449px;
-      padding-left: 178px;
-      margin-bottom: 134px;
-      align-content: flex-start;
-      background: transparent;
     }
   }
 
@@ -67,10 +79,8 @@
     }
 
     @media (min-width: $desktop-width) {
-      padding-top: 30px;
-      z-index: 0;
-      width: 552px;
-      height: 499px;
+      width: 720px;
+      height: 694px;
     }
   }
 
@@ -113,7 +123,9 @@
     display: block;
 
     @media (min-width: $desktop-width) {
-      margin: 0;
+      position: relative;
+      opacity: 0.25;
+      align-self: flex-end;
     }
   }
 
@@ -121,10 +133,6 @@
     @media (min-width: $tablet-width) {
       display: flex;
       flex-direction: column;
-    }
-
-    @media (min-width: $desktop-width) {
-      display: inline-block;
     }
   }
 

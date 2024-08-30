@@ -60,7 +60,6 @@
    width: 320px;
    height: 100%;
    padding: 0;
-   list-style: none;
    z-index: 2;
 
    @media (min-width: $tablet-width) {
@@ -71,10 +70,11 @@
     position: static;
    }
   }
- &__link {
+
+  &__link {
    display: block;
    padding: 22px 24px;
-   font-family: "Oswald", sans-serif;
+   font-family: $title-font;
    font-size: 20px;
    font-weight: 600;
    border-top: $border-navigation__link;
@@ -88,12 +88,6 @@
    }
   }
 
- &__link-index {
-  @media (min-width: $desktop-width) {
-    color: $color-text-secondary;
-    }
- }
-
  &__link--active {
    @media (min-width: $tablet-width) {
     padding-bottom: 10px;
@@ -102,8 +96,17 @@
   }
 
   &__link--active-index {
-    padding-bottom: 10px;
-    box-shadow: 0 2px $background-body ;
+    @media (min-width: $desktop-width) {
+     padding-bottom: 10px;
+     box-shadow: 0 2px $background-body;
+    }
+  }
+
+  &__link--index {
+    @media (min-width: $desktop-width) {
+      padding-bottom: 10px;
+      color: $color-text-secondary;
+      }
   }
 
  &__item {

@@ -4,17 +4,18 @@
   width: $block-width;
   margin: 0 auto;
   padding: 27px 20px 32px;
+  background-color: $background-body;
 
   @media (min-width: $tablet-width) {
    min-width: 768px;
-   padding: 0 70px;
-   margin-bottom: 60px;
+   padding: 0 70px 60px;
+  //  margin-bottom: 60px;
   }
 
   @media (min-width: $desktop-width) {
     min-width: 1440px;
-    padding: 0 110px;
-    margin-bottom: 79px;
+    padding: 0 110px 79px;
+    // margin-bottom: 79px;
   }
 
  &__form-title {

@@ -1,7 +1,6 @@
 @import "variables.scss";
 
 .extra-products {
-  margin-bottom: 35px;
   position: relative;
 
   @media (min-width: $desktop-width) {
@@ -16,6 +15,7 @@
     text-wrap: nowrap;
     padding-right: 20px;
     background-color: $background-body;
+    z-index: 1;
 
     @media (min-width: $tablet-width) {
       font-size: 36px;
@@ -122,10 +122,10 @@
   &__title-wrapper::before {
     content: "";
     position: absolute;
-    width: 320px;
+    width: 280px;
     height: 2px;
     background-color: $background-title-decor;
-    z-index: -1;
+
 
     @media (min-width: $tablet-width) {
       content: "";
@@ -146,6 +146,7 @@
 
   &__promo {
     position: relative;
+    margin-bottom: 35px;
   }
 
   &__link {
