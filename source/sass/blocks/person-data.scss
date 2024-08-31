@@ -4,10 +4,21 @@
   padding-bottom: 24px;
   border-bottom: $border-person-data;
 
+  @media (min-width: $tablet-width) {
+    border: none;
+    padding: 0;
+  }
+
   &__value {
     padding: 14px 15px;
     border: $border-person-data;
     width: 100%;
+
+    @media (min-width: $tablet-width) {
+      font-size: 20px;
+      font-family: $title-font;
+      color: $color-text-primary;
+    }
   }
 
   &__item {
@@ -19,4 +30,4 @@
   &__property {
     text-wrap: nowrap;
   }
- }
+}

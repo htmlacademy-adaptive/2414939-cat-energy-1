@@ -2,13 +2,24 @@
 
 .header {
   position: relative;
-
+  background-color: $background-body;
 
   &__wrapper {
     display: flex;
     justify-content: space-between;
     position: relative;
     align-items: center;
-    padding: 13px 21px;
+    padding: 13px 20px;
+
+    @media (min-width: $tablet-width) {
+      padding: 25px 30px 65px;
+      justify-content: left;
+      gap: 13px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 55px 110px 74px;
+      z-index: 1;
+    }
   }
 }
