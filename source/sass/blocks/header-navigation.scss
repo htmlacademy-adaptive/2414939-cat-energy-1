@@ -88,6 +88,15 @@
    }
   }
 
+  &__link:hover {
+    opacity: 0.4;
+  }
+
+  &__link:active {
+    opacity: 0.3;
+  }
+
+
  &__link--active {
    @media (min-width: $tablet-width) {
     padding-bottom: 10px;

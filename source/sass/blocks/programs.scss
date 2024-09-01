@@ -88,13 +88,25 @@
     }
   }
 
+  &__link:active {
+    opacity: 0.3;
+  }
+
   &__link::after {
     content: "";
     display: inline-block;
     width: 32px;
     height: 12px;
-    background-image: url("../img/programs-arrow.svg");
+    background-image: url("../img/icon_arrow.svg");
     background-repeat: no-repeat;
+  }
+
+  &__link::after:hover {
+    background-image: url("../img/programs-arrow.svg");
+  }
+
+  &__link::after:active {
+    opacity: 0.3;
   }
 
   &__link-wrapper {

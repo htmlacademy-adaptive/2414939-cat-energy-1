@@ -88,7 +88,15 @@
     }
   }
 
-  &__content-wrapper {
+  &__link:hover {
+    background-color: $background-button-hover;
+  }
+
+  &__link:active {
+    color: $color-text-secondary-hover;
+  }
+
+   &__content-wrapper {
     display: flex;
     padding: 20px 0 20px;
     justify-content: space-between;
@@ -188,6 +196,14 @@
   &__link--all {
     color: $color-text-primary;
     background-color: $background-button-show-all;
+  }
+
+  &__link--all:hover {
+    background-color: $background-button-show-all-hover;
+  }
+
+  &__link--all:active {
+    color: $color-text-primary;
   }
 
   &__address {

@@ -37,6 +37,8 @@
     font-size: 14px;
     line-height: 16px;
     text-transform: uppercase;
+    padding: 14px 45px 14px 13px;
+    border: 1px solid #cdcdcd;
 
     @media (min-width: $tablet-width) {
       font-size: 20px;
@@ -57,8 +59,6 @@
   &__input-box {
     position: relative;
     width: 100%;
-    padding: 14px 45px 14px 13px;
-    border: $border-owner-contacts;
   }
 
   &__input-box-email::after {

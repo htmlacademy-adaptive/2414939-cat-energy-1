@@ -5,6 +5,10 @@
     display: flex;
   }
 
+  &__radio:disabled {
+    opacity: 0.3;
+  }
+
   &__radio input[type="radio"] {
 	  display: none;
   }
@@ -31,6 +35,10 @@
     bottom: -6px;
   }
 
+  &__radio label::before:hover {
+    border: $border-program-choice-hover;
+  }
+
   &__radio label::after {
     content: "";
     position: absolute;
@@ -51,7 +59,7 @@
 	  border: 1px solid #bababa;
   }
 
-  &__radio input[type="radio"]:disabled + label::before {
-	  filter: grayscale(100%);
+  &__radio input[type="radio"]:disabled + label {
+	  opacity: 0.3;
   }
 }

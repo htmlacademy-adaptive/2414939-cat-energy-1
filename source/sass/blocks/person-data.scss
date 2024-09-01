@@ -21,6 +21,10 @@
     }
   }
 
+  &__value:hover {
+    border: $border-owner-contacts;
+  }
+
   &__item {
     display: flex;
     align-items: center;

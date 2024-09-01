@@ -6,6 +6,10 @@
     display: flex;
   }
 
+  &__item:disabled {
+    opacity: 0.3;
+  }
+
   &__container {
     display: flex;
     flex-direction: column;
@@ -49,6 +53,10 @@
     width: 30px;
     height: 30px;
     border: $border-checkbox;
+  }
+
+  &__checkbox + label::before:hover {
+    border: $border-program-choice-hover;
   }
 
   &__checkbox + label:after {

@@ -12,6 +12,10 @@
   outline-offset: -1px;
 }
 
+* {
+  outline: none;
+}
+
 .visually-hidden {
   position: absolute;
   overflow: hidden;
@@ -94,6 +98,14 @@
   cursor: pointer;
 }
 
+.button:hover {
+  background-color: $background-button-hover;
+}
+
+.button:active {
+  color: $color-text-secondary-hover;
+}
+
 .title-decor {
   width: 100%;
   height: 2px;
@@ -107,4 +119,49 @@
 
 .price::after {
 	content: " \20BD";
+}
+
+.logo__image:hover {
+opacity: 0.8;
+}
+
+.logo__image:active {
+  opacity: 0.6;
+}
+
+.logo__text:hover {
+  opacity: 0.8;
+}
+
+.logo__text:active {
+    opacity: 0.6;
+}
+
+input:user-invalid {
+  border: $border-input-invalid;
+}
+
+input:focus {
+  border: $border-input-focus;
+  border-radius: 0;
+}
+
+svg {
+  fill: #666666;
+}
+
+
+.social-button svg:hover,
+.footer__academy-logo-image:hover svg {
+  fill: #68B738;
+}
+
+.social-button svg:focus,
+.footer__academy-logo-image:focus svg {
+  fill: #68B738;
+}
+
+.social-button svg:active,
+.footer__academy-logo-image:active svg {
+  opacity: 0.3;
 }
