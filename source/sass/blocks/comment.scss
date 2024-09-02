@@ -14,8 +14,8 @@
   &__value {
     font-family: $title-font;
     font-weight: 400;
-    font-size: 16px;
-    line-height: 18px;
+    font-size: $font-medium;
+    line-height: $line-height-low;
     text-transform: uppercase;
     color: $color-text-primary;
     text-align: left;

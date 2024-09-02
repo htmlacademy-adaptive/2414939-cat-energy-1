@@ -33,8 +33,8 @@
   &__value {
     width: 100%;
     font-family: $title-font;
-    font-weight: 400;
-    font-size: 14px;
+    font-weight: $font-weight-normal;
+    font-size: $font-small;
     line-height: 16px;
     text-transform: uppercase;
     padding: 14px 45px 14px 13px;

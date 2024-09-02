@@ -7,8 +7,8 @@
   color: $color-text-primary;
 
   @media (min-width: $tablet-width) {
-    font-size: 16px;
-    line-height: 20px;
+    font-size: $font-medium;
+    line-height: $line-height-medium;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -25,9 +25,9 @@
 
   &__property--extra {
     font-family: $content-font;
-    font-size: 14px;
+    font-size: $font-small;
     line-height: 14px;
-    font-weight: 400;
+    font-weight: $font-weight-normal;
     color: $color-text-primary;
 
     @media (min-width: $desktop-width) {

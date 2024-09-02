@@ -86,9 +86,9 @@
 
   &__title {
     font-family: $title-font;
-    font-size: 36px;
-    font-weight: 400;
-    line-height: 36px;
+    font-size: $font-large;
+    font-weight: $font-weight-normal;
+    line-height: $line-height-high;
     margin-bottom: 25px;
     color: $color-text-secondary;
     z-index: 1;
@@ -105,7 +105,7 @@
 
   &__tagline {
     font-family: $title-font;
-    font-size: 14px;
+    font-size: $font-small;
     line-height: 14px;
     text-transform: uppercase;
     margin-bottom: 29px;

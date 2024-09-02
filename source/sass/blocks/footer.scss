@@ -6,8 +6,8 @@
 
   &__academy-logo-text {
     font-family: $content-font;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: $font-medium;
+    line-height: $line-height-medium;
     color: $color-text-primary;
   }
 
@@ -38,8 +38,8 @@
   }
 
   &__address-subtitle {
-    font-size: 16px;
-    line-height: 20px;
+    font-size: $font-medium;
+    line-height: $line-height-medium;
     max-width: 140px;
     color: $color-subtitle-special;
 
@@ -52,14 +52,14 @@
 
   &__address-text {
     font-family: $content-font;
-    font-size: 14px;
-    line-height: 20px;
+    font-size: $font-small;
+    line-height: $line-height-medium;
     color: $color-text-primary;
     font-style: normal;
     max-width: 140px;
 
     @media (min-width: $tablet-width) {
-      font-size: 16px;
+      font-size: $font-medium;
       max-width: 160px;
       text-align: right;
     }

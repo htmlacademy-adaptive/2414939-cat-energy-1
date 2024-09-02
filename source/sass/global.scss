@@ -12,10 +12,6 @@
   outline-offset: -1px;
 }
 
-* {
-  outline: none;
-}
-
 .visually-hidden {
   position: absolute;
   overflow: hidden;
@@ -31,20 +27,20 @@
 
 .subtitle {
   font-family: $title-font;
-  font-size: 16px;
+  font-size: $font-medium;
   line-height: 16px;
   text-transform: uppercase;
   color: $color-text-special;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
-    line-height: 20px;
+    line-height: $line-height-medium;
   }
 }
 
 .title {
   font-family: $title-font;
-  font-size: 36px;
+  font-size: $font-large;
   line-height: 40px;
   color: $color-text-special;
 
@@ -85,8 +81,8 @@
   background-color: $background-button;
   color: $color-text-secondary;
   font-family: $title-font;
-  font-size: 16px;
-  line-height: 20px;
+  font-size: $font-medium;
+  line-height: $line-height-medium;
   text-align: center;
   margin: 0 auto;
   text-decoration: none;
@@ -122,7 +118,7 @@
 }
 
 .logo__image:hover {
-opacity: 0.8;
+  opacity: 0.8;
 }
 
 .logo__image:active {
@@ -134,7 +130,7 @@ opacity: 0.8;
 }
 
 .logo__text:active {
-    opacity: 0.6;
+  opacity: 0.6;
 }
 
 input:user-invalid {
@@ -150,7 +146,6 @@ svg {
   fill: #666666;
 }
 
-
 .social-button svg:hover,
 .footer__academy-logo-image:hover svg {
   fill: #68B738;
@@ -165,3 +160,34 @@ svg {
 .footer__academy-logo-image:active svg {
   opacity: 0.3;
 }
+
+.map-responsive{
+  overflow: hidden;
+  padding-bottom: 362px;
+  position: relative;
+  height: 0;
+}
+.map-responsive iframe{
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  border: none;
+  display: block;
+}
+
+.header-navigation--nojs .header-navigation__toggle {
+  display: none;
+}
+
+.header-navigation--nojs .header-navigation__list {
+  position: static;
+  min-height: 0;
+}
+
+.header-navigation--nojs .header-navigation__item {
+  display: block;
+}
+
+

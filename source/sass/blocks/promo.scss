@@ -23,6 +23,7 @@
       flex-direction: row;
       padding: 57px 125px 69px 77px;
       justify-content: space-between;
+      background-image: url("../img/promo-image-tablet.png");
     }
 
     @media (min-width: $desktop-width) {
@@ -31,6 +32,7 @@
       width: 245px;
       height: 288px;
       padding: 56px 42px 43px;
+      background-image: url("../img/promo-image.png");
     }
   }
 
@@ -62,9 +64,9 @@
   &__text {
     text-align: center;
     font-family: $content-font;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 20px;
+    font-weight: $font-weight-normal;
+    font-size: $font-medium;
+    line-height: $line-height-medium;
     color: $color-text-secondary;
     z-index: 0;
 

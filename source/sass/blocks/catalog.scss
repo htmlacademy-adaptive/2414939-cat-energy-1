@@ -56,7 +56,7 @@
 
     @media (min-width: $tablet-width) {
       font-size: 20px;
-      font-weight: 400;
+      font-weight: $font-weight-normal;
       line-height: 24px;
       text-align: center;
     }
@@ -66,8 +66,8 @@
     background-color: $background-button;
     color: $color-text-secondary;
     font-family: $title-font;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: $font-medium;
+    line-height: $line-height-medium;
     text-align: center;
     margin: 0 auto;
     text-decoration: none;
@@ -96,7 +96,7 @@
     color: $color-text-secondary-hover;
   }
 
-   &__content-wrapper {
+  &__content-wrapper {
     display: flex;
     padding: 20px 0 20px;
     justify-content: space-between;
@@ -158,8 +158,8 @@
   }
 
   &__subtitle--all {
-    font-size: 14px;
-    line-height: 20px;
+    font-size: $font-small;
+    line-height: $line-height-medium;
     color: $color-subtitle-special;
     margin-bottom: 8px;
 
@@ -174,13 +174,13 @@
   &__text {
     font-family: $content-font;
     font-size: 12px;
-    font-weight: 400;
+    font-weight: $font-weight-normal;
     line-height: 16px;
     color: $color-text-primary;
 
     @media (min-width: $tablet-width) {
-      font-size: 16px;
-      line-height: 18px;
+      font-size: $font-medium;
+      line-height: $line-height-low;
     }
   }
 

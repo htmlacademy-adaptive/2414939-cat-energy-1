@@ -14,15 +14,15 @@
     margin-bottom: 18px;
 
     @media (min-width: $tablet-width) {
-     font-size: 36px;
-     line-height: 36px;
+     font-size: $font-large;
+     line-height: $line-height-high;
     }
   }
 
   &__subtitle {
     @media (min-width: $tablet-width) {
-     font-size: 36px;
-     line-height: 36px;
+     font-size: $font-large;
+     line-height: $line-height-high;
     }
   }
 
@@ -56,15 +56,15 @@
 
   &__text-wrapper {
     font-family: $content-font;
-    font-size: 14px;
-    line-height: 18px;
+    font-size: $font-small;
+    line-height: $line-height-low;
     color: $color-text-primary;
     padding-bottom: 23px;
     border-bottom: $border-block;
     margin-bottom: 15px;
 
     @media (min-width: $tablet-width) {
-      font-size: 16px;
+      font-size: $font-medium;
       line-height: 24px;
       max-width: 340px;
       border: none;
@@ -73,7 +73,7 @@
 
   &__link {
     font-family: $title-font;
-    font-size: 16px;
+    font-size: $font-medium;
     line-height: 16px;
     text-transform: uppercase;
     position: relative;

@@ -2,20 +2,20 @@
 
 .question-form {
   font-family: $title-font;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 18px;
+  font-weight: $font-weight-normal;
+  font-size: $font-small;
+  line-height: $line-height-low;
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
-    line-height: 20px;
+    line-height: $line-height-medium;
   }
 
   &__title {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 18px;
+    font-weight: $font-weight-normal;
+    font-size: $font-small;
+    line-height: $line-height-low;
     text-transform: uppercase;
     margin-bottom: 39px;
 
@@ -61,8 +61,8 @@
     background-color: $background-body;
 
     @media (min-width: $tablet-width) {
-      font-size: 36px;
-      line-height: 36px;
+      font-size: $font-large;
+      line-height: $line-height-high;
       padding: 0 40px;
       position: relative;
       left: -40px;
@@ -150,6 +150,7 @@
 
     @media (min-width: $tablet-width) {
       margin: 0;
+      width: 284px;
     }
 
     @media (min-width: $desktop-width) {
