@@ -117,22 +117,6 @@
 	content: " \20BD";
 }
 
-.logo__image:hover {
-  opacity: 0.8;
-}
-
-.logo__image:active {
-  opacity: 0.6;
-}
-
-.logo__text:hover {
-  opacity: 0.8;
-}
-
-.logo__text:active {
-  opacity: 0.6;
-}
-
 input:user-invalid {
   border: $border-input-invalid;
 }
@@ -140,10 +124,6 @@ input:user-invalid {
 input:focus {
   border: $border-input-focus;
   border-radius: 0;
-}
-
-svg {
-  fill: #666666;
 }
 
 .social-button svg:hover,
@@ -190,4 +170,6 @@ svg {
   display: block;
 }
 
-
+picture {
+  display: block;
+}

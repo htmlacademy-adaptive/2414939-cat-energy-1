@@ -31,6 +31,7 @@
     @media (min-width: $desktop-width) {
       display: flex;
       gap: 80px;
+      margin-bottom: 70px;
     }
   }
 
@@ -47,6 +48,7 @@
 
     @media (min-width: $desktop-width) {
       width: 100%;
+      margin-bottom: 0;
     }
   }
 
@@ -130,6 +132,7 @@
       min-width: 570px;
       padding: 25px 28px;
       justify-content: center;
+      margin-bottom: 0;
     }
   }
 

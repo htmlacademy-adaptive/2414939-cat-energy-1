@@ -88,30 +88,35 @@
     }
   }
 
-  &__link:active {
-    opacity: 0.3;
-  }
-
-  &__link::after {
+  &__link-icon {
     content: "";
-    display: inline-block;
     width: 32px;
     height: 12px;
-    background-image: url("../img/icon_arrow.svg");
+    background-image: url("../img/icon-arrow.png");
     background-repeat: no-repeat;
   }
 
-  &__link::after:hover {
-    background-image: url("../img/programs-arrow.svg");
+  &__link-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    cursor: pointer;
+
+
+    @media (min-width: $tablet-width) {
+      gap: 25px;
+    }
   }
 
-  &__link::after:active {
+  &__link-wrapper:hover span {
+    background-image: url("../img/icon_arrow-full.png");
+  }
+
+  &__link-wrapper:active {
     opacity: 0.3;
   }
 
-  &__link-wrapper {
-    display: inline-block;
-  }
+
 
   &__image-wrapper {
     width: 50px;

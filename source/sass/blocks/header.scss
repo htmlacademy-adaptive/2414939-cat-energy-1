@@ -22,4 +22,12 @@
       z-index: 1;
     }
   }
+
+  &__logo:hover {
+    opacity: 0.8;
+  }
+
+  &__logo:active {
+    opacity: 0.6;
+  }
 }

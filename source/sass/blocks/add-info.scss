@@ -3,6 +3,8 @@
 .add-info {
   &__item {
     display: flex;
+    position: relative;
+    align-items: center;
   }
 
   &__item:disabled {
@@ -40,12 +42,15 @@
 
   &__checkbox + label {
     position: relative;
-    padding-left: 55px;
+    padding-left: 40px;
     cursor: pointer;
+
+    @media (min-width: $tablet-width) {
+      padding-left: 60px;
+    }
   }
 
-  &__checkbox + label:before {
-    content: "";
+  &__icon {
     position: absolute;
     left: 0;
     top: -2px;
@@ -54,11 +59,11 @@
     border: $border-checkbox;
   }
 
-  &__checkbox + label::before:hover {
+  &__checkbox + label span:hover {
     border: $border-program-choice-hover;
   }
 
-  &__checkbox + label:after {
+  &__checkbox + label::after {
     content: "";
     position: absolute;
     width: 18px;
@@ -71,16 +76,16 @@
     background-size: 100%;
   }
 
-  &__checkbox:not(:checked) + label:after {
+  &__checkbox:not(:checked) + label::after {
     opacity: 0;
   }
 
-  &__checkbox:checked + label:after {
+  &__checkbox:checked + label::after {
     opacity: 1;
   }
 
-  &__checkbox:disabled + label:before,
-  &__checkbox:disabled + label:after,
+  &__checkbox:disabled + label::before,
+  &__checkbox:disabled + label::after,
   &__checkbox:disabled + label {
     opacity: 0.3;
   }
