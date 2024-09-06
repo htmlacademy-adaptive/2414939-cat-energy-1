@@ -134,22 +134,6 @@
   content: " ₽";
 }
 
-.logo__image:hover {
-  opacity: 0.8;
-}
-
-.logo__image:active {
-  opacity: 0.6;
-}
-
-.logo__text:hover {
-  opacity: 0.8;
-}
-
-.logo__text:active {
-  opacity: 0.6;
-}
-
 input:user-invalid {
   border: 2px solid #ff8282;
 }
@@ -157,10 +141,6 @@ input:user-invalid {
 input:focus {
   border: 2px solid #444444;
   border-radius: 0;
-}
-
-svg {
-  fill: #666666;
 }
 
 .social-button svg:hover,
@@ -208,6 +188,10 @@ svg {
   display: block;
 }
 
+picture {
+  display: block;
+}
+
 .entry {
   position: relative;
   margin-bottom: 20px;
@@ -230,7 +214,6 @@ svg {
 @media (min-width: 1200px) {
   .entry__desktop {
     display: flex;
-    gap: 116px;
     align-items: center;
     justify-content: space-between;
     position: relative;
@@ -333,7 +316,6 @@ svg {
   .entry__image {
     position: relative;
     opacity: 0.25;
-    align-self: flex-end;
   }
 }
 @media (min-width: 768px) {
@@ -374,6 +356,12 @@ svg {
     padding: 55px 110px 74px;
     z-index: 1;
   }
+}
+.header__logo:hover {
+  opacity: 0.8;
+}
+.header__logo:active {
+  opacity: 0.6;
 }
 
 .programs {
@@ -464,25 +452,29 @@ svg {
     gap: 25px;
   }
 }
-.programs__link:active {
-  opacity: 0.3;
-}
-.programs__link::after {
+.programs__link-icon {
   content: "";
-  display: inline-block;
   width: 32px;
   height: 12px;
-  background-image: url("../img/icon_arrow.svg");
+  background-image: url("../img/icon-arrow.png");
   background-repeat: no-repeat;
 }
-.programs__link::after:hover {
-  background-image: url("../img/programs-arrow.svg");
-}
-.programs__link::after:active {
-  opacity: 0.3;
-}
 .programs__link-wrapper {
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  cursor: pointer;
+}
+@media (min-width: 768px) {
+  .programs__link-wrapper {
+    gap: 25px;
+  }
+}
+.programs__link-wrapper:hover span {
+  background-image: url("../img/icon_arrow-full.png");
+}
+.programs__link-wrapper:active {
+  opacity: 0.3;
 }
 .programs__image-wrapper {
   width: 50px;
@@ -884,6 +876,10 @@ svg {
   height: 22px;
   align-items: center;
   justify-content: center;
+  color: #68B738;
+}
+.contacts__social-link {
+  color: #666666;
 }
 .contacts__promo-wrapper {
   display: flex;
@@ -1481,6 +1477,7 @@ svg {
     display: flex;
     gap: 80px;
     justify-content: space-between;
+    align-items: flex-start;
   }
 }
 
@@ -1626,6 +1623,7 @@ svg {
   .question-form__header {
     display: flex;
     gap: 80px;
+    margin-bottom: 70px;
   }
 }
 .question-form__person-data {
@@ -1643,6 +1641,7 @@ svg {
 @media (min-width: 1200px) {
   .question-form__person-data {
     width: 100%;
+    margin-bottom: 0;
   }
 }
 .question-form__subtitle {
@@ -1730,6 +1729,7 @@ svg {
     min-width: 570px;
     padding: 25px 28px;
     justify-content: center;
+    margin-bottom: 0;
   }
 }
 .question-form__comment {
@@ -1918,6 +1918,8 @@ svg {
 
 .add-info__item {
   display: flex;
+  position: relative;
+  align-items: center;
 }
 .add-info__item:disabled {
   opacity: 0.3;
@@ -1953,11 +1955,15 @@ svg {
 }
 .add-info__checkbox + label {
   position: relative;
-  padding-left: 55px;
+  padding-left: 40px;
   cursor: pointer;
 }
-.add-info__checkbox + label:before {
-  content: "";
+@media (min-width: 768px) {
+  .add-info__checkbox + label {
+    padding-left: 60px;
+  }
+}
+.add-info__icon {
   position: absolute;
   left: 0;
   top: -2px;
@@ -1965,10 +1971,10 @@ svg {
   height: 30px;
   border: 1px solid #cdcdcd;
 }
-.add-info__checkbox + label::before:hover {
+.add-info__checkbox + label span:hover {
   border: 1px solid #bababa;
 }
-.add-info__checkbox + label:after {
+.add-info__checkbox + label::after {
   content: "";
   position: absolute;
   width: 18px;
@@ -1980,13 +1986,13 @@ svg {
   background-position: center;
   background-size: 100%;
 }
-.add-info__checkbox:not(:checked) + label:after {
+.add-info__checkbox:not(:checked) + label::after {
   opacity: 0;
 }
-.add-info__checkbox:checked + label:after {
+.add-info__checkbox:checked + label::after {
   opacity: 1;
 }
-.add-info__checkbox:disabled + label:before, .add-info__checkbox:disabled + label:after, .add-info__checkbox:disabled + label {
+.add-info__checkbox:disabled + label::before, .add-info__checkbox:disabled + label::after, .add-info__checkbox:disabled + label {
   opacity: 0.3;
 }
 
