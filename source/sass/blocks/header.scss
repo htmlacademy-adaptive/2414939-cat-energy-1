@@ -14,13 +14,14 @@
     @media (min-width: $tablet-width) {
       padding: 25px 30px 65px;
       justify-content: left;
+      position: relative;
       gap: 13px;
     }
 
     @media (min-width: $desktop-width) {
       padding: 55px 110px 74px;
       z-index: 1;
-      position: relative;
+      // position: absolute;
       top: 0;
       left: 0;
       width: 100%;
