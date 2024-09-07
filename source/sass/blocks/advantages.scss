@@ -91,53 +91,17 @@
     }
   }
 
-  @for $i from 1 through 4 {
-    :nth-child#{$i} {
-      background-image: url("../img/1.png");
-    }
-    &__item:nth-child#{$i} {
-      background-image: url("../img/2.png");
-    }
-    .advantages__item:nth-child#{$i} {
-      background-image: url("../img/3.png");
-    }
-    :nth-child#{$i} {
-      background-image: url("../img/4.png");
+  @media (min-width: $tablet-width) {
+    @for $i from 1 through 4{
+      &__item:nth-child(3n + #{$i}) {
+        background: url("../img/#{$i}.png");
+        background-repeat: no-repeat;
+        background-position-x: right;
+        background-position-y: center;
+      }
     }
   }
-
-  // &__item:nth-child(1) {
-  //   @media (min-width: $tablet-width) {
-  //     background-image: url("../img/1.png");
-  //   }
-  // }
-
-  // &__item:nth-child(2) {
-  //   @media (min-width: $tablet-width) {
-  //     background-image: url("../img/2.png");
-  //   }
-  // }
-
-  // &__item:nth-child(3) {
-  //   @media (min-width: $tablet-width) {
-  //     background-image: url("../img/3.png");
-  //   }
-  // }
-
-  // &__item:nth-child(4) {
-  //   @media (min-width: $tablet-width) {
-  //     background-image: url("../img/4.png");
-  //   }
-  // }
 }
 
-// @for $i from 1 through 4 {
-//   .advantages-item:nth-child#{$i} {
-//     background-image: url("../img/1.png");
-//   }
-//   advantages-item:nth-child#{$i} {
-//     background-image: url("../img/2.png");
-//   }
-// }
 
 
