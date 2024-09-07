@@ -335,6 +335,7 @@ picture {
   .header__wrapper {
     padding: 25px 30px 65px;
     justify-content: left;
+    position: relative;
     gap: 13px;
   }
 }
@@ -342,7 +343,6 @@ picture {
   .header__wrapper {
     padding: 55px 110px 74px;
     z-index: 1;
-    position: relative;
     top: 0;
     left: 0;
     width: 100%;
