@@ -7,7 +7,6 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  background: transparent;
   border: none;
   outline-offset: -1px;
 }
@@ -42,6 +41,7 @@
   @media  (min-width: $tablet-width) {
   font: $font-s3xl-h3xh-wn-ff2;
   text-align: left;
+  margin-top: 0;
   }
 }
 
@@ -108,6 +108,10 @@
 .price::after {
 	content: " \20BD";
 }
+
+// fieldset {
+//   border: none;
+// }
 
 input:user-invalid {
   border: $border-input-invalid;

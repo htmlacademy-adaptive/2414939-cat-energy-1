@@ -20,10 +20,16 @@
     @media (min-width: $desktop-width) {
       padding: 55px 110px 74px;
       z-index: 1;
-      position: absolute;
+      position: relative;
       top: 0;
       left: 0;
       width: 100%;
+    }
+  }
+
+  &__wrapper-index {
+    @media (min-width: $desktop-width) {
+      position: absolute;
     }
   }
 
