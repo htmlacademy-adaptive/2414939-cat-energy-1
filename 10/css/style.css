@@ -39,29 +39,23 @@
 }
 
 .subtitle {
-  font-family: "Oswald", sans-serif;
-  font-size: 16px;
-  line-height: 16px;
+  font: normal 16px/16px "Oswald", sans-serif;
   text-transform: uppercase;
   color: #000000;
 }
 @media (min-width: 768px) {
   .subtitle {
-    font-size: 20px;
-    line-height: 20px;
+    font: normal 20px/20px "Oswald", sans-serif;
   }
 }
 
 .title {
-  font-family: "Oswald", sans-serif;
-  font-size: 36px;
-  line-height: 40px;
+  font: normal 36px/40px "Oswald", sans-serif;
   color: #000000;
 }
 @media (min-width: 768px) {
   .title {
-    font-size: 60px;
-    line-height: 60px;
+    font: normal 60px/60px "Oswald", sans-serif;
     text-align: left;
   }
 }
@@ -77,7 +71,7 @@
 
 .body {
   background-color: #e5e5e5;
-  font-family: "Lato";
+  font-family: "Lato", sans-serif;
   width: 320px;
   padding: 0;
   margin: 0 auto;
@@ -97,9 +91,7 @@
 .button {
   background-color: #68b738;
   color: #ffffff;
-  font-family: "Oswald", sans-serif;
-  font-size: 16px;
-  line-height: 20px;
+  font: normal 16px/20px "Oswald", sans-serif;
   text-align: center;
   margin: 0 auto;
   text-decoration: none;
@@ -192,6 +184,10 @@ picture {
   display: block;
 }
 
+.fieldset legend {
+  width: 100%;
+}
+
 .entry {
   position: relative;
   margin-bottom: 20px;
@@ -217,11 +213,9 @@ picture {
     align-items: center;
     justify-content: space-between;
     position: relative;
-    top: -170px;
     z-index: 0;
     padding-left: 160px;
     padding-top: 55px;
-    margin-bottom: -82px;
     background: linear-gradient(to right, #ffffff 50%, #68B738 50%);
   }
 }
@@ -275,10 +269,7 @@ picture {
   }
 }
 .entry__title {
-  font-family: "Oswald", sans-serif;
-  font-size: 36px;
-  font-weight: 400;
-  line-height: 36px;
+  font: normal 36px/36px "Oswald", sans-serif;
   margin-bottom: 25px;
   color: #ffffff;
   z-index: 1;
@@ -288,15 +279,12 @@ picture {
   .entry__title {
     color: #000000;
     width: 416px;
-    font-size: 60px;
-    line-height: 60px;
+    font: normal 60px/60px "Oswald", sans-serif;
     margin-bottom: 40px;
   }
 }
 .entry__tagline {
-  font-family: "Oswald", sans-serif;
-  font-size: 14px;
-  line-height: 14px;
+  font: normal 14px/14px "Oswald", sans-serif;
   text-transform: uppercase;
   margin-bottom: 29px;
   z-index: 1;
@@ -304,8 +292,7 @@ picture {
 }
 @media (min-width: 768px) {
   .entry__tagline {
-    font-size: 20px;
-    line-height: 20px;
+    font: normal 20px/20px "Oswald", sans-serif;
     margin-bottom: 50px;
   }
 }
@@ -355,6 +342,10 @@ picture {
   .header__wrapper {
     padding: 55px 110px 74px;
     z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
   }
 }
 .header__logo:hover {
@@ -371,6 +362,11 @@ picture {
   align-items: center;
   margin-bottom: 20px;
 }
+@media (min-width: 768px) {
+  .programs {
+    margin-bottom: 71px;
+  }
+}
 .programs__subtitle-wrapper {
   display: flex;
   gap: 20px;
@@ -378,15 +374,8 @@ picture {
   margin-bottom: 18px;
 }
 @media (min-width: 768px) {
-  .programs__subtitle-wrapper {
-    font-size: 36px;
-    line-height: 36px;
-  }
-}
-@media (min-width: 768px) {
   .programs__subtitle {
-    font-size: 36px;
-    line-height: 36px;
+    font: normal 36px/36px "Oswald", sans-serif;
   }
 }
 .programs__list {
@@ -405,7 +394,6 @@ picture {
   .programs__list {
     flex-direction: row;
     justify-content: space-between;
-    margin-bottom: 71px;
   }
 }
 .programs__item {
@@ -419,9 +407,7 @@ picture {
   }
 }
 .programs__text-wrapper {
-  font-family: "Lato", sans-serif;
-  font-size: 14px;
-  line-height: 18px;
+  font: normal 14px/18px "Lato", sans-serif;
   color: #444444;
   padding-bottom: 23px;
   border-bottom: 1px solid #d9d9d9;
@@ -429,16 +415,13 @@ picture {
 }
 @media (min-width: 768px) {
   .programs__text-wrapper {
-    font-size: 16px;
-    line-height: 24px;
+    font: normal 16px/24px "Lato", sans-serif;
     max-width: 340px;
     border: none;
   }
 }
 .programs__link {
-  font-family: "Oswald", sans-serif;
-  font-size: 16px;
-  line-height: 16px;
+  font: normal 16px/16px "Oswald", sans-serif;
   text-transform: uppercase;
   position: relative;
   display: flex;
@@ -447,8 +430,7 @@ picture {
 }
 @media (min-width: 768px) {
   .programs__link {
-    font-size: 20px;
-    line-height: 30px;
+    font: normal 20px/30px "Oswald", sans-serif;
     gap: 25px;
   }
 }
@@ -651,35 +633,38 @@ picture {
   }
 }
 .advantages__text-wrapper {
-  font-family: "Lato", sans-serif;
-  font-size: 14px;
-  line-height: 18px;
+  font: normal 14px/18px "Lato", sans-serif;
   color: #444444;
 }
 @media (min-width: 768px) {
   .advantages__text-wrapper {
-    font-size: 16px;
-    line-height: 24px;
+    font: normal 20px/24px "Lato", sans-serif;
   }
 }
 @media (min-width: 768px) {
-  .advantages__item:nth-child(1) {
-    background-image: url("../img/1.png");
+  .advantages__item:nth-child(3n+1) {
+    background: url("../img/1.png");
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: center;
   }
-}
-@media (min-width: 768px) {
-  .advantages__item:nth-child(2) {
-    background-image: url("../img/2.png");
+  .advantages__item:nth-child(3n+2) {
+    background: url("../img/2.png");
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: center;
   }
-}
-@media (min-width: 768px) {
-  .advantages__item:nth-child(3) {
-    background-image: url("../img/3.png");
+  .advantages__item:nth-child(3n+3) {
+    background: url("../img/3.png");
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: center;
   }
-}
-@media (min-width: 768px) {
-  .advantages__item:nth-child(4) {
-    background-image: url("../img/4.png");
+  .advantages__item:nth-child(3n+4) {
+    background: url("../img/4.png");
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: center;
   }
 }
 
@@ -702,17 +687,14 @@ picture {
   margin-bottom: 40px;
 }
 .example__text-wrapper {
-  font-family: "Lato", sans-serif;
-  font-size: 14px;
-  line-height: 18px;
+  font: normal 14px/18px "Lato", sans-serif;
   color: #444444;
   margin-bottom: 20px;
   text-align: justify;
 }
 @media (min-width: 768px) {
   .example__text-wrapper {
-    font-size: 16px;
-    line-height: 24px;
+    font: normal 16px/24px "Lato", sans-serif;
   }
 }
 @media (min-width: 1200px) {
@@ -750,16 +732,14 @@ picture {
   }
 }
 .example__legend {
-  font-family: "Oswald", sans-serif;
-  font-size: 14px;
-  line-height: 20px;
+  font: normal 14px/20px "Oswald", sans-serif;
   text-transform: uppercase;
   text-align: center;
   margin-bottom: 20px;
 }
 @media (min-width: 768px) {
   .example__legend {
-    font-size: 20px;
+    font: normal 20px/20px "Oswald", sans-serif;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -773,23 +753,18 @@ picture {
   }
 }
 .example__progress {
-  font-family: "Oswald", sans-serif;
-  font-size: 24px;
-  line-height: 24px;
+  font: normal 24px/24px "Oswald", sans-serif;
   text-transform: uppercase;
   text-align: center;
   margin-bottom: 8px;
 }
 @media (min-width: 768px) {
   .example__progress {
-    font-size: 30px;
-    line-height: 37px;
+    font: normal 30px/37px "Oswald", sans-serif;
   }
 }
 .example__description {
-  font-family: "Lato", sans-serif;
-  font-size: 12px;
-  line-height: 12px;
+  font: normal 12px/12px "Lato", sans-serif;
   color: #444444;
   text-align: center;
   width: 77px;
@@ -798,8 +773,7 @@ picture {
 }
 @media (min-width: 768px) {
   .example__description {
-    font-size: 14px;
-    line-height: 14px;
+    font: normal 14px/14px "Lato", sans-serif;
     background-color: #ffffff;
   }
 }
@@ -959,16 +933,12 @@ picture {
 .header-navigation__link {
   display: block;
   padding: 22px 24px;
-  font-family: "Oswald", sans-serif;
-  font-size: 20px;
-  font-weight: 600;
+  font: normal 20px/20px "Oswald", sans-serif;
   border-top: 1px solid #e6e6e6;
 }
 @media (min-width: 768px) {
   .header-navigation__link {
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 24px;
+    font: normal 18px/24px "Oswald", sans-serif;
     padding: 0;
     border: none;
   }
@@ -1108,18 +1078,14 @@ picture {
 }
 @media (min-width: 768px) {
   .catalog__subtitle {
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 24px;
+    font: normal 20px/24px "Oswald", sans-serif;
     text-align: center;
   }
 }
 .catalog__link {
   background-color: #68b738;
   color: #ffffff;
-  font-family: "Oswald", sans-serif;
-  font-size: 16px;
-  line-height: 20px;
+  font: normal 16px/20px "Oswald", sans-serif;
   text-align: center;
   margin: 0 auto;
   text-decoration: none;
@@ -1210,30 +1176,24 @@ picture {
   }
 }
 .catalog__subtitle--all {
-  font-size: 14px;
-  line-height: 20px;
+  font: normal 14px/20px "Oswald", sans-serif;
   color: #111111;
   margin-bottom: 8px;
 }
 @media (min-width: 768px) {
   .catalog__subtitle--all {
-    font-size: 20px;
-    line-height: 24px;
+    font: normal 20px/24px "Oswald", sans-serif;
     margin-bottom: 23px;
     max-width: 134px;
   }
 }
 .catalog__text {
-  font-family: "Lato", sans-serif;
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 16px;
+  font: normal 12px/16px "Lato", sans-serif;
   color: #444444;
 }
 @media (min-width: 768px) {
   .catalog__text {
-    font-size: 16px;
-    line-height: 18px;
+    font: normal 16px/18px "Lato", sans-serif;
   }
 }
 .catalog__text-wrapper--all {
@@ -1270,15 +1230,12 @@ picture {
 }
 
 .table-property {
-  font-family: "Lato", sans-serif;
-  font-size: 12px;
-  line-height: 16px;
+  font: normal 12px/16px "Lato", sans-serif;
   color: #444444;
 }
 @media (min-width: 768px) {
   .table-property {
-    font-size: 16px;
-    line-height: 20px;
+    font: normal 16px/20px "Lato", sans-serif;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -1294,10 +1251,7 @@ picture {
   }
 }
 .table-property__property--extra {
-  font-family: "Lato", sans-serif;
-  font-size: 14px;
-  line-height: 14px;
-  font-weight: 400;
+  font: normal 14px/14px "Lato", sans-serif;
   color: #444444;
 }
 @media (min-width: 1200px) {
@@ -1313,9 +1267,7 @@ picture {
   position: relative;
 }
 .extra-products__title {
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 24px;
+  font: normal 24px/24px "Oswald", sans-serif;
   color: #000000;
   text-wrap: nowrap;
   padding-right: 20px;
@@ -1324,8 +1276,7 @@ picture {
 }
 @media (min-width: 768px) {
   .extra-products__title {
-    font-size: 36px;
-    line-height: 36px;
+    font: normal 36px/36px "Oswald", sans-serif;
     padding-left: 40px;
     padding-right: 40px;
   }
@@ -1381,8 +1332,7 @@ picture {
 }
 @media (min-width: 768px) {
   .extra-products__row {
-    font-size: 16px;
-    line-height: 20px;
+    font: normal 16px/20px "Lato", sans-serif;
     align-items: center;
     gap: 55px;
   }
@@ -1544,10 +1494,7 @@ picture {
 }
 .promo__text {
   text-align: center;
-  font-family: "Lato", sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
+  font: normal 16px/20px "Lato", sans-serif;
   color: #ffffff;
   z-index: 0;
 }
@@ -1581,40 +1528,33 @@ picture {
     padding: 0 110px 79px;
   }
 }
-.main-form__form-title {
+.main-form__title {
   margin-bottom: 37px;
 }
 @media (min-width: 768px) {
-  .main-form__form-title {
+  .main-form__title {
     margin-bottom: 54px;
     padding: 0;
   }
 }
 
 .question-form {
-  font-family: "Oswald", sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 18px;
+  font: normal 14px/18px "Oswald", sans-serif;
   text-transform: uppercase;
 }
 @media (min-width: 768px) {
   .question-form {
-    font-size: 20px;
-    line-height: 20px;
+    font: normal 20px/20px "Oswald", sans-serif;
   }
 }
 .question-form__title {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 18px;
+  font: normal 14px/18px "Oswald", sans-serif;
   text-transform: uppercase;
   margin-bottom: 39px;
 }
 @media (min-width: 768px) {
   .question-form__title {
-    font-size: 20px;
-    line-height: 30px;
+    font: normal 20px/30px "Oswald", sans-serif;
     max-width: 323px;
     margin-bottom: 66px;
   }
@@ -1646,9 +1586,7 @@ picture {
 }
 .question-form__subtitle {
   position: relative;
-  font-family: "Oswald", sans-serif;
-  font-size: 24px;
-  line-height: 26px;
+  font: normal 24px/24px "Oswald", sans-serif;
   text-transform: none;
   text-wrap: nowrap;
   padding-right: 20px;
@@ -1656,8 +1594,7 @@ picture {
 }
 @media (min-width: 768px) {
   .question-form__subtitle {
-    font-size: 36px;
-    line-height: 36px;
+    font: normal 36px/36px "Oswald", sans-serif;
     padding: 0 40px;
     position: relative;
     left: -40px;
@@ -1808,17 +1745,14 @@ picture {
 }
 .owner-contacts__value {
   width: 100%;
-  font-family: "Oswald", sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 16px;
+  font: normal 14px/16px "Oswald", sans-serif;
   text-transform: uppercase;
   padding: 14px 45px 14px 13px;
   border: 1px solid #cdcdcd;
 }
 @media (min-width: 768px) {
   .owner-contacts__value {
-    font-size: 20px;
+    font: normal 20px/30px "Oswald", sans-serif;
   }
 }
 .owner-contacts__wrapper {
@@ -1876,8 +1810,7 @@ picture {
 }
 @media (min-width: 768px) {
   .person-data__value {
-    font-size: 20px;
-    font-family: "Oswald", sans-serif;
+    font: normal 20px/30px "Oswald", sans-serif;
     color: #444444;
   }
 }
@@ -1889,12 +1822,16 @@ picture {
   align-items: center;
   gap: 13px;
 }
+.person-data__item:not(last-child) {
+  margin-bottom: 14px;
+}
 .person-data__property {
   text-wrap: nowrap;
 }
 
 .comment__value-wrapper {
   height: 150px;
+  width: 280px;
   border: 1px solid #e7e7e7;
 }
 @media (min-width: 768px) {
@@ -1904,10 +1841,7 @@ picture {
   }
 }
 .comment__value {
-  font-family: "Oswald", sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 18px;
+  font: normal 16px/18px "Oswald", sans-serif;
   text-transform: uppercase;
   color: #444444;
   text-align: left;
@@ -1998,6 +1932,10 @@ picture {
 
 .program-choice__radio {
   display: flex;
+  padding: 6px 0 6px;
+}
+.program-choice__radio:not(:last-child) {
+  margin-bottom: 13px;
 }
 .program-choice__radio:disabled {
   opacity: 0.3;
@@ -2055,9 +1993,7 @@ picture {
   position: relative;
 }
 .footer__academy-logo-text {
-  font-family: "Lato", sans-serif;
-  font-size: 16px;
-  line-height: 20px;
+  font: normal 16px/20px "Lato", sans-serif;
   color: #444444;
 }
 .footer__address-wrapper {
@@ -2087,29 +2023,24 @@ picture {
   background-color: #ffffff;
 }
 .footer__address-subtitle {
-  font-size: 16px;
-  line-height: 20px;
+  font: normal 16px/20px "Oswald", sans-serif;
   max-width: 140px;
   color: #111111;
 }
 @media (min-width: 768px) {
   .footer__address-subtitle {
-    font-size: 20px;
-    line-height: 26px;
+    font: normal 14px/20px "Oswald", sans-serif;
     max-width: 160px;
   }
 }
 .footer__address-text {
-  font-family: "Lato", sans-serif;
-  font-size: 14px;
-  line-height: 20px;
+  font: normal 14px/20px "Lato", sans-serif;
   color: #444444;
-  font-style: normal;
   max-width: 140px;
 }
 @media (min-width: 768px) {
   .footer__address-text {
-    font-size: 16px;
+    font: normal 16px/20px "Lato", sans-serif;
     max-width: 160px;
     text-align: right;
   }
@@ -2117,5 +2048,10 @@ picture {
 
 .main-index {
   background-color: #ffffff;
+}
+@media (min-width: 1200px) {
+  .main-index {
+    padding-top: 82px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
