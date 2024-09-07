@@ -3,6 +3,7 @@
 .comment {
   &__value-wrapper {
     height: 150px;
+    width: 280px;
     border: $border-comment;
 
     @media (min-width: $tablet-width) {
@@ -12,10 +13,7 @@
   }
 
   &__value {
-    font-family: $title-font;
-    font-weight: 400;
-    font-size: $font-medium;
-    line-height: $line-height-low;
+    font: $font-sms-hn-wn-ff2;
     text-transform: uppercase;
     color: $color-text-primary;
     text-align: left;

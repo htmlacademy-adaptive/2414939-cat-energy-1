@@ -1,16 +1,37 @@
-$title-font: "Oswald", sans-serif;
-$content-font: "Lato", sans-serif;
-$font-small: 14px;
-$font-medium: 16px;
-$font-large: 36px;
-$font-weight-normal: 400;
-$line-height-low: 18px;
-$line-height-medium: 20px;
-$line-height-high: 36px;
+$tablet-width: 768px;
+$desktop-width: 1200px;
+$mobile-width-only: 767px;
+$ff1: "Lato", sans-serif;
+$ff2: "Oswald", sans-serif;
 $block-width: 320px;
+$font-sxs-hxl-wn-ff1: normal 12px/12px "Lato", sans-serif;
+$font-sxs-hnl-wn-ff1: normal 12px/16px "Lato", sans-serif;
+$font-ss-hl-wn-ff1: normal 14px/14px "Lato", sans-serif;
+$font-ss-hn-wn-ff1: normal 14px/18px "Lato", sans-serif;
+$font-ss-hnh-wn-ff1: normal 14px/20px "Lato", sans-serif;
+$font-sms-hn-wn-ff1: normal 16px/18px "Lato", sans-serif;
+$font-sms-hnh-wn-ff1: normal 16px/20px "Lato", sans-serif;
+$font-sms-hh-wn-ff1: normal 16px/24px "Lato", sans-serif;
+$font-sml-hh-wn-ff1: normal 20px/24px "Lato", sans-serif;
+$font-ss-hl-wn-ff2: normal 14px/14px "Oswald", sans-serif;
+$font-ss-hnl-wn-ff2: normal 14px/16px "Oswald", sans-serif;
+$font-ss-hn-wn-ff2: normal 14px/18px "Oswald", sans-serif;
+$font-ss-hnh-wn-ff2: normal 14px/20px "Oswald", sans-serif;
+$font-sms-hnl-wn-ff2: normal 16px/16px "Oswald", sans-serif;
+$font-sms-hn-wn-ff2: normal 16px/18px "Oswald", sans-serif;
+$font-sms-hnh-wn-ff2: normal 16px/20px "Oswald", sans-serif;
+$font-sm-hh-wn-ff2: normal 18px/24px "Oswald", sans-serif;
+$font-sml-hnh-wn-ff2: normal 20px/20px "Oswald", sans-serif;
+$font-ss-hh-wn-ff2: normal 20px/24px "Oswald", sans-serif;
+$font-sml-hxh-wn-ff2: normal 20px/30px "Oswald", sans-serif;
+$font-sl-hh-wn-ff2: normal 24px/24px "Oswald", sans-serif;
+$font-sxl-hxxh-wn-ff2: normal 30px/37px "Oswald", sans-serif;
+$font-sxxl-hxxh-wn-ff2: normal 36px/36px "Oswald", sans-serif;
+$font-sxxl-hg-wn-ff2: normal 36px/40px "Oswald", sans-serif;
+$font-s3xl-h3xh-wn-ff2: normal 60px/60px "Oswald", sans-serif;
 $color-text-primary: #444444;
 $color-text-secondary: #ffffff;
-$color-text-secondary-hover:rgba(255,255,255,0.3);
+$color-text-secondary-hover: rgba(255,255,255,0.3);
 $color-subtitle-special: #111111;
 $color-text-special: #000000;
 $background-body: #ffffff;
@@ -40,6 +61,14 @@ $border-extra-products__title: 1px solid #ebebeb;
 $border-navigation__link: 1px solid #e6e6e6;
 $border-input-invalid: 2px solid #ff8282;
 $border-input-focus: 2px solid #444444;
-$tablet-width: 768px;
-$desktop-width: 1200px;
-$mobile-width-only: 767px;
+
+
+
+
+
+
+
+
+
+
+

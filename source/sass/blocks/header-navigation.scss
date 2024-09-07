@@ -1,91 +1,87 @@
 @import "variables.scss";
 
 .header-navigation{
- &__wrapper {
-   width: 24px;
-   display: flex;
+  &__wrapper {
+    width: 24px;
+    display: flex;
 
-   @media (min-width: $tablet-width) {
-    width: auto;
-    margin-left: auto;
-   }
+    @media (min-width: $tablet-width) {
+      width: auto;
+      margin-left: auto;
+    }
   }
 
- &__wrapper:focus-within &__list {
+  &__wrapper:focus-within &__list {
     visibility: visible;
     left: 0px;
   }
 
- &__toggle {
-   display: flex;
-   align-items: center;
-   position: relative;
-   top: 50%;
-   transform: translateY(-50%);
-   right: 0;
-   width: 26px;
-   height: 26px;
-   cursor: pointer;
-
-   @media (min-width: $tablet-width) {
-    display: none;
-   }
-  }
-
- &__toggle > span,
- &__toggle > span::before,
- &__toggle > span::after {
-   display: block;
-   position: absolute;
-   width: 100%;
-   height: 2px;
-   background-color: #000000;
-  }
-
- &__toggle > span::before {
-   content: "";
-   top: -8px;
-  }
-
- &__toggle > span::after {
-   content: "";
-   top: 8px;
-  }
-
- &__list {
-   display: block;
-   position: absolute;
-   visibility: hidden;
-   top: 55px;
-   width: 320px;
-   height: 100%;
-   padding: 0;
-   z-index: 2;
-
-   @media (min-width: $tablet-width) {
-    visibility: visible;
+  &__toggle {
     display: flex;
+    align-items: center;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
+
+  &__toggle > span,
+  &__toggle > span::before,
+  &__toggle > span::after {
+    display: block;
+    position: absolute;
     width: 100%;
-    gap: 33px;
-    position: static;
-   }
+    height: 2px;
+    background-color: #000000;
+  }
+
+  &__toggle > span::before {
+    content: "";
+    top: -8px;
+  }
+
+  &__toggle > span::after {
+    content: "";
+    top: 8px;
+  }
+
+  &__list {
+    display: block;
+    position: absolute;
+    visibility: hidden;
+    top: 55px;
+    width: 320px;
+    height: 100%;
+    padding: 0;
+    z-index: 2;
+
+    @media (min-width: $tablet-width) {
+      visibility: visible;
+      display: flex;
+      width: 100%;
+      gap: 33px;
+      position: static;
+    }
   }
 
   &__link {
-   display: block;
-   padding: 22px 24px;
-   font-family: $title-font;
-   font-size: 20px;
-   font-weight: 600;
-   border-top: $border-navigation__link;
+    display: block;
+    padding: 22px 24px;
+    font: $font-sml-hnh-wn-ff2;
+    border-top: $border-navigation__link;
 
-   @media (min-width: $tablet-width) {
-    font-size: 18px;
-    font-weight: $font-weight-normal;
-    line-height: 24px;
-    padding: 0;
-    border: none;
-   }
+    @media (min-width: $tablet-width) {
+      font: $font-sm-hh-wn-ff2;
+      padding: 0;
+      border: none;
+    }
   }
 
   &__link:hover {
@@ -96,17 +92,17 @@
     opacity: 0.3;
   }
 
- &__link--active {
+  &__link--active {
     @media (min-width: $tablet-width) {
-     padding-bottom: 10px;
-     box-shadow: 0 2px $background-button;
+      padding-bottom: 10px;
+      box-shadow: 0 2px $background-button;
     }
   }
 
   &__link--active-index {
     @media (min-width: $desktop-width) {
-     padding-bottom: 10px;
-     box-shadow: 0 2px $background-body;
+      padding-bottom: 10px;
+      box-shadow: 0 2px $background-body;
     }
   }
 

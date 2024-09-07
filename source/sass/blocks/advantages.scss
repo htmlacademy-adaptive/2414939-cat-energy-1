@@ -83,38 +83,61 @@
   }
 
   &__text-wrapper {
-    font-family: $content-font;
-    font-size: $font-small;
-    line-height: $line-height-low;
+    font: $font-ss-hn-wn-ff1;
     color: $color-text-primary;
 
     @media (min-width: $tablet-width) {
-      font-size: $font-medium;
-      line-height: 24px;
+      font: $font-sml-hh-wn-ff1;
     }
   }
 
-  &__item:nth-child(1) {
-    @media (min-width: $tablet-width) {
+  @for $i from 1 through 4 {
+    :nth-child#{$i} {
       background-image: url("../img/1.png");
     }
-  }
-
-  &__item:nth-child(2) {
-    @media (min-width: $tablet-width) {
+    &__item:nth-child#{$i} {
       background-image: url("../img/2.png");
     }
-  }
-
-  &__item:nth-child(3) {
-    @media (min-width: $tablet-width) {
+    .advantages__item:nth-child#{$i} {
       background-image: url("../img/3.png");
     }
-  }
-
-  &__item:nth-child(4) {
-    @media (min-width: $tablet-width) {
+    :nth-child#{$i} {
       background-image: url("../img/4.png");
     }
   }
+
+  // &__item:nth-child(1) {
+  //   @media (min-width: $tablet-width) {
+  //     background-image: url("../img/1.png");
+  //   }
+  // }
+
+  // &__item:nth-child(2) {
+  //   @media (min-width: $tablet-width) {
+  //     background-image: url("../img/2.png");
+  //   }
+  // }
+
+  // &__item:nth-child(3) {
+  //   @media (min-width: $tablet-width) {
+  //     background-image: url("../img/3.png");
+  //   }
+  // }
+
+  // &__item:nth-child(4) {
+  //   @media (min-width: $tablet-width) {
+  //     background-image: url("../img/4.png");
+  //   }
+  // }
 }
+
+// @for $i from 1 through 4 {
+//   .advantages-item:nth-child#{$i} {
+//     background-image: url("../img/1.png");
+//   }
+//   advantages-item:nth-child#{$i} {
+//     background-image: url("../img/2.png");
+//   }
+// }
+
+

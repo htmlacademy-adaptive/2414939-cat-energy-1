@@ -63,10 +63,7 @@
 
   &__text {
     text-align: center;
-    font-family: $content-font;
-    font-weight: $font-weight-normal;
-    font-size: $font-medium;
-    line-height: $line-height-medium;
+    font: $font-sms-hnh-wn-ff1;
     color: $color-text-secondary;
     z-index: 0;
 
@@ -75,7 +72,7 @@
       text-align: left;
     }
 
-      @media (min-width: $desktop-width) {
+    @media (min-width: $desktop-width) {
       text-align: center;
     }
   }

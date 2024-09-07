@@ -4,16 +4,16 @@
   position: relative;
   margin-bottom: 20px;
   background: linear-gradient(rgba(104, 183, 56, 0.85) 302px, rgba(255, 255, 255, 0.85) 302px),
-              url("../img/entry-background.png") no-repeat;
+    url("../img/entry-background.png") no-repeat;
 
-  @media (min-width: $tablet-width) {
-    margin-bottom: 0;
-    background: none;
-  }
+    @media (min-width: $tablet-width) {
+      margin-bottom: 0;
+      background: none;
+    }
 
-  @media (min-width: $desktop-width) {
-    display: none;
-  }
+    @media (min-width: $desktop-width) {
+      display: none;
+    }
 
   &__desktop {
     display: none;
@@ -25,11 +25,9 @@
       align-items:center;
       justify-content: space-between;
       position: relative;
-      top: -170px;
       z-index: 0;
       padding-left: 160px;
       padding-top: 55px;
-      margin-bottom: -82px;
       background: linear-gradient(to right, #ffffff 50%, #68B738 50%);
     }
   }
@@ -84,10 +82,7 @@
   }
 
   &__title {
-    font-family: $title-font;
-    font-size: $font-large;
-    font-weight: $font-weight-normal;
-    line-height: $line-height-high;
+    font: $font-sxxl-hxxh-wn-ff2;
     margin-bottom: 25px;
     color: $color-text-secondary;
     z-index: 1;
@@ -96,24 +91,20 @@
     @media (min-width: $tablet-width) {
       color: $color-text-special;
       width: 416px;
-      font-size: 60px;
-      line-height: 60px;
+      font: $font-s3xl-h3xh-wn-ff2;
       margin-bottom: 40px;
     }
   }
 
   &__tagline {
-    font-family: $title-font;
-    font-size: $font-small;
-    line-height: 14px;
+    font: $font-ss-hl-wn-ff2;
     text-transform: uppercase;
     margin-bottom: 29px;
     z-index: 1;
     position: relative;
 
     @media (min-width: $tablet-width) {
-      font-size: 20px;
-      line-height: 20px;
+      font: $font-sml-hnh-wn-ff2;
       margin-bottom: 50px;
     }
   }
@@ -136,10 +127,10 @@
 
   &__button {
     @media (min-width: $tablet-width) {
-    margin: 0;
-    padding: 14px 26px;
-    z-index: 2;
-    width: max-content;
+      margin: 0;
+      padding: 14px 26px;
+      z-index: 2;
+      width: max-content;
     }
   }
 }

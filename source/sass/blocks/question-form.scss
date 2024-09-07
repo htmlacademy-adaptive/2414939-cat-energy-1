@@ -1,27 +1,21 @@
+
 @import "variables.scss";
 
 .question-form {
-  font-family: $title-font;
-  font-weight: $font-weight-normal;
-  font-size: $font-small;
-  line-height: $line-height-low;
+  font: $font-ss-hn-wn-ff2;
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
-    font-size: 20px;
-    line-height: $line-height-medium;
+    font: $font-sml-hnh-wn-ff2;
   }
 
   &__title {
-    font-weight: $font-weight-normal;
-    font-size: $font-small;
-    line-height: $line-height-low;
+    font: $font-ss-hn-wn-ff2;
     text-transform: uppercase;
     margin-bottom: 39px;
 
     @media (min-width: $tablet-width) {
-      font-size: 20px;
-      line-height: 30px;
+      font: $font-sml-hxh-wn-ff2;
       max-width: 323px;
       margin-bottom: 66px;
     }
@@ -54,17 +48,14 @@
 
   &__subtitle {
     position: relative;
-    font-family: $title-font;
-    font-size: 24px;
-    line-height: 26px;
+    font: $font-sl-hh-wn-ff2;
     text-transform: none;
     text-wrap: nowrap;
     padding-right: 20px;
     background-color: $background-body;
 
     @media (min-width: $tablet-width) {
-      font-size: $font-large;
-      line-height: $line-height-high;
+      font: $font-sxxl-hxxh-wn-ff2;
       padding: 0 40px;
       position: relative;
       left: -40px;
@@ -115,14 +106,14 @@
   }
 
   &__program-choice {
-      display: flex;
-      flex-direction: column;
-      gap: 24px;
-      padding-bottom: 19px;
-      margin-bottom: 26px;
-      border-bottom: $border-block;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding-bottom: 19px;
+    margin-bottom: 26px;
+    border-bottom: $border-block;
 
-   @media (min-width: $tablet-width) {
+    @media (min-width: $tablet-width) {
       border: $border-block;
       padding: 27px;
       margin-bottom: 65px;
@@ -141,7 +132,7 @@
 
     @media (min-width: $tablet-width) {
       margin-bottom: 65px;
-   }
+    }
 
     @media (min-width: $desktop-width) {
       margin-bottom: 70px;
@@ -158,23 +149,23 @@
 
     @media (min-width: $desktop-width) {
       width: 570px;
-      }
+    }
   }
 
   &__note {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: $content-font;
+    font-family: $ff1;
     text-transform: none;
     text-align: center;
   }
 
   &__footer {
-   @media (min-width: $tablet-width) {
-    display: flex;
-    align-items: baseline;
-    gap: 60px;
-   }
+    @media (min-width: $tablet-width) {
+      display: flex;
+      align-items: baseline;
+      gap: 60px;
+    }
   }
 }

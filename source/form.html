@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -44,8 +44,8 @@
     </div>
   </header>
   <main class="main-form body__main body__main--form">
-    <div class="container">
-      <h1 class="title main-form__form-title">Подбор программы</h1>
+    <div class="main-form__title-wrapper">
+      <h1 class="title main-form__title">Подбор программы</h1>
     </div>
     <form class="question-form main-form__question-form" action="https://echo.htmlacademy.ru" method="post">
       <div class="container container--form">
@@ -53,40 +53,44 @@
           вашего кота</h2>
         <div class="question-form__header">
           <fieldset class="fieldset person-data question-form__person-data">
-            <legend class="visually-hidden">Данные кота</legend>
-            <label class="person-data__item">
-              <span class="person-data__property">имя:
-                <sup class="question-form__req">*</sup>
-              </span>
-              <input class="input person-data__value" pattern="[A-Za-zА-Яа-яЁё]{3,8}" type="text" name="name"
-                placeholder="БАРСИК" required>
-            </label>
-            <label class="person-data__item">
-              <span class="person-data__property">Вес (кг):
-                <sup class="question-form__req">*</sup>
-              </span>
-              <input class="input person-data__value" type="text" pattern="[0-9]{1,2}" name="weight" placeholder="7"
-                required>
-            </label>
-            <label class="person-data__item">
-              <span class="person-data__property">Возраст (лет):</span>
-              <input class="input person-data__value" type="text" pattern="[0-9]{1,2}" name="age" placeholder="7">
-            </label>
+            <legend>
+              <h2 class="visually-hidden">Данные кота</h2>
+              <label class="person-data__item">
+                <span class="person-data__property">имя:
+                  <sup class="question-form__req">*</sup>
+                </span>
+                <input class="input person-data__value" pattern="[A-Za-zА-Яа-яЁё]{3,8}" type="text" name="name"
+                  placeholder="БАРСИК" required>
+              </label>
+              <label class="person-data__item">
+                <span class="person-data__property">Вес (кг):
+                  <sup class="question-form__req">*</sup>
+                </span>
+                <input class="input person-data__value" type="text" pattern="[0-9]{1,2}" name="weight" placeholder="7"
+                  required>
+              </label>
+              <label class="person-data__item">
+                <span class="person-data__property">Возраст (лет):</span>
+                <input class="input person-data__value" type="text" pattern="[0-9]{1,2}" name="age" placeholder="7">
+              </label>
+            </legend>
           </fieldset>
           <fieldset class="fieldset program-choice question-form__program-choice">
-            <legend class="visually-hidden">Выбор программы</legend>
-            <div class="program-choice__radio">
-              <input id="losing-weight" type="radio" name="program" value="losing-weight" checked>
-              <label for="losing-weight">похудение</label>
-            </div>
-            <div class="program-choice__radio">
-              <input id="weight-gain" type="radio" name="program" value="weight-gain">
-              <label for="weight-gain">Набор массы</label>
-            </div>
-            <div class="program-choice__radio">
-              <input id="need-advice" type="radio" name="program" value="need-advice">
-              <label for="need-advice">Не знаю (Нужен ваш совет)</label>
-            </div>
+            <legend>
+              <h2 class="visually-hidden">Выбор программы</h2>
+              <div class="program-choice__radio">
+                <input id="losing-weight" type="radio" name="program" value="losing-weight" checked>
+                <label for="losing-weight">похудение</label>
+              </div>
+              <div class="program-choice__radio">
+                <input id="weight-gain" type="radio" name="program" value="weight-gain">
+                <label for="weight-gain">Набор массы</label>
+              </div>
+              <div class="program-choice__radio">
+                <input id="need-advice" type="radio" name="program" value="need-advice">
+                <label for="need-advice">Не знаю (Нужен ваш совет)</label>
+              </div>
+            </legend>
           </fieldset>
         </div>
         <div class="question-form__subtitle-wrapper">
@@ -95,48 +99,47 @@
           </h2>
         </div>
         <fieldset class="fieldset owner-contacts question-form__owner-contacts">
-          <legend class="visually-hidden">Контакты владельца</legend>
-          <div class="container">
-            <div class="owner-contacts__wrapper">
-              <div class="owner-contacts__item owner-contacts__content  owner-contacts__email">
-                <span class="owner-contacts__property">E-mail:
-                  <sup class="question-form__req">*</sup>
-                </span>
-                <div class="owner-contacts__input-box owner-contacts__input-box-email">
-                  <input class="input owner-contacts__value" type="email" name="email" placeholder="kuklachev@gmail.com"
-                    required>
+          <legend>
+            <div class="container">
+              <div class="owner-contacts__wrapper">
+                <div class="owner-contacts__item owner-contacts__content  owner-contacts__email">
+                  <span class="owner-contacts__property">E-mail:
+                    <sup class="question-form__req">*</sup>
+                  </span>
+                  <div class="owner-contacts__input-box owner-contacts__input-box-email">
+                    <input class="input owner-contacts__value" type="email" name="email"
+                      placeholder="kuklachev@gmail.com" required>
+                  </div>
                 </div>
-              </div>
-              <div class="owner-contacts__item owner-contacts__content owner-contacts__tel">
-                <span class="owner-contacts__property">Телефон:
-                  <sup class="question-form__req">*</sup>
-                </span>
-                <div class="owner-contacts__input-box owner-contacts__input-box-tel">
-                  <input class="input owner-contacts__value" type="tel" name="tel" placeholder="8 (960) 900-60-90"
-                    pattern="[0-9,+]{11,12}" required>
+                <div class="owner-contacts__item owner-contacts__content owner-contacts__tel">
+                  <span class="owner-contacts__property">Телефон:
+                    <sup class="question-form__req">*</sup>
+                  </span>
+                  <div class="owner-contacts__input-box owner-contacts__input-box-tel">
+                    <input class="input owner-contacts__value" type="tel" name="tel" placeholder="8 (960) 900-60-90"
+                      pattern="[0-9,+]{11,12}" required>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
+          </legend>
         </fieldset>
         <div class="question-form__subtitle-wrapper">
           <h2 class="subtitle question-form__subtitle question-form__subtitle--comment">Комментарий</h2>
         </div>
         <fieldset class="fieldset comment question-form__comment">
-          <legend class="visually-hidden">Комментарий</legend>
-          <div class="container">
+          <legend>
             <div class="comment__value-wrapper">
               <textarea class="input comment__value" name="comment"
                 placeholder="Расскажите обо всех повадках кота"></textarea>
             </div>
-          </div>
+          </legend>
         </fieldset>
         <div class="question-form__subtitle-wrapper">
           <h2 class="subtitle question-form__subtitle question-form__subtitle--add">Дополнительно</h2>
         </div>
         <fieldset class="fieldset add-info question-form__add-info">
-          <legend class="visually-hidden">Дополнительные товары</legend>
-          <div class="container">
+          <legend>
             <div class="add-info__container">
               <div class="add-info__item">
                 <input class="add-info__checkbox" type="checkbox" id="sweetener" name="add" checked="checked">
@@ -163,14 +166,16 @@
                   витамины</label>
               </div>
             </div>
-          </div>
+      </div>
+      </legend>
+      <!-- <div class="container"> -->
         </fieldset>
         <div class="question-form__footer">
           <button class="button question-form__button" type="submit" title="отправить заявку">отправить заявку</button>
           <small class="question-form__note">
             <sup class="question-form__req">*</sup> — Обязательные поля</small>
         </div>
-      </div>
+      <!-- </div> -->
     </form>
   </main>
   <footer class="footer body__footer">
@@ -219,9 +224,9 @@
           </li>
           <li class="contacts__social-item">
             <a class="link social-button contacts__social-link contacts__social-telegram" href="#" title="Мы Telegram">
-              <svg class="social-button-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="18" fill="currentColor" viewBox="0 0 20 18">
+              <svg class="social-button-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="18"
+                fill="currentColor" viewBox="0 0 20 18">
                 <path
-
                   d="M19.46.153c.18.15.265.382.227.611l-2.626 15.757a.657.657 0 0 1-1.012.439l-7.878-5.253a.656.656 0 0 1-.149-.956l2.611-3.263-4.36 2.906a.657.657 0 0 1-.658.041L.363 7.81a.657.657 0 0 1 .073-1.205L18.819.038a.657.657 0 0 1 .642.115ZM2.327 7.323 5.862 9.09l7.561-5.04a.656.656 0 0 1 .877.956l-4.805 6.006 6.438 4.292L18.208 1.65 2.326 7.323Z"
                   clip-rule="evenodd" />
               </svg>
@@ -233,7 +238,7 @@
           <a class="link footer__academy-logo-text" href="https://htmlacademy.ru/" title="Перейти в HTML Academy">HTML
             Academy</a>
           <a class="link footer__academy-logo-image" href="https://htmlacademy.ru/" title="Перейти в HTML Academy"><svg
-              xmlns="http://www.w3.org/2000/svg" width="27" height="34" fill="none" viewBox="0 0 27 34">
+              xmlns="http://www.w3.org/2000/svg" width="27" height="34" fill="#666666" viewBox="0 0 27 34">
               <path
                 d="M13.643.016 13.5 0 0 1.407v24.606L13.5 34 27 26.013V1.407L13.643.016Zm11.591 25L13.5 31.956 1.766 25.015V14.93l11.685 6.916.02 1.253-8.017-4.743-.011 1.225 8.046 4.809.02 1.286-8.045-4.758-.01 1.226L13.5 26.95l8.124-4.833V16.91l3.62-2.15-.01 10.256Zm0-11.564-3.22 1.88-1.482.875-7.065-4.187-.011 1.225 6.04 3.573-.053.031-.13.076-.86.492-4.986-2.948-.011 1.225 3.936 2.328-.933.61-.021.012-2.971-1.742-.011 1.225 1.947 1.135-1.988 1.186-11.618-6.872 11.638-6.958 11.8 6.834Zm0-1.225L13.44 5.31 1.766 12.22V2.99L13.5 1.764 25.234 2.99v9.237Z" />
             </svg>

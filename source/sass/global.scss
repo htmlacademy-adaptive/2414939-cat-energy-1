@@ -26,27 +26,21 @@
 }
 
 .subtitle {
-  font-family: $title-font;
-  font-size: $font-medium;
-  line-height: 16px;
+  font: $font-sms-hnl-wn-ff2;
   text-transform: uppercase;
   color: $color-text-special;
 
   @media (min-width: $tablet-width) {
-    font-size: 20px;
-    line-height: $line-height-medium;
+    font: $font-sml-hnh-wn-ff2;
   }
 }
 
 .title {
-  font-family: $title-font;
-  font-size: $font-large;
-  line-height: 40px;
+  font: $font-sxxl-hg-wn-ff2;
   color: $color-text-special;
 
   @media  (min-width: $tablet-width) {
-  font-size: 60px;
-  line-height: 60px;
+  font: $font-s3xl-h3xh-wn-ff2;
   text-align: left;
   }
 }
@@ -62,7 +56,7 @@
 
 .body {
   background-color: $background-body-1;
-  font-family: "Lato";
+  font-family: $ff1;
   width: 320px;
   padding: 0;
   margin: 0 auto;
@@ -80,9 +74,7 @@
 .button {
   background-color: $background-button;
   color: $color-text-secondary;
-  font-family: $title-font;
-  font-size: $font-medium;
-  line-height: $line-height-medium;
+  font: $font-sms-hnh-wn-ff2;
   text-align: center;
   margin: 0 auto;
   text-decoration: none;
@@ -172,4 +164,8 @@ input:focus {
 
 picture {
   display: block;
+}
+
+.fieldset legend {
+  width: 100%;
 }

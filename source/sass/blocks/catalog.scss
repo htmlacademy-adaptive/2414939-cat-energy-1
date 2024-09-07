@@ -55,9 +55,7 @@
     min-width: 140px;
 
     @media (min-width: $tablet-width) {
-      font-size: 20px;
-      font-weight: $font-weight-normal;
-      line-height: 24px;
+      font: $font-ss-hh-wn-ff2;
       text-align: center;
     }
   }
@@ -65,9 +63,7 @@
   &__link {
     background-color: $background-button;
     color: $color-text-secondary;
-    font-family: $title-font;
-    font-size: $font-medium;
-    line-height: $line-height-medium;
+    font: $font-sms-hnh-wn-ff2;
     text-align: center;
     margin: 0 auto;
     text-decoration: none;
@@ -158,29 +154,23 @@
   }
 
   &__subtitle--all {
-    font-size: $font-small;
-    line-height: $line-height-medium;
+    font: $font-ss-hnh-wn-ff2;
     color: $color-subtitle-special;
     margin-bottom: 8px;
 
     @media (min-width: $tablet-width) {
-      font-size: 20px;
-      line-height: 24px;
+      font: $font-ss-hh-wn-ff2;
       margin-bottom: 23px;
       max-width: 134px;
     }
   }
 
   &__text {
-    font-family: $content-font;
-    font-size: 12px;
-    font-weight: $font-weight-normal;
-    line-height: 16px;
+    font: $font-sxs-hnl-wn-ff1;
     color: $color-text-primary;
 
     @media (min-width: $tablet-width) {
-      font-size: $font-medium;
-      line-height: $line-height-low;
+      font: $font-sms-hn-wn-ff1;
     }
   }
 

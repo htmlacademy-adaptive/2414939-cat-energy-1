@@ -7,22 +7,20 @@
   align-items: center;
   margin-bottom: 20px;
 
+  @media (min-width: $tablet-width) {
+    margin-bottom: 71px;
+  }
+  
   &__subtitle-wrapper {
     display: flex;
     gap: 20px;
     align-items: center;
     margin-bottom: 18px;
-
-    @media (min-width: $tablet-width) {
-     font-size: $font-large;
-     line-height: $line-height-high;
-    }
   }
 
   &__subtitle {
     @media (min-width: $tablet-width) {
-     font-size: $font-large;
-     line-height: $line-height-high;
+      font: $font-sxxl-hxxh-wn-ff2;
     }
   }
 
@@ -40,7 +38,6 @@
     @media (min-width: $desktop-width) {
       flex-direction: row;
       justify-content: space-between;
-      margin-bottom: 71px;
     }
   }
 
@@ -55,26 +52,21 @@
   }
 
   &__text-wrapper {
-    font-family: $content-font;
-    font-size: $font-small;
-    line-height: $line-height-low;
+    font: $font-ss-hn-wn-ff1;
     color: $color-text-primary;
     padding-bottom: 23px;
     border-bottom: $border-block;
     margin-bottom: 15px;
 
     @media (min-width: $tablet-width) {
-      font-size: $font-medium;
-      line-height: 24px;
+      font: $font-sms-hh-wn-ff1;
       max-width: 340px;
       border: none;
     }
   }
 
   &__link {
-    font-family: $title-font;
-    font-size: $font-medium;
-    line-height: 16px;
+    font: $font-sms-hnl-wn-ff2;
     text-transform: uppercase;
     position: relative;
     display: flex;
@@ -82,8 +74,7 @@
     align-items: center;
 
     @media (min-width: $tablet-width) {
-      font-size: 20px;
-      line-height: 30px;
+      font: $font-sml-hxh-wn-ff2;
       gap: 25px;
     }
   }
@@ -102,7 +93,6 @@
     gap: 15px;
     cursor: pointer;
 
-
     @media (min-width: $tablet-width) {
       gap: 25px;
     }
@@ -115,9 +105,6 @@
   &__link-wrapper:active {
     opacity: 0.3;
   }
-
-
-
   &__image-wrapper {
     width: 50px;
     height: 50px;
@@ -142,7 +129,7 @@
 
   &__item-wrapper {
     position: relative;
-   }
+  }
 
   &__icon-wrapper {
     display: none;
@@ -170,20 +157,20 @@
 
   &__icon-slim {
     @media  (min-width: $tablet-width) {
-    object-fit: cover;
-    width: 140px;
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+      object-fit: cover;
+      width: 140px;
+      position: relative;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
     }
 
     @media (min-width: $desktop-width) {
-    width: 70px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+      width: 70px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
     }
   }
 
