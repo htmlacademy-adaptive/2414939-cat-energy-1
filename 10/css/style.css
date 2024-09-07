@@ -19,7 +19,6 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  background: transparent;
   border: none;
   outline-offset: -1px;
 }
@@ -57,6 +56,7 @@
   .title {
     font: normal 60px/60px "Oswald", sans-serif;
     text-align: left;
+    margin-top: 0;
   }
 }
 
@@ -342,10 +342,15 @@ picture {
   .header__wrapper {
     padding: 55px 110px 74px;
     z-index: 1;
-    position: absolute;
+    position: relative;
     top: 0;
     left: 0;
     width: 100%;
+  }
+}
+@media (min-width: 1200px) {
+  .header__wrapper-index {
+    position: absolute;
   }
 }
 .header__logo:hover {
@@ -1279,6 +1284,7 @@ picture {
     font: normal 36px/36px "Oswald", sans-serif;
     padding-left: 40px;
     padding-right: 40px;
+    margin-bottom: 0;
   }
 }
 @media (min-width: 1200px) {
@@ -1564,6 +1570,7 @@ picture {
     display: flex;
     gap: 80px;
     margin-bottom: 70px;
+    align-items: center;
   }
 }
 .question-form__person-data {
