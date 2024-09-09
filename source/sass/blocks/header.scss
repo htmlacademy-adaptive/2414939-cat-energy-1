@@ -27,7 +27,7 @@
     }
   }
 
-  &__wrapper::before {
+  &__wrapper-index::before {
     @media (min-width: $desktop-width) {
       content: "";
       width: 552px;
