@@ -25,21 +25,21 @@
 }
 
 .subtitle {
-  font: $font-sms-hnl-wn-ff2;
+  font: $font-sms-hnl-ff2;
   text-transform: uppercase;
   color: $color-text-special;
 
   @media (min-width: $tablet-width) {
-    font: $font-sml-hnh-wn-ff2;
+    font: $font-sml-hnh-ff2;
   }
 }
 
 .title {
-  font: $font-sxxl-hg-wn-ff2;
+  font: $font-sxxl-hg-ff2;
   color: $color-text-special;
 
   @media  (min-width: $tablet-width) {
-  font: $font-s3xl-h3xh-wn-ff2;
+  font: $font-s3xl-h3xh-ff2;
   text-align: left;
   margin-top: 0;
   }
@@ -60,6 +60,7 @@
   width: 320px;
   padding: 0;
   margin: 0 auto;
+  font-weight: normal;
 
   @media (min-width: $tablet-width) {
     min-width: 768px;
@@ -74,7 +75,7 @@
 .button {
   background-color: $background-button;
   color: $color-text-secondary;
-  font: $font-sms-hnh-wn-ff2;
+  font: $font-sms-hnh-ff2;
   text-align: center;
   margin: 0 auto;
   text-decoration: none;
@@ -108,10 +109,6 @@
 .price::after {
 	content: " \20BD";
 }
-
-// fieldset {
-//   border: none;
-// }
 
 input:user-invalid {
   border: $border-input-invalid;

@@ -30,7 +30,7 @@
       display: flex;
       flex-direction: column;
       width: 245px;
-      height: 288px;
+      min-height: 288px;
       padding: 56px 42px 43px;
       background-image: url("../img/promo-image.png");
     }
@@ -63,7 +63,7 @@
 
   &__text {
     text-align: center;
-    font: $font-sms-hnh-wn-ff1;
+    font: $font-sms-hnh-ff1;
     color: $color-text-secondary;
     z-index: 0;
 

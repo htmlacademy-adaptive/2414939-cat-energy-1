@@ -32,19 +32,6 @@
     }
   }
 
-  &__desktop::before {
-    @media (min-width: $desktop-width) {
-      content: "";
-      width: 552px;
-      height: 499px;
-      position: absolute;
-      background-image: url("../img/index-can-desktop.png");
-      top: 143px;
-      right: 331px;
-      z-index:5;
-    }
-  }
-
   &__header {
     color: $color-text-secondary;
     text-align: center;
@@ -82,7 +69,7 @@
   }
 
   &__title {
-    font: $font-sxxl-hxxh-wn-ff2;
+    font: $font-sxxl-hxxh-ff2;
     margin-bottom: 25px;
     color: $color-text-secondary;
     z-index: 1;
@@ -91,20 +78,20 @@
     @media (min-width: $tablet-width) {
       color: $color-text-special;
       width: 416px;
-      font: $font-s3xl-h3xh-wn-ff2;
+      font: $font-s3xl-h3xh-ff2;
       margin-bottom: 40px;
     }
   }
 
   &__tagline {
-    font: $font-ss-hl-wn-ff2;
+    font: $font-ss-hl-ff2;
     text-transform: uppercase;
     margin-bottom: 29px;
     z-index: 1;
     position: relative;
 
     @media (min-width: $tablet-width) {
-      font: $font-sml-hnh-wn-ff2;
+      font: $font-sml-hnh-ff2;
       margin-bottom: 50px;
     }
   }

@@ -5,7 +5,7 @@
   position: relative;
 
   &__academy-logo-text {
-    font: $font-sms-hnh-wn-ff1;
+    font: $font-sms-hnh-ff1;
     color: $color-text-primary;
   }
 
@@ -36,23 +36,23 @@
   }
 
   &__address-subtitle {
-    font: $font-sms-hnh-wn-ff2;
+    font: $font-sms-hnh-ff2;
     max-width: 140px;
     color: $color-subtitle-special;
 
     @media (min-width: $tablet-width) {
-      font: $font-ss-hnh-wn-ff2;
+      font: $font-ss-hnh-ff2;
       max-width: 160px;
     }
   }
 
   &__address-text {
-    font: $font-ss-hnh-wn-ff1;
+    font: $font-ss-hnh-ff1;
     color: $color-text-primary;
     max-width: 140px;
 
     @media (min-width: $tablet-width) {
-      font: $font-sms-hnh-wn-ff1;
+      font: $font-sms-hnh-ff1;
       max-width: 160px;
       text-align: right;
     }

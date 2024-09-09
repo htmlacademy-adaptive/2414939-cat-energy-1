@@ -24,6 +24,7 @@
       flex-wrap: wrap;
       gap: 60px;
       margin-bottom: 70px;
+      align-items: flex-end;
     }
 
     @media (min-width: $desktop-width) {
@@ -55,7 +56,7 @@
     min-width: 140px;
 
     @media (min-width: $tablet-width) {
-      font: $font-ss-hh-wn-ff2;
+      font: $font-ss-hh-ff2;
       text-align: center;
     }
   }
@@ -63,7 +64,7 @@
   &__link {
     background-color: $background-button;
     color: $color-text-secondary;
-    font: $font-sms-hnh-wn-ff2;
+    font: $font-sms-hnh-ff2;
     text-align: center;
     margin: 0 auto;
     text-decoration: none;
@@ -110,7 +111,6 @@
 
     @media (min-width: $tablet-width) {
       width: 324px;
-      height: 429px;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -118,12 +118,10 @@
       padding: 50px 37px 40px;
       background-image: none;
       outline: $border-catalog-item-all;
-      top: 77px;
     }
 
     @media (min-width: $desktop-width) {
       width: 245px;
-      height: 431px;
     }
   }
 
@@ -135,42 +133,24 @@
     }
   }
 
-  &__item--all::after {
-    @media (min-width: $tablet-width) {
-      content: "";
-      position: absolute;
-      width: 324px;
-      height: 403px;
-      top: 81px;
-      left: 0;
-      background-color: $background-body;
-      z-index: -1;
-      border: $border-catalog-item-all;
-    }
-
-    @media (min-width: $desktop-width) {
-      width: 245px;
-    }
-  }
-
   &__subtitle--all {
-    font: $font-ss-hnh-wn-ff2;
+    font: $font-ss-hnh-ff2;
     color: $color-subtitle-special;
     margin-bottom: 8px;
 
     @media (min-width: $tablet-width) {
-      font: $font-ss-hh-wn-ff2;
+      font: $font-ss-hh-ff2;
       margin-bottom: 23px;
       max-width: 134px;
     }
   }
 
   &__text {
-    font: $font-sxs-hnl-wn-ff1;
+    font: $font-sxs-hnl-ff1;
     color: $color-text-primary;
 
     @media (min-width: $tablet-width) {
-      font: $font-sms-hn-wn-ff1;
+      font: $font-sms-hn-ff1;
     }
   }
 

@@ -74,11 +74,11 @@
   &__link {
     display: block;
     padding: 22px 24px;
-    font: $font-sml-hnh-wn-ff2;
+    font: $font-sml-hnh-ff2;
     border-top: $border-navigation__link;
 
     @media (min-width: $tablet-width) {
-      font: $font-sm-hh-wn-ff2;
+      font: $font-sm-hh-ff2;
       padding: 0;
       border: none;
     }

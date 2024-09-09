@@ -21,10 +21,22 @@
     @media (min-width: $desktop-width) {
       padding: 55px 110px 74px;
       z-index: 1;
-      // position: absolute;
       top: 0;
       left: 0;
       width: 100%;
+    }
+  }
+
+  &__wrapper::before {
+    @media (min-width: $desktop-width) {
+      content: "";
+      width: 552px;
+      height: 499px;
+      position: absolute;
+      background-image: url("../img/index-can-desktop.png");
+      top: 143px;
+      right: 331px;
+      z-index:5;
     }
   }
 

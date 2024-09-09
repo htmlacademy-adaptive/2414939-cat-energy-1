@@ -77,17 +77,15 @@
       gap: 31px;
       max-width: 269px;
       height: 280px;
-      background-repeat: no-repeat;
-      background-position-x: right;
     }
   }
 
   &__text-wrapper {
-    font: $font-ss-hn-wn-ff1;
+    font: $font-ss-hn-ff1;
     color: $color-text-primary;
 
     @media (min-width: $tablet-width) {
-      font: $font-sml-hh-wn-ff1;
+      font: $font-sms-hh-ff1;
     }
   }
 

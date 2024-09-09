@@ -15,7 +15,7 @@
     width: 100%;
 
     @media (min-width: $tablet-width) {
-      font: $font-sml-hxh-wn-ff2;
+      font: $font-sml-hxh-ff2;
       color: $color-text-primary;
     }
   }
@@ -28,10 +28,6 @@
     display: flex;
     align-items: center;
     gap: 13px;
-  }
-
-  &__item:not(last-child) {
-      margin-bottom: 14px;
   }
 
   &__property {
