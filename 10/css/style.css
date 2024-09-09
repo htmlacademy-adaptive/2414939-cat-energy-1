@@ -338,7 +338,7 @@ picture {
   }
 }
 @media (min-width: 1200px) {
-  .header__wrapper::before {
+  .header__wrapper-index::before {
     content: "";
     width: 552px;
     height: 499px;
