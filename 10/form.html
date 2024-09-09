@@ -54,44 +54,40 @@
           вашего кота</h2>
         <div class="question-form__header">
           <fieldset class="fieldset person-data question-form__person-data">
-            <legend>
-              <h2 class="visually-hidden">Данные кота</h2>
-              <label class="person-data__item">
-                <span class="person-data__property">имя:
-                  <sup class="question-form__req">*</sup>
-                </span>
-                <input class="input person-data__value" pattern="[A-Za-zА-Яа-яЁё]{3,8}" type="text" name="name"
-                  placeholder="БАРСИК" required>
-              </label>
-              <label class="person-data__item">
-                <span class="person-data__property">Вес (кг):
-                  <sup class="question-form__req">*</sup>
-                </span>
-                <input class="input person-data__value" type="text" pattern="[0-9]{1,2}" name="weight" placeholder="7"
-                  required>
-              </label>
-              <label class="person-data__item">
-                <span class="person-data__property">Возраст (лет):</span>
-                <input class="input person-data__value" type="text" pattern="[0-9]{1,2}" name="age" placeholder="7">
-              </label>
-            </legend>
+            <legend class="visually-hidden">Данные кота></legend>
+            <label class="person-data__item">
+              <span class="person-data__property">имя:
+                <sup class="question-form__req">*</sup>
+              </span>
+              <input class="input person-data__value" pattern="[A-Za-zА-Яа-яЁё]{3,8}" type="text" name="name"
+                placeholder="БАРСИК" required>
+            </label>
+            <label class="person-data__item">
+              <span class="person-data__property">Вес (кг):
+                <sup class="question-form__req">*</sup>
+              </span>
+              <input class="input person-data__value" type="text" pattern="[0-9]{1,2}" name="weight" placeholder="7"
+                required>
+            </label>
+            <label class="person-data__item">
+              <span class="person-data__property">Возраст (лет):</span>
+              <input class="input person-data__value" type="text" pattern="[0-9]{1,2}" name="age" placeholder="7">
+            </label>
           </fieldset>
           <fieldset class="fieldset program-choice question-form__program-choice">
-            <legend>
-              <h2 class="visually-hidden">Выбор программы</h2>
-              <div class="program-choice__radio">
-                <input id="losing-weight" type="radio" name="program" value="losing-weight" checked>
-                <label for="losing-weight">похудение</label>
-              </div>
-              <div class="program-choice__radio">
-                <input id="weight-gain" type="radio" name="program" value="weight-gain">
-                <label for="weight-gain">Набор массы</label>
-              </div>
-              <div class="program-choice__radio">
-                <input id="need-advice" type="radio" name="program" value="need-advice">
-                <label for="need-advice">Не знаю (Нужен ваш совет)</label>
-              </div>
-            </legend>
+            <legend class="visually-hidden">Выбор программы></legend>
+            <div class="program-choice__radio">
+              <input id="losing-weight" type="radio" name="program" value="losing-weight" checked>
+              <label for="losing-weight">похудение</label>
+            </div>
+            <div class="program-choice__radio">
+              <input id="weight-gain" type="radio" name="program" value="weight-gain">
+              <label for="weight-gain">Набор массы</label>
+            </div>
+            <div class="program-choice__radio">
+              <input id="need-advice" type="radio" name="program" value="need-advice">
+              <label for="need-advice">Не знаю (Нужен ваш совет)</label>
+            </div>
           </fieldset>
         </div>
         <div class="question-form__subtitle-wrapper">
@@ -100,83 +96,78 @@
           </h2>
         </div>
         <fieldset class="fieldset owner-contacts question-form__owner-contacts">
-          <legend>
-            <div class="container">
-              <div class="owner-contacts__wrapper">
-                <div class="owner-contacts__item owner-contacts__content  owner-contacts__email">
-                  <span class="owner-contacts__property">E-mail:
-                    <sup class="question-form__req">*</sup>
-                  </span>
-                  <div class="owner-contacts__input-box owner-contacts__input-box-email">
-                    <input class="input owner-contacts__value" type="email" name="email"
-                      placeholder="kuklachev@gmail.com" required>
-                  </div>
+          <legend class="visually-hidden">Контактные данные (владельца кота)</legend>
+          <div class="container">
+            <div class="owner-contacts__wrapper">
+              <div class="owner-contacts__item owner-contacts__content  owner-contacts__email">
+                <span class="owner-contacts__property">E-mail:
+                  <sup class="question-form__req">*</sup>
+                </span>
+                <div class="owner-contacts__input-box owner-contacts__input-box-email">
+                  <input class="input owner-contacts__value" type="email" name="email" placeholder="kuklachev@gmail.com"
+                    required>
                 </div>
-                <div class="owner-contacts__item owner-contacts__content owner-contacts__tel">
-                  <span class="owner-contacts__property">Телефон:
-                    <sup class="question-form__req">*</sup>
-                  </span>
-                  <div class="owner-contacts__input-box owner-contacts__input-box-tel">
-                    <input class="input owner-contacts__value" type="tel" name="tel" placeholder="8 (960) 900-60-90"
-                      pattern="[0-9,+]{11,12}" required>
-                  </div>
+              </div>
+              <div class="owner-contacts__item owner-contacts__content owner-contacts__tel">
+                <span class="owner-contacts__property">Телефон:
+                  <sup class="question-form__req">*</sup>
+                </span>
+                <div class="owner-contacts__input-box owner-contacts__input-box-tel">
+                  <input class="input owner-contacts__value" type="tel" name="tel" placeholder="8 (960) 900-60-90"
+                    pattern="[0-9,+]{11,12}" required>
                 </div>
               </div>
             </div>
-          </legend>
+          </div>
         </fieldset>
         <div class="question-form__subtitle-wrapper">
           <h2 class="subtitle question-form__subtitle question-form__subtitle--comment">Комментарий</h2>
         </div>
         <fieldset class="fieldset comment question-form__comment">
-          <legend>
-            <div class="comment__value-wrapper">
-              <textarea class="input comment__value" name="comment"
-                placeholder="Расскажите обо всех повадках кота"></textarea>
-            </div>
-          </legend>
+          <legend class="visually-hidden">Комментарий</legend>
+          <div class="comment__value-wrapper">
+            <textarea class="input comment__value" name="comment"
+              placeholder="Расскажите обо всех повадках кота"></textarea>
+          </div>
         </fieldset>
         <div class="question-form__subtitle-wrapper">
           <h2 class="subtitle question-form__subtitle question-form__subtitle--add">Дополнительно</h2>
         </div>
         <fieldset class="fieldset add-info question-form__add-info">
-          <legend>
-            <div class="add-info__container">
-              <div class="add-info__item">
-                <input class="add-info__checkbox" type="checkbox" id="sweetener" name="add" checked="checked">
-                <label for="sweetener">
-                  <span class="add-info__icon"></span>
-                  сахарозаменитель</label>
-              </div>
-              <div class="add-info__item">
-                <input class="add-info__checkbox" type="checkbox" id="water" name="add">
-                <label for="water">
-                  <span class="add-info__icon"></span>
-                  питьевая вода</label>
-              </div>
-              <div class="add-info__item">
-                <input class="add-info__checkbox" type="checkbox" id="milk" name="add">
-                <label for="milk">
-                  <span class="add-info__icon"></span>
-                  молоко</label>
-              </div>
-              <div class="add-info__item">
-                <input class="add-info__checkbox" type="checkbox" id="vitamins" name="add">
-                <label for="vitamins">
-                  <span class="add-info__icon"></span>
-                  витамины</label>
-              </div>
+          <legend class="visually-hidden">Дополнительно</legend>
+          <div class="add-info__container">
+            <div class="add-info__item">
+              <input class="add-info__checkbox" type="checkbox" id="sweetener" name="add" checked="checked">
+              <label for="sweetener">
+                <span class="add-info__icon"></span>
+                сахарозаменитель</label>
             </div>
-      </div>
-      </legend>
-      <!-- <div class="container"> -->
+            <div class="add-info__item">
+              <input class="add-info__checkbox" type="checkbox" id="water" name="add">
+              <label for="water">
+                <span class="add-info__icon"></span>
+                питьевая вода</label>
+            </div>
+            <div class="add-info__item">
+              <input class="add-info__checkbox" type="checkbox" id="milk" name="add">
+              <label for="milk">
+                <span class="add-info__icon"></span>
+                молоко</label>
+            </div>
+            <div class="add-info__item">
+              <input class="add-info__checkbox" type="checkbox" id="vitamins" name="add">
+              <label for="vitamins">
+                <span class="add-info__icon"></span>
+                витамины</label>
+            </div>
+          </div>
         </fieldset>
         <div class="question-form__footer">
           <button class="button question-form__button" type="submit" title="отправить заявку">отправить заявку</button>
           <small class="question-form__note">
             <sup class="question-form__req">*</sup> — Обязательные поля</small>
         </div>
-      <!-- </div> -->
+      </div>
     </form>
   </main>
   <footer class="footer body__footer">
@@ -239,7 +230,7 @@
           <a class="link footer__academy-logo-text" href="https://htmlacademy.ru/" title="Перейти в HTML Academy">HTML
             Academy</a>
           <a class="link footer__academy-logo-image" href="https://htmlacademy.ru/" title="Перейти в HTML Academy"><svg
-              xmlns="http://www.w3.org/2000/svg" width="27" height="34" fill="#666666" viewBox="0 0 27 34">
+              xmlns="http://www.w3.org/2000/svg" width="27" height="34" fill="currentColor" viewBox="0 0 27 34">
               <path
                 d="M13.643.016 13.5 0 0 1.407v24.606L13.5 34 27 26.013V1.407L13.643.016Zm11.591 25L13.5 31.956 1.766 25.015V14.93l11.685 6.916.02 1.253-8.017-4.743-.011 1.225 8.046 4.809.02 1.286-8.045-4.758-.01 1.226L13.5 26.95l8.124-4.833V16.91l3.62-2.15-.01 10.256Zm0-11.564-3.22 1.88-1.482.875-7.065-4.187-.011 1.225 6.04 3.573-.053.031-.13.076-.86.492-4.986-2.948-.011 1.225 3.936 2.328-.933.61-.021.012-2.971-1.742-.011 1.225 1.947 1.135-1.988 1.186-11.618-6.872 11.638-6.958 11.8 6.834Zm0-1.225L13.44 5.31 1.766 12.22V2.99L13.5 1.764 25.234 2.99v9.237Z" />
             </svg>
