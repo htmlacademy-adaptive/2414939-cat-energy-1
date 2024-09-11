@@ -50,7 +50,7 @@
     </div>
     <form class="question-form main-form__question-form" action="https://echo.htmlacademy.ru" method="post">
       <div class="container container--form">
-        <h2 class="title question-form__title">Заполните анкету, и мы подберем программу питания для
+        <h2 class="question-form__title">Заполните анкету, и мы подберем программу питания для
           вашего кота</h2>
         <div class="question-form__header">
           <fieldset class="fieldset person-data question-form__person-data">
@@ -90,51 +90,46 @@
             </div>
           </fieldset>
         </div>
-        <div class="question-form__subtitle-wrapper">
-          <h2 class="subtitle question-form__subtitle question-form__subtitle--contacts">
-            Контактные данные<br> (владельца кота)
-          </h2>
-        </div>
+
         <fieldset class="fieldset owner-contacts question-form__owner-contacts">
-          <legend class="visually-hidden">Контактные данные (владельца кота)</legend>
-          <div class="container">
-            <div class="owner-contacts__wrapper">
-              <div class="owner-contacts__item owner-contacts__content  owner-contacts__email">
-                <span class="owner-contacts__property">E-mail:
-                  <sup class="question-form__req">*</sup>
-                </span>
-                <div class="owner-contacts__input-box owner-contacts__input-box-email">
-                  <input class="input owner-contacts__value" type="email" name="email" placeholder="kuklachev@gmail.com"
-                    required>
-                </div>
+          <legend class="subtitle question-form__subtitle question-form__subtitle-contacts">
+            <span class="question-form__subtitle-wrapper">Контактные данные (владельца кота)</span>
+          </legend>
+          <div class="owner-contacts__wrapper">
+            <div class="owner-contacts__item owner-contacts__content  owner-contacts__email">
+              <span class="owner-contacts__property">E-mail:
+                <sup class="question-form__req">*</sup>
+              </span>
+              <div class="owner-contacts__input-box owner-contacts__input-box-email">
+                <input class="input owner-contacts__value" type="email" name="email" placeholder="kuklachev@gmail.com"
+                  required>
               </div>
-              <div class="owner-contacts__item owner-contacts__content owner-contacts__tel">
-                <span class="owner-contacts__property">Телефон:
-                  <sup class="question-form__req">*</sup>
-                </span>
-                <div class="owner-contacts__input-box owner-contacts__input-box-tel">
-                  <input class="input owner-contacts__value" type="tel" name="tel" placeholder="8 (960) 900-60-90"
-                    pattern="[0-9,+]{11,12}" required>
-                </div>
+            </div>
+            <div class="owner-contacts__item owner-contacts__content owner-contacts__tel">
+              <span class="owner-contacts__property">Телефон:
+                <sup class="question-form__req">*</sup>
+              </span>
+              <div class="owner-contacts__input-box owner-contacts__input-box-tel">
+                <input class="input owner-contacts__value" type="tel" name="tel" placeholder="8 (960) 900-60-90"
+                  pattern="[0-9,+]{11,12}" required>
               </div>
             </div>
           </div>
         </fieldset>
-        <div class="question-form__subtitle-wrapper">
-          <h2 class="subtitle question-form__subtitle question-form__subtitle--comment">Комментарий</h2>
-        </div>
         <fieldset class="fieldset comment question-form__comment">
-          <legend class="visually-hidden">Комментарий</legend>
+          <legend class="subtitle question-form__subtitle question-form__subtitle-comment">
+            <span class="question-form__subtitle-wrapper">Комментарий</span>
+          </legend>
           <div class="comment__value-wrapper">
             <textarea class="input comment__value" name="comment"
               placeholder="Расскажите обо всех повадках кота"></textarea>
           </div>
         </fieldset>
-        <div class="question-form__subtitle-wrapper">
-          <h2 class="subtitle question-form__subtitle question-form__subtitle--add">Дополнительно</h2>
-        </div>
         <fieldset class="fieldset add-info question-form__add-info">
-          <legend class="visually-hidden">Дополнительно</legend>
+          <legend class="subtitle question-form__subtitle question-form__subtitle-add">
+            <span class="question-form__subtitle-wrapper">Дополнительно</span>
+          </legend>
+          <h2 class="visually-hidden">Дополнительно</h2>
           <div class="add-info__container">
             <div class="add-info__item">
               <input class="add-info__checkbox" type="checkbox" id="sweetener" name="add" checked="checked">
