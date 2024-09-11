@@ -5,6 +5,7 @@
   flex-direction: column;
   gap: 14px;
   margin-bottom: 24px;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 65px;

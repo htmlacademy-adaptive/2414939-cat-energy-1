@@ -4,6 +4,7 @@
 .question-form {
   font: $font-ss-hn-ff2;
   text-transform: uppercase;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     font: $font-sml-hnh-ff2;
@@ -51,9 +52,8 @@
     position: relative;
     font: $font-sl-hh-ff2;
     text-transform: none;
-    text-wrap: nowrap;
     padding-right: 20px;
-    background-color: $background-body;
+    isolation: isolate;
 
     @media (min-width: $tablet-width) {
       font: $font-sxxl-hxxh-ff2;
@@ -61,39 +61,45 @@
       position: relative;
       left: -40px;
     }
-
-    @media (min-width: $desktop-width) {
-      padding: 0 40px;
-    }
   }
 
   &__subtitle-wrapper {
-    display: flex;
-    margin-bottom: 34px;
-    align-items: center;
-    position: relative;
+    padding-right: 20px;
+    background-color: $background-body;
+    display: block;
 
     @media (min-width: $tablet-width) {
-      margin-bottom: 87px;
-    }
-
-    @media (min-width: $desktop-width) {
-      margin-bottom: 78px;
+      padding: 0 40px;
+      position: relative;
+      left: -40px;
+      text-wrap: nowrap;
     }
   }
 
-  &__subtitle-wrapper::before {
+  &__subtitle-contacts {
+    margin-bottom: 35px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 76px;
+    }
+  }
+
+  &__subtitle::after {
     content: "";
     position: absolute;
     width: 300px;
     height: 2px;
     background-color: $background-title-decor;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    z-index: -1;
 
     @media (min-width: $tablet-width) {
       content: "";
       position: absolute;
       width: 768px;
-      left: -70px;
+      left: -30px;
       top: 50%;
       transform: translateY(-50%);
     }
@@ -102,14 +108,13 @@
       content: "";
       position: absolute;
       width: 1440px;
-      left: -110px;
+      left: -70px;
     }
   }
 
   &__program-choice {
     display: flex;
     flex-direction: column;
-    gap: 24px;
     padding-bottom: 19px;
     margin-bottom: 26px;
     border-bottom: $border-block;
@@ -139,7 +144,27 @@
     }
   }
 
-  &__button {
+  &__subtitle-comment {
+    margin-bottom: 38px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 87px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 78px;
+    }
+  }
+
+&__subtitle-add {
+  margin-bottom: 34px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 87px;
+  }
+}
+
+&__button {
     margin-bottom: 21px;
 
     @media (min-width: $tablet-width) {

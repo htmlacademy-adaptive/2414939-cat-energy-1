@@ -15,7 +15,7 @@
 
   @media (min-width: $desktop-width) {
     border: none;
-    padding: 0;
+    padding: 0 110px;
   }
 
   &__title {
@@ -60,7 +60,6 @@
       justify-content: space-between;
       margin-bottom: 69px;
       gap: 100px;
-      padding: 0 84px;
     }
   }
 
@@ -68,6 +67,9 @@
     display: flex;
     gap: 20px;
     align-items: center;
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: center;
 
     @media (min-width: $tablet-width) {
       display: flex;
@@ -92,10 +94,7 @@
   @media (min-width: $tablet-width) {
     @for $i from 1 through 4{
       &__item:nth-child(3n + #{$i}) {
-        background: url("../img/#{$i}.png");
-        background-repeat: no-repeat;
-        background-position-x: right;
-        background-position-y: center;
+        background-image: url("../img/#{$i}.png");
       }
     }
   }

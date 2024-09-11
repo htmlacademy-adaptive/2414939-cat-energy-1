@@ -95,11 +95,11 @@
   color: $color-text-secondary-hover;
 }
 
-.title-decor {
-  width: 100%;
-  height: 2px;
-  background-color: $background-title-decor;
-}
+// .title-decor {
+//   width: 100%;
+//   height: 2px;
+//   background-color: $background-title-decor;
+// }
 
 .image {
   max-width: 100%;
@@ -167,6 +167,8 @@ picture {
   display: block;
 }
 
-.fieldset legend {
-  width: 100%;
+fieldset {
+  padding: 0;
+  margin: 0;
 }
+
