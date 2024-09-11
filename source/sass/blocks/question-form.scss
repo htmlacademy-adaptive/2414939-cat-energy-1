@@ -23,11 +23,13 @@
   }
 
   &__header {
+    font: $font-sms-hn-ff2;
+
     @media (min-width: $desktop-width) {
       display: flex;
       gap: 80px;
       margin-bottom: 70px;
-      align-items: center;
+      // align-items: center;
     }
   }
 
@@ -127,8 +129,8 @@
 
     @media (min-width: $desktop-width) {
       min-width: 570px;
-      justify-content: center;
       margin-bottom: 0;
+      justify-content: center;
     }
   }
 
