@@ -6,6 +6,12 @@
   background: linear-gradient(rgba(104, 183, 56, 0.85) 302px, rgba(255, 255, 255, 0.85) 302px),
     url("../img/entry-background.png") no-repeat;
 
+    @media (min-resolution: 2dppx) {
+      background: linear-gradient(rgba(104, 183, 56, 0.85) 302px, rgba(255, 255, 255, 0.85) 302px),
+    url("../img/entry-background@2x.png") no-repeat;
+    background-size: contain;
+    }
+
     @media (min-width: $tablet-width) {
       margin-bottom: 0;
       background: none;

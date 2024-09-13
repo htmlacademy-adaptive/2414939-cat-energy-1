@@ -19,8 +19,8 @@
           программу</a>
       </div>
       <div class="entry__image-wrapper">
-        <img class="entry__image" src="./img/index-background-desktop.png" height="694" width="720"
-          alt="Довольная рожа">
+        <img class="entry__image" src="./img/index-background-desktop.png"
+          srcset="./img/index-background-desktop@2x.png 2x" height="694" width="720" alt="Довольная рожа">
       </div>
     </section>
     <div class="container header__wrapper header__wrapper-index">
@@ -65,9 +65,10 @@
           <h1 class="title entry__title">Функциональное питание для котов</h1>
           <p class="text entry__tagline">Занялся собой? Займись котом!</p>
           <picture class="entry__image-wrapper">
-            <source media="(min-width: 1200px)" srcset="./img/index-can-desktop.png">
-            <source media="(min-width: 768px)" srcset="./img/index-can-tablet.png">
-            <img class="image entry__image" src="./img/index-can-mobile.png"
+            <source media="(min-width: 1200px)"
+              srcset="./img/index-can-desktop.png 1x, ./img/index-can-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="./img/index-can-tablet.png 1x, ./img/index-can-tablet@2x.png 2x">
+            <img class="image entry__image" src="./img/index-can-mobile.png" srcset="./img/index-can-mobile@2x.png 2x"
               alt="Банка кошачих консервов Cat Energy с курицей">
           </picture>
           <a class="button entry__button" href="form.html" title="Перейти страницу подбора программы">Подобрать
@@ -212,18 +213,16 @@
               <dd class="example__description">затрачено времени</dd>
             </div>
           </dl>
-          <div class="example__legend">
-            <span class="example__cost-title">Затраты на питание: </span>
-            <span class="example__cost-price">15 000 руб.</span>
-          </div>
+          <p class="example__legend">
+            <span>Затраты на питание:</span>
+            <span>15 000 РУБ.</span>
+          </p>
         </div>
-        <div class="slider example__slider">
+        <div class="example__slider">
           <picture>
-            <source media="(min-width: 1200px)" srcset="./img/cat-slider-tablet.png" width="520">
-            <source media="(min-width: 768px)" srcset="./img/cat-slider-tablet.png" width="520">
-            <img class="slider__item slider__item--before" src="./img/cat-slider-mobile.png" width="280" height="256"
-              alt="Толстый кот">
-          </picture>
+            <source media="(min-width: 768px)" srcset="./img/cat-slider-tablet.png">
+          <img class="example__slider-image" src="./img/cat-slider-mobile.png" alt="слайдер">
+        </picture>
         </div>
       </div>
     </section>

@@ -13,6 +13,12 @@
     background-image: url("../img/promo-image.png");
     background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/promo-image@2x.png");
+      background-size: cover;
+    }
 
     @media (min-width: $tablet-width) {
       width: 100%;
@@ -24,6 +30,11 @@
       padding: 57px 125px 69px 77px;
       justify-content: space-between;
       background-image: url("../img/promo-image-tablet.png");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/promo-image-tablet@2x.png");
+        background-size: contain;
+      }
     }
 
     @media (min-width: $desktop-width) {
@@ -33,6 +44,11 @@
       min-height: 288px;
       padding: 56px 42px 43px;
       background-image: url("../img/promo-image.png");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/promo-image@2x.png");
+        background-size: cover;
+      }
     }
   }
 
