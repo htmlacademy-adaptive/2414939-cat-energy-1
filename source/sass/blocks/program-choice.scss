@@ -15,28 +15,28 @@
   }
 
   &__radio input[type="radio"] {
-	  display: none;
+    display: none;
   }
 
   &__radio label {
-	  display: inline-block;
-	  cursor: pointer;
-	  position: relative;
-	  padding-left: 45px;
-	  margin-right: 0;
-	  line-height: 18px;
-	  user-select: none;
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    padding-left: 45px;
+    margin-right: 0;
+    line-height: 18px;
+    user-select: none;
   }
 
   &__radio label::before {
-	  content: "";
-	  display: block;
-	  width: 30px;
-	  height: 30px;
-	  position: absolute;
+    content: "";
+    display: block;
+    width: 30px;
+    height: 30px;
+    position: absolute;
     border-radius: 50%;
     border: $border-program-choice;
-	  left: 0;
+    left: 0;
     bottom: -6px;
   }
 
@@ -61,10 +61,10 @@
   }
 
   &__radio label:hover::before {
-	  border: 1px solid #bababa;
+    border: 1px solid #bababa;
   }
 
   &__radio input[type="radio"]:disabled + label {
-	  opacity: 0.3;
+    opacity: 0.3;
   }
 }

@@ -95,7 +95,7 @@
     text-align: center;
     background-color: $background-body;
 
-   @media (min-width: $desktop-width) {
+    @media (min-width: $desktop-width) {
       background: transparent;
       z-index: 2;
     }
@@ -115,37 +115,35 @@
 
 .header-navigation-opened .header-navigation__list {
   @media (max-width: $mobile-width-only) {
-   visibility: visible;
-   position: absolute;
-   top: 66px;
-   right: 0;
-   z-index: 10;
+    visibility: visible;
+    position: absolute;
+    top: 66px;
+    right: 0;
+    z-index: 10;
   }
 }
 
 .header-navigation-opened .header-navigation__toggle::before {
-    content: "";
-    position: absolute;
-    top: 50%;
-    transform:translateY(-50%);
-    left: 0;
-    width: 24px;
-    height: 2px;
-    background-color: #000000;
-    transform: rotate(45deg);
-    box-shadow: none;
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%) rotate(45deg);
+  left: 0;
+  width: 24px;
+  height: 2px;
+  background-color: #000000;
+  box-shadow: none;
 }
 
 .header-navigation-opened .header-navigation__toggle::after {
-    content: "";
-    position: absolute;
-    top: 50%;
-    transform:translateY(-50%);
-    left: 0px;
-    width: 24px;
-    height: 2px;
-    background-color: #000000;
-    transform: rotate(-45deg);
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%) rotate(-45deg);
+  left: 0;
+  width: 24px;
+  height: 2px;
+  background-color: #000000;
 }
 
 .header-navigation-nojs .header-navigation__toggle {

@@ -82,6 +82,30 @@
     }
   }
 
+  &__item:nth-child(1) {
+    @media (min-width: $tablet-width) {
+      background-image: url("../img/1.png");
+    }
+  }
+
+  &__item:nth-child(2) {
+    @media (min-width: $tablet-width) {
+      background-image: url("../img/2.png");
+    }
+  }
+
+  &__item:nth-child(3) {
+    @media (min-width: $tablet-width) {
+      background-image: url("../img/3.png");
+    }
+  }
+
+  &__item:nth-child(4) {
+    @media (min-width: $tablet-width) {
+      background-image: url("../img/4.png");
+    }
+  }
+
   &__text-wrapper {
     font: $font-ss-hn-ff1;
     color: $color-text-primary;
@@ -91,14 +115,11 @@
     }
   }
 
-  @media (min-width: $tablet-width) {
-    @for $i from 1 through 4{
-      &__item:nth-child(3n + #{$i}) {
-        background-image: url("../img/#{$i}.png");
-      }
-    }
-  }
+  // @media (min-width: $tablet-width) {
+  //   @for $i from 1 through 4 {
+  //     &__item:nth-child(3n + #{$i}) {
+  //       background-image: url("../img/#{$i}.png");
+  //     }
+  //   }
+  // }
 }
-
-
-
