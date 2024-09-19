@@ -99,20 +99,20 @@
           </legend>
           <div class="owner-contacts__wrapper">
             <div class="owner-contacts__item owner-contacts__content  owner-contacts__email">
-              <span class="owner-contacts__property">E-mail:
+              <label for="email" class="owner-contacts__property">E-mail:
                 <sup class="question-form__req">*</sup>
-              </span>
+              </label>
               <div class="owner-contacts__input-box owner-contacts__input-box-email">
-                <input class="input owner-contacts__value" type="email" name="email" placeholder="kuklachev@gmail.com"
+                <input class="input owner-contacts__value" type="email" name="email" id="email" placeholder="kuklachev@gmail.com"
                   required>
               </div>
             </div>
             <div class="owner-contacts__item owner-contacts__content owner-contacts__tel">
-              <span class="owner-contacts__property">Телефон:
+              <label for="tel" class="owner-contacts__property">Телефон:
                 <sup class="question-form__req">*</sup>
-              </span>
+              </label>
               <div class="owner-contacts__input-box owner-contacts__input-box-tel">
-                <input class="input owner-contacts__value" type="tel" name="tel" placeholder="8 (960) 900-60-90"
+                <input class="input owner-contacts__value" type="tel" name="tel" id="tel" placeholder="8 (960) 900-60-90"
                   pattern="[0-9,+]{11,12}" required>
               </div>
             </div>
@@ -123,7 +123,8 @@
             <span class="question-form__subtitle-wrapper">Комментарий</span>
           </legend>
           <div class="comment__value-wrapper">
-            <textarea class="input comment__value" name="comment"
+            <label for="comment" class="visually-hidden">Расскажите обо всех повадках кота</label>
+            <textarea class="input comment__value" name="comment" id="comment"
               placeholder="Расскажите обо всех повадках кота"></textarea>
           </div>
         </fieldset>
