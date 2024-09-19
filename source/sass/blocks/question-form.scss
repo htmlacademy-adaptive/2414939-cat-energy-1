@@ -1,18 +1,34 @@
 @import "variables.scss";
 
 .question-form {
-  font-family: $title-font;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 18px;
+  font: $font-ss-hn-ff2;
   text-transform: uppercase;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    font: $font-sml-hnh-ff2;
+  }
 
   &__title {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 18px;
+    font: $font-ss-hn-ff2;
     text-transform: uppercase;
     margin-bottom: 39px;
+
+    @media (min-width: $tablet-width) {
+      font: $font-sml-hxh-ff2;
+      max-width: 323px;
+      margin-bottom: 66px;
+    }
+  }
+
+  &__header {
+    font: $font-sms-hn-ff2;
+
+    @media (min-width: $desktop-width) {
+      display: flex;
+      gap: 80px;
+      margin-bottom: 70px;
+    }
   }
 
   &__person-data {
@@ -20,48 +36,161 @@
     flex-direction: column;
     gap: 14px;
     margin-bottom: 22px;
+
+    @media (min-width: $tablet-width) {
+      gap: 20px;
+      margin-bottom: 71px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 100%;
+      margin-bottom: 0;
+    }
   }
 
   &__subtitle {
     position: relative;
-    font-family: $title-font;
-    font-size: 24px;
-    line-height: 26px;
+    font: $font-sl-hh-ff2;
     text-transform: none;
-    width: 100%;
-    text-wrap: nowrap;
+    padding-right: 20px;
+    isolation: isolate;
+
+    @media (min-width: $tablet-width) {
+      font: $font-sxxl-hxxh-ff2;
+      padding: 0 40px;
+      position: relative;
+      left: -40px;
+    }
   }
 
   &__subtitle-wrapper {
-    display: flex;
-    gap: 20px;
-    margin-bottom: 34px;
-    align-items: center;
+    padding-right: 20px;
+    background-color: $background-body;
+    display: block;
+
+    @media (min-width: $tablet-width) {
+      padding: 0 40px;
+      position: relative;
+      left: -40px;
+      text-wrap: nowrap;
+    }
+  }
+
+  &__subtitle-contacts {
+    margin-bottom: 35px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 76px;
+    }
+  }
+
+  &__subtitle::after {
+    content: "";
+    position: absolute;
+    width: 300px;
+    height: 2px;
+    background-color: $background-title-decor;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    z-index: -1;
+
+    @media (min-width: $tablet-width) {
+      content: "";
+      position: absolute;
+      width: 768px;
+      left: -30px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    @media (min-width: $desktop-width) {
+      content: "";
+      position: absolute;
+      width: 1440px;
+      left: -70px;
+    }
   }
 
   &__program-choice {
     display: flex;
     flex-direction: column;
-    gap: 24px;
     padding-bottom: 19px;
     margin-bottom: 26px;
     border-bottom: $border-block;
+
+    @media (min-width: $tablet-width) {
+      border: $border-block;
+      padding: 27px;
+      margin-bottom: 65px;
+    }
+
+    @media (min-width: $desktop-width) {
+      min-width: 570px;
+      margin-bottom: 0;
+      justify-content: center;
+    }
   }
 
   &__comment {
     margin-bottom: 23px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 65px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 70px;
+    }
+  }
+
+  &__subtitle-comment {
+    margin-bottom: 38px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 87px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 78px;
+    }
+  }
+
+  &__subtitle-add {
+    margin-bottom: 34px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 87px;
+    }
   }
 
   &__button {
     margin-bottom: 21px;
+
+    @media (min-width: $tablet-width) {
+      margin: 0;
+      width: 284px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 570px;
+    }
   }
 
   &__note {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: $content-font;
+    font-family: $ff1;
     text-transform: none;
     text-align: center;
+  }
+
+  &__footer {
+    @media (min-width: $tablet-width) {
+      display: flex;
+      align-items: baseline;
+      gap: 60px;
+    }
   }
 }

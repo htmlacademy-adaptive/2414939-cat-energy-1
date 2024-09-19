@@ -6,7 +6,6 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  background: transparent;
   border: none;
   outline-offset: -1px;
 }
@@ -25,19 +24,24 @@
 }
 
 .subtitle {
-  font-family: $title-font;
-  font-size: 16px;
-  line-height: 16px;
+  font: $font-sms-hnl-ff2;
   text-transform: uppercase;
   color: $color-text-special;
+
+  @media (min-width: $tablet-width) {
+    font: $font-sml-hnh-ff2;
+  }
 }
 
 .title {
-  font-family: $title-font;
-  font-size: 36px;
-  line-height: 40px;
+  font: $font-sxxl-hg-ff2;
   color: $color-text-special;
 
+  @media (min-width: $tablet-width) {
+    font: $font-s3xl-h3xh-ff2;
+    text-align: left;
+    margin-top: 0;
+  }
 }
 
 .list {
@@ -50,32 +54,105 @@
 }
 
 .body {
-  background-color: $background-body;
-  font-family: "Lato";
+  background-color: $background-body-1;
+  font-family: $ff1;
   width: 320px;
   padding: 0;
   margin: 0 auto;
+  font-weight: normal;
+
+  @media (min-width: $tablet-width) {
+    min-width: 768px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 1440px;
+    position: relative;
+  }
 }
 
 .button {
   background-color: $background-button;
   color: $color-text-secondary;
-  font-family: $title-font;
-  font-size: 16px;
-  line-height: 20px;
+  font: $font-sms-hnh-ff2;
   text-align: center;
   margin: 0 auto;
   text-decoration: none;
   display: block;
   text-transform: uppercase;
-  width: $block-width;
+  width: 100%;
   min-height: 40px;
   padding: 10px 10px;
   cursor: pointer;
 }
 
-.title-decor {
+.button:hover {
+  background-color: $background-button-hover;
+}
+
+.button:active {
+  color: $color-text-secondary-hover;
+}
+
+.image {
+  max-width: 100%;
+  height: auto;
+}
+
+.price::after {
+  content: " \20BD";
+}
+
+input:user-invalid {
+  border: $border-input-invalid;
+}
+
+input:focus {
+  border: $border-input-focus;
+  border-radius: 0;
+}
+
+.social-button svg:hover,
+.footer__academy-logo-image:hover svg {
+  fill: #68b738;
+}
+
+.social-button svg:focus,
+.footer__academy-logo-image:focus svg {
+  fill: #68b738;
+}
+
+.social-button svg:active,
+.footer__academy-logo-image:active svg {
+  opacity: 0.3;
+}
+
+.map-responsive {
+  overflow: hidden;
+  padding-bottom: 362px;
+  position: relative;
+  height: 0;
+}
+
+.map-responsive iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
   width: 100%;
-  height: 2px;
-  background-color: $background-title-decor;
+  position: absolute;
+  border: none;
+  display: block;
+}
+
+.header-navigation--nojs .header-navigation__toggle {
+  display: none;
+}
+
+.header-navigation--nojs .header-navigation__list {
+  position: static;
+  min-height: 0;
+}
+
+.header-navigation--nojs .header-navigation__item {
+  display: block;
 }

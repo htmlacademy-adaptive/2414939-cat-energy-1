@@ -3,10 +3,25 @@
 .main-form {
   width: $block-width;
   margin: 0 auto;
-  margin-bottom: 32px;
+  padding: 27px 20px 32px;
+  background-color: $background-body;
 
- &__form-title {
-  padding-top: 27px;
-  margin-bottom: 37px;
- }
+  @media (min-width: $tablet-width) {
+    min-width: 768px;
+    padding: 0 70px 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 1440px;
+    padding: 0 110px 79px;
+  }
+
+  &__title {
+    margin-bottom: 37px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 54px;
+      padding: 0;
+    }
+  }
 }

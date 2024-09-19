@@ -5,6 +5,15 @@
   flex-direction: column;
   gap: 14px;
   margin-bottom: 24px;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 65px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 70px;
+  }
 
   &__item {
     display: flex;
@@ -12,6 +21,9 @@
     gap: 13px;
     position: relative;
 
+    @media (min-width: $desktop-width) {
+      width: 100%;
+    }
   }
 
   &__property {
@@ -21,24 +33,30 @@
 
   &__value {
     width: 100%;
-    font-family: $title-font;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 16px;
+    font: $font-ss-hnl-ff2;
     text-transform: uppercase;
+    padding: 14px 45px 14px 13px;
+    border: 1px solid #cdcdcd;
+
+    @media (min-width: $tablet-width) {
+      font: $font-sml-hxh-ff2;
+    }
   }
 
   &__wrapper {
     display: flex;
     flex-direction: column;
     gap: 14px;
+
+    @media (min-width: $desktop-width) {
+      flex-direction: row;
+      gap: 81px;
+    }
   }
 
   &__input-box {
     position: relative;
     width: 100%;
-    padding: 14px 45px 14px 13px;
-    border: $border-owner-contacts;
   }
 
   &__input-box-email::after {

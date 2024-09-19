@@ -3,6 +3,12 @@
 .add-info {
   &__item {
     display: flex;
+    position: relative;
+    align-items: center;
+  }
+
+  &__item:disabled {
+    opacity: 0.3;
   }
 
   &__container {
@@ -10,6 +16,22 @@
     flex-direction: column;
     gap: 31px;
     margin-bottom: 34px;
+
+    @media (min-width: $tablet-width) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      row-gap: 32px;
+      column-gap: 123px;
+      margin-bottom: 52px;
+    }
+
+    @media (min-width: $desktop-width) {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      text-wrap: nowrap;
+    }
   }
 
   &__checkbox {
@@ -20,12 +42,15 @@
 
   &__checkbox + label {
     position: relative;
-    padding-left: 55px;
+    padding-left: 40px;
     cursor: pointer;
+
+    @media (min-width: $tablet-width) {
+      padding-left: 60px;
+    }
   }
 
-  &__checkbox + label:before {
-    content: "";
+  &__icon {
     position: absolute;
     left: 0;
     top: -2px;
@@ -34,29 +59,31 @@
     border: $border-checkbox;
   }
 
-  &__checkbox + label:after {
+  &__checkbox + label span:hover {
+    border: $border-program-choice-hover;
+  }
+
+  &__checkbox + label::after {
     content: "";
     position: absolute;
     width: 18px;
     height: 14px;
     top: 7px;
     left: 6px;
-    background-image: url("../img/check.svg");
-    background-repeat: no-repeat;
-    background-position: center;
+    background: url("../img/check.svg") no-repeat center;
     background-size: 100%;
   }
 
-  &__checkbox:not(:checked) + label:after {
+  &__checkbox:not(:checked) + label::after {
     opacity: 0;
   }
 
-  &__checkbox:checked + label:after {
+  &__checkbox:checked + label::after {
     opacity: 1;
   }
 
-  &__checkbox:disabled + label:before,
-  &__checkbox:disabled + label:after,
+  &__checkbox:disabled + label::before,
+  &__checkbox:disabled + label::after,
   &__checkbox:disabled + label {
     opacity: 0.3;
   }
