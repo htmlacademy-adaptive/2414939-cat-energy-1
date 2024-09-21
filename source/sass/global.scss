@@ -1,4 +1,3 @@
-
 @import "variables.scss";
 
 *,
@@ -38,10 +37,10 @@
   font: $font-sxxl-hg-ff2;
   color: $color-text-special;
 
-  @media  (min-width: $tablet-width) {
-  font: $font-s3xl-h3xh-ff2;
-  text-align: left;
-  margin-top: 0;
+  @media (min-width: $tablet-width) {
+    font: $font-s3xl-h3xh-ff2;
+    text-align: left;
+    margin-top: 0;
   }
 }
 
@@ -95,19 +94,13 @@
   color: $color-text-secondary-hover;
 }
 
-// .title-decor {
-//   width: 100%;
-//   height: 2px;
-//   background-color: $background-title-decor;
-// }
-
 .image {
   max-width: 100%;
   height: auto;
 }
 
 .price::after {
-	content: " \20BD";
+  content: " \20BD";
 }
 
 input:user-invalid {
@@ -121,12 +114,12 @@ input:focus {
 
 .social-button svg:hover,
 .footer__academy-logo-image:hover svg {
-  fill: #68B738;
+  fill: #68b738;
 }
 
 .social-button svg:focus,
 .footer__academy-logo-image:focus svg {
-  fill: #68B738;
+  fill: #68b738;
 }
 
 .social-button svg:active,
@@ -134,13 +127,14 @@ input:focus {
   opacity: 0.3;
 }
 
-.map-responsive{
+.map-responsive {
   overflow: hidden;
   padding-bottom: 362px;
   position: relative;
   height: 0;
 }
-.map-responsive iframe{
+
+.map-responsive iframe {
   left: 0;
   top: 0;
   height: 100%;
@@ -162,8 +156,3 @@ input:focus {
 .header-navigation--nojs .header-navigation__item {
   display: block;
 }
-
-picture {
-  display: block;
-}
-
