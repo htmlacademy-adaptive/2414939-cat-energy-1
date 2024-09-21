@@ -118,50 +118,10 @@
     padding-bottom: 19px;
     margin-bottom: 26px;
     border-bottom: $border-block;
-
-    @media (min-width: $tablet-width) {
-      border: $border-block;
-      padding: 27px;
-      margin-bottom: 65px;
-    }
-
-    @media (min-width: $desktop-width) {
-      min-width: 570px;
-      margin-bottom: 0;
-      justify-content: center;
-    }
   }
 
   &__comment {
     margin-bottom: 23px;
-
-    @media (min-width: $tablet-width) {
-      margin-bottom: 65px;
-    }
-
-    @media (min-width: $desktop-width) {
-      margin-bottom: 70px;
-    }
-  }
-
-  &__subtitle-comment {
-    margin-bottom: 38px;
-
-    @media (min-width: $tablet-width) {
-      margin-bottom: 87px;
-    }
-
-    @media (min-width: $desktop-width) {
-      margin-bottom: 78px;
-    }
-  }
-
-  &__subtitle-add {
-    margin-bottom: 34px;
-
-    @media (min-width: $tablet-width) {
-      margin-bottom: 87px;
-    }
   }
 
   &__button {
