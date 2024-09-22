@@ -3,6 +3,10 @@
 .footer {
   background-color: $background-footer;
 
+  &__address {
+    position: relative;
+  }
+
   &__academy-logo-text {
     font: $font-sms-hnh-ff1;
     color: $color-text-primary;
