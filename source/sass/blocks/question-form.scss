@@ -67,8 +67,6 @@
     padding-right: 20px;
     background-color: $background-body;
     display: block;
-    margin-bottom: 87px;
-
 
     @media (min-width: $tablet-width) {
       padding: 0 40px;
@@ -120,6 +118,22 @@
     padding-bottom: 19px;
     margin-bottom: 26px;
     border-bottom: $border-block;
+
+    @media (min-width: 768px) {
+      .question-form__program-choice {
+        border: 1px solid #d9d9d9;
+        padding: 27px;
+        margin-bottom: 65px;
+      }
+    }
+
+    @media (min-width: 1200px) {
+      .question-form__program-choice {
+        min-width: 570px;
+        margin-bottom: 0;
+        justify-content: center;
+      }
+    }
   }
 
   &__comment {
