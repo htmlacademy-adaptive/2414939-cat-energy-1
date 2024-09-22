@@ -143,6 +143,18 @@
   &__button {
     margin-bottom: 21px;
 
+    @media (min-width: 768px) {
+      .question-form__comment {
+        margin-bottom: 65px;
+      }
+    }
+
+    @media (min-width: 1200px) {
+      .question-form__comment {
+        margin-bottom: 70px;
+      }
+    }
+
     @media (min-width: $tablet-width) {
       margin: 0;
       width: 284px;
