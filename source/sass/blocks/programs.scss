@@ -5,23 +5,22 @@
   flex-direction: column;
   gap: 20px;
   align-items: center;
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 71px;
+  }
 
   &__subtitle-wrapper {
     display: flex;
     gap: 20px;
     align-items: center;
     margin-bottom: 18px;
-
-    @media (min-width: $tablet-width) {
-     font-size: 36px;
-     line-height: 36px;
-    }
   }
 
   &__subtitle {
     @media (min-width: $tablet-width) {
-     font-size: 36px;
-     line-height: 36px;
+      font: $font-sxxl-hxxh-ff2;
     }
   }
 
@@ -29,7 +28,6 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
-    margin-bottom: 20px;
     padding-left: 20px;
     padding-right: 20px;
 
@@ -40,15 +38,12 @@
     @media (min-width: $desktop-width) {
       flex-direction: row;
       justify-content: space-between;
-      margin-bottom: 71px;
     }
   }
 
   &__item {
     background-color: $background-block;
     padding: 20px;
-    width: $block-width;
-    z-index: -1;
 
     @media (min-width: $tablet-width) {
       width: 708px;
@@ -57,26 +52,21 @@
   }
 
   &__text-wrapper {
-    font-family: $content-font;
-    font-size: 14px;
-    line-height: 18px;
+    font: $font-ss-hn-ff1;
     color: $color-text-primary;
     padding-bottom: 23px;
     border-bottom: $border-block;
     margin-bottom: 15px;
 
     @media (min-width: $tablet-width) {
-      font-size: 16px;
-      line-height: 24px;
+      font: $font-sms-hh-ff1;
       max-width: 340px;
       border: none;
     }
   }
 
   &__link {
-    font-family: $title-font;
-    font-size: 16px;
-    line-height: 16px;
+    font: $font-sms-hnl-ff2;
     text-transform: uppercase;
     position: relative;
     display: flex;
@@ -84,23 +74,36 @@
     align-items: center;
 
     @media (min-width: $tablet-width) {
-      font-size: 20px;
-      line-height: 30px;
+      font: $font-sml-hxh-ff2;
       gap: 25px;
     }
   }
 
-  &__link::after {
+  &__link-icon {
     content: "";
-    display: inline-block;
     width: 32px;
     height: 12px;
-    background-image: url("../img/programs-arrow.svg");
+    background-image: url("../img/icon-arrow.png");
     background-repeat: no-repeat;
   }
 
   &__link-wrapper {
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    cursor: pointer;
+
+    @media (min-width: $tablet-width) {
+      gap: 25px;
+    }
+  }
+
+  &__link-wrapper:hover span {
+    background-image: url("../img/icon_arrow-full.png");
+  }
+
+  &__link-wrapper:active {
+    opacity: 0.3;
   }
 
   &__image-wrapper {
@@ -127,13 +130,13 @@
 
   &__item-wrapper {
     position: relative;
-   }
+  }
 
   &__icon-wrapper {
     display: none;
 
-    @media  (min-width: $tablet-width) {
-      display: flex;
+    @media (min-width: $tablet-width) {
+      display: block;
       width: 200px;
       height: 200px;
       border-radius: 50%;
@@ -142,12 +145,52 @@
       top: 50%;
       transform: translateY(-50%);
       right: 10px;
-      align-items: center;
-      justify-content: center;
     }
 
     @media (min-width: $desktop-width) {
       display: none;
+    }
+  }
+
+  &__icon {
+    position: relative;
+  }
+
+  &__icon-slim {
+    @media (min-width: $tablet-width) {
+      object-fit: cover;
+      width: 140px;
+      position: relative;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 70px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  &__icon-pro {
+    @media (min-width: $tablet-width) {
+      object-fit: cover;
+      width: 268px;
+      position: relative;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 134px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
     }
   }
 }

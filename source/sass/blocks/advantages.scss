@@ -8,14 +8,14 @@
 
   @media (min-width: $tablet-width) {
     align-items: flex-start;
-    border-bottom: 1px solid #E6E6E6;
+    border-bottom: 1px solid #e6e6e6;
     padding: 0 30px;
     margin-bottom: 47px;
   }
 
   @media (min-width: $desktop-width) {
     border: none;
-    padding: 0;
+    padding: 0 110px;
   }
 
   &__title {
@@ -60,7 +60,6 @@
       justify-content: space-between;
       margin-bottom: 69px;
       gap: 100px;
-      padding: 0 84px;
     }
   }
 
@@ -68,6 +67,9 @@
     display: flex;
     gap: 20px;
     align-items: center;
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: center;
 
     @media (min-width: $tablet-width) {
       display: flex;
@@ -80,46 +82,44 @@
     }
   }
 
+  &__item:nth-child(1) {
+    @media (min-width: $tablet-width) {
+      background-image: url("../img/1.png");
+    }
+  }
+
+  &__item:nth-child(2) {
+    @media (min-width: $tablet-width) {
+      background-image: url("../img/2.png");
+    }
+  }
+
+  &__item:nth-child(3) {
+    @media (min-width: $tablet-width) {
+      background-image: url("../img/3.png");
+    }
+  }
+
+  &__item:nth-child(4) {
+    @media (min-width: $tablet-width) {
+      background-image: url("../img/4.png");
+    }
+  }
+
   &__text-wrapper {
-    font-family: $content-font;
-    font-size: 14px;
-    line-height: 18px;
+    font: $font-ss-hn-ff1;
     color: $color-text-primary;
 
     @media (min-width: $tablet-width) {
-      font-size: 16px;
-      line-height: 24px;
+      font: $font-sms-hh-ff1;
     }
   }
 
-  &__item-1 {
-    @media (min-width: $tablet-width) {
-      background-image: url("/img/1.png");
-    }
-  }
-
-  &__item-2 {
-    @media (min-width: $tablet-width) {
-      background-image: url("/img/2.png");
-    }
-  }
-
-  &__item-3 {
-    @media (min-width: $tablet-width) {
-      background-image: url("/img/3.png");
-    }
-  }
-
-  &__item-4 {
-    @media (min-width: $tablet-width) {
-      background-image: url("/img/4.png");
-    }
-  }
-
-  @for $i from 1 through 4 {
-    &__item-#{$i} {
-      background-repeat: no-repeat;
-      background-position: 126px 40px;
-     }
-  }
+  // @media (min-width: $tablet-width) {
+  //   @for $i from 1 through 4 {
+  //     &__item:nth-child(3n + #{$i}) {
+  //       background-image: url("../img/#{$i}.png");
+  //     }
+  //   }
+  // }
 }

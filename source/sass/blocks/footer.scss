@@ -1,13 +1,14 @@
 @import "variables.scss";
 
 .footer {
-      background-color: $background-footer;
-      position: relative;
+  background-color: $background-footer;
+
+  &__address {
+    position: relative;
+  }
 
   &__academy-logo-text {
-    font-family: $content-font;
-    font-size: 16px;
-    line-height: 20px;
+    font: $font-sms-hnh-ff1;
     color: $color-text-primary;
   }
 
@@ -38,28 +39,23 @@
   }
 
   &__address-subtitle {
-    font-size: 16px;
-    line-height: 20px;
+    font: $font-sms-hnh-ff2;
     max-width: 140px;
     color: $color-subtitle-special;
 
     @media (min-width: $tablet-width) {
-      font-size: 20px;
-      line-height: 26px;
+      font: $font-ss-hnh-ff2;
       max-width: 160px;
     }
   }
 
   &__address-text {
-    font-family: $content-font;
-    font-size: 14px;
-    line-height: 20px;
+    font: $font-ss-hnh-ff1;
     color: $color-text-primary;
-    font-style: normal;
     max-width: 140px;
 
     @media (min-width: $tablet-width) {
-      font-size: 16px;
+      font: $font-sms-hnh-ff1;
       max-width: 160px;
       text-align: right;
     }

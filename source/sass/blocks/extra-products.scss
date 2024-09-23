@@ -1,27 +1,21 @@
 @import "variables.scss";
 
 .extra-products {
-  margin-bottom: 35px;
   position: relative;
 
-  @media (min-width: $desktop-width) {
-    margin-bottom: 91px;
-  }
-
   &__title {
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 24px;
+    font: $font-sl-hh-ff2;
     color: $color-text-special;
     text-wrap: nowrap;
     padding-right: 20px;
     background-color: $background-body;
+    z-index: 1;
 
     @media (min-width: $tablet-width) {
-      font-size: 36px;
-      line-height: 36px;
+      font: $font-sxxl-hxxh-ff2;
       padding-left: 40px;
       padding-right: 40px;
+      margin-bottom: 0;
     }
   }
 
@@ -74,8 +68,7 @@
     justify-content: space-between;
 
     @media (min-width: $tablet-width) {
-      font-size: 16px;
-      line-height: 20px;
+      font: $font-sms-hnh-ff1;
       align-items: center;
       gap: 55px;
     }
@@ -92,6 +85,7 @@
 
     @media (min-width: $tablet-width) {
       border: none;
+      margin-bottom: 70px;
     }
 
     @media (min-width: $desktop-width) {
@@ -122,10 +116,9 @@
   &__title-wrapper::before {
     content: "";
     position: absolute;
-    width: 320px;
+    width: 280px;
     height: 2px;
     background-color: $background-title-decor;
-    z-index: -1;
 
     @media (min-width: $tablet-width) {
       content: "";
@@ -146,6 +139,10 @@
 
   &__promo {
     position: relative;
+
+    @media (min-width: $tablet-width) {
+      padding-bottom: 75px;
+    }
   }
 
   &__link {
@@ -163,6 +160,7 @@
       display: flex;
       gap: 80px;
       justify-content: space-between;
+      align-items: flex-start;
     }
   }
 }

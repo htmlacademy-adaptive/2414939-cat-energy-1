@@ -5,6 +5,7 @@
   margin: 0 auto;
   border-top: $border-block;
   padding: 27px 20px;
+  background-color: $background-body;
 
   @media (min-width: $tablet-width) {
     min-width: 768px;
@@ -14,15 +15,15 @@
 
   @media (min-width: $desktop-width) {
     min-width: 1440px;
-    padding: 0 110px;
+    padding: 0 110px 87px;
     margin: 0;
   }
 
   &__catalog-title {
-   margin-bottom: 41px;
+    margin-bottom: 41px;
 
-   @media (min-width: $desktop-width) {
-    margin-bottom: 84px;
-   }
+    @media (min-width: $desktop-width) {
+      margin-bottom: 84px;
+    }
   }
 }

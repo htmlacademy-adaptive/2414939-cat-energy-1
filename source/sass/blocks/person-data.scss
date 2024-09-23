@@ -10,24 +10,34 @@
   }
 
   &__value {
-    padding: 14px 15px;
+    padding: 14px 15px 13px;
     border: $border-person-data;
     width: 100%;
+    font: $font-sms-hn-ff2;
 
     @media (min-width: $tablet-width) {
-      font-size: 20px;
-      font-family: $title-font;
+      font: $font-sml-hxh-ff2;
       color: $color-text-primary;
+      padding: 11px 20px;
     }
+  }
+
+  &__value:hover {
+    border: $border-owner-contacts;
   }
 
   &__item {
     display: flex;
     align-items: center;
     gap: 13px;
+    font: $font-sms-hn-ff2;
+
+    @media (min-width: $tablet-width) {
+      font: $font-sml-hxh-ff2;
+    }
   }
 
   &__property {
     text-wrap: nowrap;
   }
- }
+}
