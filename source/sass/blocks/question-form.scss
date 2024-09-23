@@ -140,40 +140,32 @@
     border-bottom: $border-block;
 
     @media (min-width: 768px) {
-      .question-form__program-choice {
         border: 1px solid #d9d9d9;
         padding: 27px;
         margin-bottom: 65px;
-      }
     }
 
     @media (min-width: 1200px) {
-      .question-form__program-choice {
         min-width: 570px;
         margin-bottom: 0;
         justify-content: center;
-      }
     }
   }
 
   &__comment {
     margin-bottom: 23px;
+
+    @media (min-width: 768px) {
+      margin-bottom: 65px;
+    }
+
+    @media (min-width: 1200px) {
+        margin-bottom: 70px;
+    }
   }
 
   &__button {
     margin-bottom: 21px;
-
-    @media (min-width: 768px) {
-      .question-form__comment {
-        margin-bottom: 65px;
-      }
-    }
-
-    @media (min-width: 1200px) {
-      .question-form__comment {
-        margin-bottom: 70px;
-      }
-    }
 
     @media (min-width: $tablet-width) {
       margin: 0;
