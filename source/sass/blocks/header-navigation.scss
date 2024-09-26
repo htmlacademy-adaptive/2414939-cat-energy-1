@@ -21,7 +21,7 @@
     width: 24px;
     height: 24px;
     cursor: pointer;
-    background-color: #ffffff;
+    background-color: $background-body;
 
     @media (min-width: $tablet-width) {
       display: none;

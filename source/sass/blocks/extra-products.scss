@@ -4,7 +4,7 @@
   position: relative;
 
   &__title {
-    font: $font-sl-hh-ff2;
+    font: $font-s_l-h_h-ff2;
     color: $color-text-special;
     text-wrap: nowrap;
     padding-right: 20px;
@@ -12,7 +12,7 @@
     z-index: 1;
 
     @media (min-width: $tablet-width) {
-      font: $font-sxxl-hxxh-ff2;
+      font: $font-s_xxl-h_xxh-ff2;
       padding-left: 40px;
       padding-right: 40px;
       margin-bottom: 0;
