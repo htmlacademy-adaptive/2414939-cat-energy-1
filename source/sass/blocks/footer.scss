@@ -9,6 +9,10 @@
     color: $color-text-primary;
   }
 
+  &__academy-logo-image:hover {
+    fill: $background-button;
+  }
+
   &__address-wrapper {
     display: flex;
     padding: 26px 20px;

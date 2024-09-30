@@ -59,27 +59,21 @@
     width: 100%;
   }
 
-  &__input-box-email::after {
-    content: "";
+  &__email-icon {
     position: absolute;
     width: 20px;
     height: 20px;
-    background-image: url("../img/email-owner.svg");
     right: 13px;
     top: 50%;
     transform: translateY(-50%);
-    background-repeat: no-repeat;
   }
 
-  &__input-box-tel::before {
-    content: "";
+  &__tel-icon {
     position: absolute;
     width: 20px;
     height: 20px;
-    background-image: url("../img/tel-owner.svg");
     right: 13px;
     top: 50%;
     transform: translateY(-50%);
-    background-repeat: no-repeat;
   }
 }

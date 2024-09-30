@@ -131,6 +131,10 @@
     @media (min-width: $tablet-width) {
       margin-bottom: 50px;
     }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 40px;
+    }
   }
 
   &__subtitle--all {
