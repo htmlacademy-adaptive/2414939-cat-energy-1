@@ -13,53 +13,51 @@
 </head>
 
 <body class="body page__body">
-<header class="header body-header">
-  <div class="container header__wrapper">
-    <div class="logo__image-wrapper">
-      <a class="link logo-link header__logo " href="index.html" title="Перейти на главную страницу">
-        <svg class="icon logo__image" width="33" viewBox="0 0 33 38">
-          <use xlink:href="sprite.svg#logo-img-mobile"></use>
-        </svg>
-      </a>
+  <header class="header body-header">
+    <div class="container header__wrapper">
+      <div class="logo__image-wrapper">
+        <a class="link logo-link header__logo " href="index.html" title="Перейти на главную страницу">
+          <img class="image logo__image" src="./img/logo-img-mobile.svg" width="33" height="38"
+            alt="Логотип Cat Energy">
+        </a>
+      </div>
+      <div class="logo__text-wrapper">
+        <a class="link logo-link header__logo" href="index.html" title="Перейти на главную страницу">
+          <img class="logo__text" src="./img/logo-text-mobile.svg" width="101" height="18" alt="Надпись Cat Energy">
+        </a>
+      </div>
+      <div class="header-navigation__wrapper">
+        <nav class="header-navigation navigation header-navigation-closed header-navigation-nojs">
+          <button class="header-navigation__toggle" type="button"><span></span></button>
+          <ul class="list header-navigation__list" id="header-navigation__list">
+            <li class="header-navigation__item">
+              <a class="link header-navigation__link" href="index.html" title="Перейти на главную страницу">Главная</a>
+            </li>
+            <li class="header-navigation__item">
+              <a class="link header-navigation__link" href="catalog.html" title="Перейти в каталог">Каталог
+                продукции</a>
+            </li>
+            <li class="header-navigation__item">
+              <a class="link header-navigation__link header-navigation__link--active" href="#"
+                title="Перейти страницу подбора программы">Подбор программы</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </div>
-    <div class="logo__text-wrapper">
-      <a class="link logo-link header__logo" href="index.html" title="Перейти на главную страницу">
-        <svg class="icon logo__text" width="101" viewBox="0 0 101 18">
-          <use xlink:href="sprite.svg#logo-text-mobile"></use>
-        </svg>
-      </a>
+  </header>
+  <main class="main-form body__main body__main--form">
+    <div class="main-form__title-wrapper">
+      <h1 class="title main-form__title">Подбор программы</h1>
     </div>
-    <div class="header-navigation__wrapper">
-      <nav class="header-navigation navigation header-navigation-closed header-navigation-nojs">
-        <button class="header-navigation__toggle" type="button"><span></span></button>
-        <ul class="list header-navigation__list" id="header-navigation__list">
-          <li class="header-navigation__item">
-            <a class="link header-navigation__link" href="index.html" title="Перейти на главную страницу">Главная</a>
-          </li>
-          <li class="header-navigation__item">
-            <a class="link header-navigation__link" href="catalog.html" title="Перейти в каталог">Каталог
-              продукции</a>
-          </li>
-          <li class="header-navigation__item">
-            <a class="link header-navigation__link header-navigation__link--active" href="#"  title="Перейти страницу подбора программы">Подбор программы</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-  </div>
-</header>
-<main class="main-form body__main body__main--form">
-  <div class="main-form__title-wrapper">
-    <h1 class="title main-form__title">Подбор программы</h1>
-  </div>
-  <form class="question-form main-form__question-form" action="https://echo.htmlacademy.ru" method="post">
-    <div class="container container--form">
-      <h2 class="question-form__title">Заполните анкету, и мы подберем программу питания для
-        вашего кота</h2>
-      <div class="question-form__header">
-        <fieldset class="fieldset person-data question-form__person-data">
-          <legend class="visually-hidden">Данные кота></legend>
-          <label class="person-data__item">
+    <form class="question-form main-form__question-form" action="https://echo.htmlacademy.ru" method="post">
+      <div class="container container--form">
+        <h2 class="question-form__title">Заполните анкету, и мы подберем программу питания для
+          вашего кота</h2>
+        <div class="question-form__header">
+          <fieldset class="fieldset person-data question-form__person-data">
+            <legend class="visually-hidden">Данные кота></legend>
+            <label class="person-data__item">
               <span class="person-data__property">имя:
                 <sup class="question-form__req">*</sup>
               </span>
@@ -200,7 +198,7 @@
       <ul class="list contacts__social-list">
         <li class="contacts__social-item">
           <a class="link social-button contacts__social-link contacts__social-vk" href="#" title="Мы в VK">
-            <svg class="icon" width="28" fill="#666666">
+            <svg class="icon" width="28" height="22"fill="#666666">
               <use xlink:href="sprite.svg#vkontakte"></use>
             </svg>
             <span class="visually-hidden">мы в ВК</span>
@@ -208,14 +206,14 @@
         </li>
         <li class="contacts__social-item">
           <a class="link social-button contacts__social-link contacts__social-youtube" href="#" title="Мы в Youtube">
-            <svg class="icon" width="28" fill="#666666">
+            <svg class="icon" width="28" height="22" fill="#666666">
               <use xlink:href="sprite.svg#youtube"></use>
             </svg>
             <span class="visually-hidden">мы в Youtube</span> </a>
         </li>
         <li class="contacts__social-item">
           <a class="link social-button contacts__social-link contacts__social-telegram" href="#" title="Мы Telegram">
-            <svg class="icon" width="20" fill="#666666">
+            <svg class="icon" width="20" height="22" fill="#666666">
               <use xlink:href="sprite.svg#telegram"></use>
             </svg>
             <span class="visually-hidden">мы Telegram</span>
@@ -226,7 +224,7 @@
         <a class="link footer__academy-logo-text" href="https://htmlacademy.ru/" title="Перейти в HTML Academy">HTML
           Academy</a>
         <a class="link footer__academy-logo-image" href="https://htmlacademy.ru/" title="Перейти в HTML Academy">
-          <svg class="icon" width="27" fill="#666666">
+          <svg class="icon" width="27" height="37"fill="#666666">
             <use xlink:href="sprite.svg#academy__logo-image"></use>
           </svg>
           <span class="visually-hidden">Ссылка на HTML-Academy</span>
