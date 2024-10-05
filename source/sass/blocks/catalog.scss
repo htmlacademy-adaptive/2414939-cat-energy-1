@@ -1,4 +1,4 @@
-@import "variables.scss";
+@import "../variables.scss";
 
 .catalog {
   &__item {
@@ -130,6 +130,10 @@
 
     @media (min-width: $tablet-width) {
       margin-bottom: 50px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 40px;
     }
   }
 

@@ -1,9 +1,5 @@
-@import "variables.scss";
+@import "../variables";
 
 .main-index {
   background-color: #ffffff;
-
-  @media (min-width: $desktop-width) {
-    padding-top: 82px;
-  }
 }

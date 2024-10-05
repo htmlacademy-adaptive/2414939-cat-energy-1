@@ -1,6 +1,17 @@
-@import "variables.scss";
+@import "../variables.scss";
 
 .logo {
+  &__text {
+    @media (min-width: $desktop-width) {
+      width: 118px;
+      height: 21px;
+    }
+  }
+
+  &__text:hover svg {
+    fill: #3e3e3e;
+  }
+
   &__image {
     @media (min-width: $tablet-width) {
       width: 60px;
@@ -8,13 +19,6 @@
 
     @media (min-width: $desktop-width) {
       width: 70px;
-    }
-  }
-
-  &__text {
-    @media (min-width: $desktop-width) {
-      width: 118px;
-      height: 21px;
     }
   }
 }

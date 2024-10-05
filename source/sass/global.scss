@@ -1,4 +1,4 @@
-@import "variables.scss";
+@import "./variables.scss";
 
 *,
 *::before,
@@ -112,17 +112,17 @@ input:focus {
   border-radius: 0;
 }
 
-.social-button svg:hover,
+.social-button:hover svg,
 .footer__academy-logo-image:hover svg {
   fill: #68b738;
 }
 
-.social-button svg:focus,
+.social-button:focus svg,
 .footer__academy-logo-image:focus svg {
   fill: #68b738;
 }
 
-.social-button svg:active,
+.social-button:active svg,
 .footer__academy-logo-image:active svg {
   opacity: 0.3;
 }

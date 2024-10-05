@@ -1,4 +1,4 @@
-@import "variables.scss";
+@import "../variables.scss";
 
 .contacts {
   &__container {
@@ -9,6 +9,7 @@
       justify-content: space-between;
       align-items: center;
       padding: 55px 30px;
+      max-height: 37px;
     }
 
     @media (min-width: $desktop-width) {
@@ -49,11 +50,6 @@
     height: 22px;
     align-items: center;
     justify-content: center;
-    color: #68b738;
-  }
-
-  &__social-link {
-    color: #666666;
   }
 
   &__promo-wrapper {
@@ -64,5 +60,13 @@
     @media (min-width: $tablet-width) {
       gap: 23px;
     }
+  }
+
+  &__promo-wrapper:active {
+    opacity: 0.3;
+  }
+
+  &__promo-wrapper:hover svg {
+    fill: #68b738;
   }
 }

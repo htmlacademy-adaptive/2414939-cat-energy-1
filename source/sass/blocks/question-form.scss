@@ -1,4 +1,4 @@
-@import "variables.scss";
+@import "../variables.scss";
 
 .question-form {
   font: $font-ss-hn-ff2;
@@ -139,16 +139,16 @@
     margin-bottom: 26px;
     border-bottom: $border-block;
 
-    @media (min-width: 768px) {
-        border: 1px solid #d9d9d9;
-        padding: 27px;
-        margin-bottom: 65px;
+    @media (min-width: $tablet-width) {
+      border: $border-block;
+      padding: 27px;
+      margin-bottom: 65px;
     }
 
-    @media (min-width: 1200px) {
-        min-width: 570px;
-        margin-bottom: 0;
-        justify-content: center;
+    @media (min-width: $desktop-width) {
+      min-width: 570px;
+      margin-bottom: 0;
+      justify-content: center;
     }
   }
 
@@ -160,7 +160,7 @@
     }
 
     @media (min-width: 1200px) {
-        margin-bottom: 70px;
+      margin-bottom: 70px;
     }
   }
 

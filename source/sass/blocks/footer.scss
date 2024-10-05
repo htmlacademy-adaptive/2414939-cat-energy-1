@@ -1,15 +1,16 @@
-@import "variables.scss";
+@import "../variables.scss";
 
 .footer {
   background-color: $background-footer;
-
-  &__address {
-    position: relative;
-  }
+  position: relative;
 
   &__academy-logo-text {
     font: $font-sms-hnh-ff1;
     color: $color-text-primary;
+  }
+
+  &__academy-logo-image:hover {
+    fill: $background-button;
   }
 
   &__address-wrapper {
