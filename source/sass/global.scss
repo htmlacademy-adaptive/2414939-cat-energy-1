@@ -10,6 +10,11 @@
   outline-offset: -1px;
 }
 
+
+svg {
+  fill: currentColor;
+}
+
 .visually-hidden {
   position: absolute;
   overflow: hidden;
