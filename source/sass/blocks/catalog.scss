@@ -29,7 +29,7 @@
 
     @media (min-width: $desktop-width) {
       row-gap: 63px;
-      column-gap: 80px;
+      column-gap: 84px;
       margin-bottom: 51px;
     }
   }
@@ -55,11 +55,16 @@
   }
 
   &__subtitle {
-    min-width: 140px;
+    width: 76px;
 
     @media (min-width: $tablet-width) {
       font: $font-sml-hh-ff2;
       text-align: center;
+      width: 135px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 140px;
     }
   }
 
