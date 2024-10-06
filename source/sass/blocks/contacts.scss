@@ -9,7 +9,6 @@
       justify-content: space-between;
       align-items: center;
       padding: 55px 30px;
-      max-height: 37px;
     }
 
     @media (min-width: $desktop-width) {
@@ -24,6 +23,10 @@
 
     @media (min-width: $tablet-width) {
       margin: 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-right: 35px;
     }
   }
 

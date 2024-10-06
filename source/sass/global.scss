@@ -10,7 +10,6 @@
   outline-offset: -1px;
 }
 
-
 svg {
   fill: currentColor;
 }
@@ -137,6 +136,10 @@ input:focus {
   padding-bottom: 362px;
   position: relative;
   height: 0;
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 400px;
+  }
 }
 
 .map-responsive iframe {

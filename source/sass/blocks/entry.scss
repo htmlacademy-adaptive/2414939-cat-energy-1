@@ -30,7 +30,7 @@
       justify-content: space-between;
       position: relative;
       z-index: 0;
-      padding-left: 160px;
+      padding-left: 190px;
       margin-bottom: 82px;
       background: linear-gradient(to right, #ffffff 50%, #68b738 50%);
     }
@@ -67,8 +67,9 @@
     }
 
     @media (min-width: $desktop-width) {
+      padding-top: 50px;
       width: 720px;
-      height: 694px;
+      height: 750px;
     }
   }
 
@@ -84,6 +85,12 @@
       width: 416px;
       font: $font-s3xl-h3xh-ff2;
       margin-bottom: 40px;
+    }
+  }
+
+  &__title-wrapper {
+    @media (min-width: $desktop-width) {
+      padding-top: 40px;
     }
   }
 
@@ -104,7 +111,6 @@
     display: block;
 
     @media (min-width: $desktop-width) {
-      position: relative;
       opacity: 0.25;
     }
   }
@@ -122,6 +128,7 @@
       padding: 14px 26px;
       z-index: 2;
       width: max-content;
+      font: $font-sml-hhh-ff2;
     }
   }
 }

@@ -13,6 +13,21 @@
     fill: $background-button;
   }
 
+  &__address {
+    position: relative;
+  }
+
+  &__address::before {
+    content: "";
+    position: absolute;
+    width: 113px;
+    height: 106px;
+    top: 131px;
+    left: 908px;
+    background-image: url("../img/map-pin-tablet.png");
+    z-index: 3;
+  }
+
   &__address-wrapper {
     display: flex;
     padding: 26px 20px;
@@ -45,7 +60,7 @@
     color: $color-subtitle-special;
 
     @media (min-width: $tablet-width) {
-      font: $font-ss-hnh-ff2;
+      font: $font-sml-hhh-ff2;
       max-width: 160px;
     }
   }
@@ -59,6 +74,13 @@
       font: $font-sms-hnh-ff1;
       max-width: 160px;
       text-align: right;
+    }
+
+    @media (min-width: $desktop-width) {
+      display: flex;
+      flex-direction: column;
+      gap: 19px;
+      text-align: left;
     }
   }
 }

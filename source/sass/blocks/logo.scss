@@ -3,8 +3,8 @@
 .logo {
   &__text {
     @media (min-width: $desktop-width) {
-      width: 118px;
-      height: 21px;
+      width: 128px;
+      height: 24px;
     }
   }
 
@@ -12,13 +12,30 @@
     fill: #3e3e3e;
   }
 
-  &__image {
+  &__image-tablet,
+  &__image-desktop {
+    display: none;
+  }
+
+  &__image-mobile {
     @media (min-width: $tablet-width) {
-      width: 60px;
+      display: none;
+    }
+  }
+
+  &__image-tablet {
+    @media (min-width: $tablet-width) {
+      display: block;
     }
 
     @media (min-width: $desktop-width) {
-      width: 70px;
+      display: none;
+    }
+  }
+
+  &__image-desktop {
+    @media (min-width: $desktop-width) {
+      display: block;
     }
   }
 }
