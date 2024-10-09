@@ -9,23 +9,12 @@
     color: $color-text-primary;
   }
 
+  &__academy-logo-image {
+    color: $color-icon;
+  }
+
   &__academy-logo-image:hover {
     fill: $background-button;
-  }
-
-  &__address {
-    position: relative;
-  }
-
-  &__address::before {
-    content: "";
-    position: absolute;
-    width: 113px;
-    height: 106px;
-    top: 131px;
-    left: 908px;
-    background-image: url("../img/map-pin-tablet.png");
-    z-index: 3;
   }
 
   &__address-wrapper {

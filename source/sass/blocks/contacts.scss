@@ -12,7 +12,7 @@
     }
 
     @media (min-width: $desktop-width) {
-      padding: 10px 110px;
+      padding: 69px 110px;
     }
   }
 
@@ -53,6 +53,10 @@
     height: 22px;
     align-items: center;
     justify-content: center;
+  }
+
+  &__social-link {
+    color: $color-icon;
   }
 
   &__promo-wrapper {

@@ -45,6 +45,7 @@
       display: flex;
       flex-direction: row;
       justify-content: space-between;
+      align-items: baseline;
     }
 
     @media (min-width: $desktop-width) {
@@ -56,10 +57,11 @@
   &__list {
     display: flex;
     margin-bottom: 20px;
-    gap: 32px;
+    justify-content: space-between;
 
     @media (min-width: $tablet-width) {
       gap: 43px;
+      margin-bottom: 99px;
     }
 
     @media (min-width: $desktop-width) {
@@ -104,13 +106,16 @@
     font: $font-sxs-hxl-ff1;
     color: $color-text-primary;
     text-align: center;
-    min-width: 77px;
+    max-width: 77px;
     margin-bottom: -11px;
     background-color: $background-block-example;
 
     @media (min-width: $tablet-width) {
       font: $font-ss-hl-ff1;
       background-color: $background-body;
+      padding: 0;
+      min-width: 140px;
+      margin-bottom: -6px;
     }
 
     @media (min-width: $desktop-width) {
@@ -128,7 +133,7 @@
     padding-top: 14px;
 
     @media (min-width: $tablet-width) {
-      width: 162px;
+      min-width: 162px;
     }
   }
 
