@@ -18,7 +18,7 @@
   &__item {
     display: flex;
     align-items: center;
-    gap: 13px;
+    gap: 11px;
     position: relative;
 
     @media (min-width: $desktop-width) {
@@ -29,13 +29,14 @@
   &__property {
     text-align: center;
     text-wrap: nowrap;
+    font: $font-sms-hn-ff2;
   }
 
   &__value {
     width: 100%;
     font: $font-ss-hnl-ff2;
     text-transform: uppercase;
-    padding: 14px 45px 14px 13px;
+    padding: 14px 45px 14px 14px;
     border: 1px solid #cdcdcd;
 
     @media (min-width: $tablet-width) {
@@ -63,7 +64,7 @@
     position: absolute;
     width: 20px;
     height: 20px;
-    right: 13px;
+    right: 8px;
     top: 50%;
     transform: translateY(-50%);
   }
@@ -72,7 +73,7 @@
     position: absolute;
     width: 20px;
     height: 20px;
-    right: 13px;
+    right: 8px;
     top: 50%;
     transform: translateY(-50%);
   }

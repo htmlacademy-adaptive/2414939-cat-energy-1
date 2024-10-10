@@ -29,7 +29,8 @@
 
     @media (min-width: $desktop-width) {
       row-gap: 63px;
-      column-gap: 80px;
+      column-gap: 82px;
+      margin-bottom: 51px;
     }
   }
 
@@ -49,15 +50,21 @@
 
     @media (min-width: $desktop-width) {
       width: 169px;
+      margin-bottom: 12px;
     }
   }
 
   &__subtitle {
-    min-width: 140px;
+    width: 76px;
 
     @media (min-width: $tablet-width) {
-      font: $font-ss-hh-ff2;
+      font: $font-sml-hh-ff2;
       text-align: center;
+      width: 135px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 140px;
     }
   }
 
@@ -101,7 +108,7 @@
     @media (min-width: $tablet-width) {
       flex-direction: column;
       padding: 0;
-      margin-bottom: 32px;
+      margin-bottom: 41px;
     }
   }
 
@@ -133,7 +140,7 @@
     }
 
     @media (min-width: $desktop-width) {
-      margin-bottom: 40px;
+      margin-bottom: 38px;
     }
   }
 
@@ -143,7 +150,7 @@
     margin-bottom: 8px;
 
     @media (min-width: $tablet-width) {
-      font: $font-ss-hh-ff2;
+      font: $font-sml-hh-ff2;
       margin-bottom: 23px;
       max-width: 134px;
     }
@@ -164,6 +171,10 @@
     @media (min-width: $tablet-width) {
       margin-bottom: 79px;
       max-width: 170px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 92px;
     }
   }
 
@@ -190,7 +201,8 @@
     justify-content: space-between;
 
     @media (min-width: $tablet-width) {
-      gap: 20px;
+      gap: 27px;
+      align-items: center;
     }
   }
 }

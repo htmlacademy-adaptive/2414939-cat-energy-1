@@ -10,6 +10,10 @@
   outline-offset: -1px;
 }
 
+svg {
+  fill: currentColor;
+}
+
 .visually-hidden {
   position: absolute;
   overflow: hidden;
@@ -127,13 +131,6 @@ input:focus {
   opacity: 0.3;
 }
 
-.map-responsive {
-  overflow: hidden;
-  padding-bottom: 362px;
-  position: relative;
-  height: 0;
-}
-
 .map-responsive iframe {
   left: 0;
   top: 0;
@@ -155,4 +152,41 @@ input:focus {
 
 .header-navigation--nojs .header-navigation__item {
   display: block;
+}
+
+.map-responsive {
+  overflow: hidden;
+  padding-bottom: 362px;
+  position: relative;
+  height: 0;
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 400px;
+  }
+}
+
+.map-responsive::before {
+  content: "";
+  position: absolute;
+  width: 57px;
+  height: 53px;
+  top: 139px;
+  left: 134px;
+  background-image: url("../img/map-pin-mobile.png");
+  z-index: 3;
+
+  @media (min-width: $tablet-width) {
+    width: 113px;
+    height: 106px;
+    top: 146px;
+    left: 333px;
+    background-image: url("../img/map-pin-tablet.png");
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 113px;
+    height: 106px;
+    top: 131px;
+    left: 908px;
+  }
 }

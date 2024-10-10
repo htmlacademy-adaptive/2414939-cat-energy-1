@@ -7,7 +7,11 @@
   }
 
   &__radio:not(:last-child) {
-    margin-bottom: 13px;
+    margin-bottom: 12px;
+
+    @media (min-width: $tablet-width) {
+      margin-right: 17px;
+    }
   }
 
   &__radio:disabled {
@@ -26,6 +30,14 @@
     margin-right: 0;
     line-height: 18px;
     user-select: none;
+
+    @media (min-width: $tablet-width) {
+      font: $font-sml-hh-ff2;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-left: 60px;
+    }
   }
 
   &__radio label::before {
@@ -38,6 +50,11 @@
     border: $border-program-choice;
     left: 0;
     bottom: -6px;
+
+    @media (min-width: $tablet-width) {
+      width: 40px;
+      height: 40px;
+    }
   }
 
   &__radio label::before:hover {
@@ -54,6 +71,11 @@
     top: 3px;
     left: 9px;
     visibility: hidden;
+
+    @media (min-width: $tablet-width) {
+      width: 18px;
+      height: 18px;
+    }
   }
 
   &__radio input[type="radio"]:checked + label::after {

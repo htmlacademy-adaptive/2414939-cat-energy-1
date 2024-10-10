@@ -52,9 +52,10 @@
     padding: 22px 24px;
     font: $font-sml-hnh-ff2;
     border-top: $border-navigation__link;
+    position: relative;
 
     @media (min-width: $tablet-width) {
-      font: $font-sm-hh-ff2;
+      font: $font-sml-hh-ff2;
       padding: 0;
       border: none;
     }
@@ -68,17 +69,22 @@
     opacity: 0.3;
   }
 
-  &__link--active {
+  &__link--active::before {
     @media (min-width: $tablet-width) {
-      padding-bottom: 10px;
-      box-shadow: 0 2px $background-button;
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      background: $background-button;
+      bottom: -8px;
+      left: 0;
+      z-index: 6;
     }
   }
 
-  &__link--active-index {
+  &__link--active-index::before {
     @media (min-width: $desktop-width) {
-      padding-bottom: 10px;
-      box-shadow: 0 2px $background-body;
+      background: $background-body;
     }
   }
 

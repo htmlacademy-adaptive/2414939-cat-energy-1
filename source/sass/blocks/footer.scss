@@ -9,6 +9,10 @@
     color: $color-text-primary;
   }
 
+  &__academy-logo-image {
+    color: $color-icon;
+  }
+
   &__academy-logo-image:hover {
     fill: $background-button;
   }
@@ -45,7 +49,7 @@
     color: $color-subtitle-special;
 
     @media (min-width: $tablet-width) {
-      font: $font-ss-hnh-ff2;
+      font: $font-sml-hhh-ff2;
       max-width: 160px;
     }
   }
@@ -59,6 +63,13 @@
       font: $font-sms-hnh-ff1;
       max-width: 160px;
       text-align: right;
+    }
+
+    @media (min-width: $desktop-width) {
+      display: flex;
+      flex-direction: column;
+      gap: 19px;
+      text-align: left;
     }
   }
 }

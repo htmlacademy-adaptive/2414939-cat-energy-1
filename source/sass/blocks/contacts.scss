@@ -9,11 +9,10 @@
       justify-content: space-between;
       align-items: center;
       padding: 55px 30px;
-      max-height: 37px;
     }
 
     @media (min-width: $desktop-width) {
-      padding: 66px 110px;
+      padding: 69px 110px;
     }
   }
 
@@ -24,6 +23,10 @@
 
     @media (min-width: $tablet-width) {
       margin: 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-right: 35px;
     }
   }
 
@@ -50,6 +53,10 @@
     height: 22px;
     align-items: center;
     justify-content: center;
+  }
+
+  &__social-link {
+    color: $color-icon;
   }
 
   &__promo-wrapper {
