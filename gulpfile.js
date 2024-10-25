@@ -12,7 +12,7 @@ import autoprefixer from 'autoprefixer';
 import browser from 'browser-sync';
 import optimize from 'gulp-svgo';
 import svgstore from 'gulp-svgstore';
-// import reboot from 'reload';
+// import reload from 'reload';
 // import Watcher from 'watcher';
 
 
@@ -124,17 +124,17 @@ const server = (done) => {
 
 //Reload
 
-// const reboot = (done) => {
-//   browser.reload();
-//   done();
-// }
+const reload = (done) => {
+  browser.reload();
+  done();
+}
 
 // Watcher
 
   const watcher = () => {
   gulp.watch('source/sass/*.scss', gulp.series(styles));
   gulp.watch('source/js/script.js', gulp.series(script));
-  gulp.watch('source/*.html', gulp.series(html));
+  gulp.watch('source/*.html', gulp.series(html, reload));
 
 }
 
