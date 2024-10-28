@@ -12,8 +12,8 @@ import autoprefixer from 'autoprefixer';
 import browser from 'browser-sync';
 import optimize from 'gulp-svgo';
 import svgstore from 'gulp-svgstore';
-// import reload from 'reload';
-// import Watcher from 'watcher';
+import reload from 'reload';
+import Watcher from 'watcher';
 
 
 
