@@ -6,7 +6,7 @@ import csso from 'postcss-csso';
 import rename from 'gulp-rename';
 import htmlmin from 'gulp-htmlmin';
 import {deleteAsync} from 'del';
-import squoosh from 'gulp-libsquoosh';
+// import squoosh from 'gulp-libsquoosh';
 import terser from 'gulp-terser';
 import autoprefixer from 'autoprefixer';
 import browser from 'browser-sync';
