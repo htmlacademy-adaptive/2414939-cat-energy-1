@@ -6,7 +6,7 @@ import csso from 'postcss-csso';
 import rename from 'gulp-rename';
 import htmlmin from 'gulp-htmlmin';
 import {deleteAsync} from 'del';
-// import squoosh from 'gulp-libsquoosh';
+import squoosh from 'gulp-libsquoosh';
 import terser from 'gulp-terser';
 import autoprefixer from 'autoprefixer';
 import browser from 'browser-sync';
@@ -50,11 +50,11 @@ export const createWebp = () => {
 
 //images
 
-// export const images = () => {
-//   return gulp.src('source/img/*.{png,jpg,}')
-//     .pipe(squoosh())
-//     .pipe(gulp.dest('build/img'));
-// }
+export const images = () => {
+  return gulp.src('source/img/*.{png,jpg,}')
+    .pipe(squoosh())
+    .pipe(gulp.dest('build/img'));
+}
 
 export const copyImages = () => {
   return gulp.src('source/img/*.{png,jpg,}')
@@ -141,7 +141,7 @@ const reload = (done) => {
 export const build = gulp.series(
   clean,
   copy,
-  // images,
+  images,
   gulp.parallel(
     styles,
     html,
