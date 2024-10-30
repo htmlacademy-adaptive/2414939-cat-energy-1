@@ -52,11 +52,11 @@ export const createWebp = () => {
 
 //images
 
-export const images = () => {
-  return gulp.src('source/img/*.{png,jpg,}')
-    .pipe(squoosh())
-    .pipe(gulp.dest('build/img'));
-}
+// export const images = () => {
+//   return gulp.src('source/img/*.{png,jpg,}')
+//     .pipe(squoosh())
+//     .pipe(gulp.dest('build/img'));
+// }
 
 export const copyImages = () => {
   return gulp.src('source/img/*.{png,jpg,}')
