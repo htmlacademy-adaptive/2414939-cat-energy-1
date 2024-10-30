@@ -141,7 +141,7 @@ const reload = (done) => {
 export const build = gulp.series(
   clean,
   copy,
-  images,
+  // images,
   gulp.parallel(
     styles,
     html,
