@@ -15,8 +15,6 @@ import svgstore from 'gulp-svgstore';
 // import reload from 'reload';
 // import Watcher from 'watcher';
 
-
-
 // Styles
 
 export const styles = () => {
