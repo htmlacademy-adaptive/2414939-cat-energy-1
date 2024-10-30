@@ -12,8 +12,8 @@ import autoprefixer from 'autoprefixer';
 import browser from 'browser-sync';
 import optimize from 'gulp-svgo';
 import svgstore from 'gulp-svgstore';
-import reload from 'reload';
-import Watcher from 'watcher';
+// import reload from 'reload';
+// import Watcher from 'watcher';
 
 
 
@@ -134,7 +134,7 @@ const reload = (done) => {
   const watcher = () => {
   gulp.watch('source/sass/*.scss', gulp.series(styles));
   gulp.watch('source/js/script.js', gulp.series(script));
-  gulp.watch('source/*.html', gulp.series(html));
+  gulp.watch('source/*.html', gulp.series(html, reload));
 
 }
 
