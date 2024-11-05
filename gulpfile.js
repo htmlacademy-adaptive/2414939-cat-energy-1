@@ -42,13 +42,13 @@ export const html = () => {
 
 //WebP
 
-export const createWebp = () => {
-  return gulp.src('source/img/*.{png,jpg,}')
-    .pipe(squoosh({
-      webp:{}
-    }))
-    .pipe(gulp.dest('build/img'));
-}
+// export const createWebp = () => {
+//   return gulp.src('source/img/*.{png,jpg,}')
+//     .pipe(squoosh({
+//       webp:{}
+//     }))
+//     .pipe(gulp.dest('build/img'));
+// }
 
 //images
 
@@ -150,7 +150,7 @@ export const build = gulp.series(
     script,
     svg,
     sprite,
-    createWebp
+    // createWebp
   ),
   gulp.series(
     server,
@@ -167,7 +167,7 @@ export default gulp.series(
     script,
     svg,
     sprite,
-    createWebp,
+    // createWebp,
   ),
   gulp.series(
     server,
