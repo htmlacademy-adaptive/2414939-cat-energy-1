@@ -73,20 +73,20 @@ export const script = () => {
 
 //svg
 
-export const svg = () => {
-  return gulp.src('source/img/*.svg')
-    .pipe(optimize())
-    .pipe(gulp.dest('build/img'));
-}
+// export const svg = () => {
+//   return gulp.src('source/img/*.svg')
+//     .pipe(optimize())
+//     .pipe(gulp.dest('build/img'));
+// }
 
-export const sprite = () => {
-  return gulp.src('source/sprite.svg')
-    .pipe(optimize())
-    .pipe(svgstore({
-      inlineSvg: true
-    }))
-    .pipe(gulp.dest('build'));
-}
+// export const sprite = () => {
+//   return gulp.src('source/sprite.svg')
+//     .pipe(optimize())
+//     .pipe(svgstore({
+//       inlineSvg: true
+//     }))
+//     .pipe(gulp.dest('build'));
+// }
 
 //Copy
 
@@ -148,8 +148,8 @@ export const build = gulp.series(
     styles,
     html,
     script,
-    svg,
-    sprite,
+    // svg,
+    // sprite,
     // createWebp
   ),
   gulp.series(
@@ -165,8 +165,8 @@ export default gulp.series(
     styles,
     html,
     script,
-    svg,
-    sprite,
+    // svg,
+    // sprite,
     // createWebp,
   ),
   gulp.series(
