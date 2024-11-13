@@ -1,13 +1,10 @@
 import gulp from 'gulp';
 import plumber from 'gulp-plumber';
 import htmlmin from 'gulp-htmlmin';
-
 import sass from 'gulp-dart-sass';
-
 import postcss from 'gulp-postcss';
 import csso from 'postcss-csso';
 import rename from 'gulp-rename';
-
 import {deleteAsync} from 'del';
 import squoosh from 'gulp-libsquoosh';
 import terser from 'gulp-terser';
@@ -15,8 +12,6 @@ import autoprefixer from 'autoprefixer';
 import browser from 'browser-sync';
 import optimize from 'gulp-svgo';
 import svgstore from 'gulp-svgstore';
-
-
 
 // Styles
 
