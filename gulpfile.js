@@ -15,8 +15,6 @@ import autoprefixer from 'autoprefixer';
 import browser from 'browser-sync';
 import optimize from 'gulp-svgo';
 import svgstore from 'gulp-svgstore';
-// import reload from 'reload';
-// import Watcher from 'watcher';
 
 
 
@@ -45,21 +43,21 @@ export const html = () => {
 
 //WebP
 
-// export const createWebp = () => {
-//   return gulp.src('source/img/*.{png,jpg,}')
-//     .pipe(squoosh({
-//       webp:{}
-//     }))
-//     .pipe(gulp.dest('build/img'));
-// }
+export const createWebp = () => {
+  return gulp.src('source/img/*.{png,jpg,}')
+    .pipe(squoosh({
+      webp:{}
+    }))
+    .pipe(gulp.dest('build/img'));
+}
 
 //images
 
-// export const images = () => {
-//   return gulp.src('source/img/*.{png,jpg,}')
-//     .pipe(squoosh())
-//     .pipe(gulp.dest('build/img'));
-// }
+export const images = () => {
+  return gulp.src('source/img/*.{png,jpg,}')
+    .pipe(squoosh())
+    .pipe(gulp.dest('build/img'));
+}
 
 export const copyImages = () => {
   return gulp.src('source/img/*.{png,jpg,}')
@@ -76,20 +74,20 @@ export const script = () => {
 
 //svg
 
-// export const svg = () => {
-//   return gulp.src('source/img/*.svg')
-//     .pipe(optimize())
-//     .pipe(gulp.dest('build/img'));
-// }
+export const svg = () => {
+  return gulp.src('source/img/*.svg')
+    .pipe(optimize())
+    .pipe(gulp.dest('build/img'));
+}
 
-// export const sprite = () => {
-//   return gulp.src('source/sprite.svg')
-//     .pipe(optimize())
-//     .pipe(svgstore({
-//       inlineSvg: true
-//     }))
-//     .pipe(gulp.dest('build'));
-// }
+export const sprite = () => {
+  return gulp.src('source/sprite.svg')
+    .pipe(optimize())
+    .pipe(svgstore({
+      inlineSvg: true
+    }))
+    .pipe(gulp.dest('build'));
+}
 
 //Copy
 
@@ -151,9 +149,9 @@ export const build = gulp.series(
     styles,
     html,
     script,
-    // svg,
-    // sprite,
-    // createWebp
+    svg,
+    sprite,
+    createWebp
   ),
   gulp.series(
     server,
@@ -168,9 +166,9 @@ export default gulp.series(
     styles,
     html,
     script,
-    // svg,
-    // sprite,
-    // createWebp,
+    svg,
+    sprite,
+    createWebp,
   ),
   gulp.series(
     server,
