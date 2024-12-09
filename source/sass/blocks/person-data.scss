@@ -39,5 +39,9 @@
 
   &__property {
     text-wrap: nowrap;
+
+    @media (min-width: $tablet-width) {
+      display: flex;
+    }
   }
 }

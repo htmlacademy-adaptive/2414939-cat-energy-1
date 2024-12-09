@@ -32,7 +32,7 @@
     display: block;
     position: absolute;
     left: 0;
-    top: 55px;
+    top: 51px;
     width: 320px;
     height: 100%;
     padding: 0;
@@ -55,9 +55,13 @@
     position: relative;
 
     @media (min-width: $tablet-width) {
-      font: $font-sml-hh-ff2;
+      font: $font-sm-hh-ff2;
       padding: 0;
       border: none;
+    }
+
+    @media (min-width: $desktop-width) {
+      font: $font-sml-hxh-ff2;
     }
   }
 
@@ -85,6 +89,7 @@
   &__link--active-index::before {
     @media (min-width: $desktop-width) {
       background: $background-body;
+      bottom: 0;
     }
   }
 

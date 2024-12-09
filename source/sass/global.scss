@@ -163,6 +163,10 @@ input:focus {
   @media (min-width: $desktop-width) {
     padding-bottom: 400px;
   }
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 400px;
+  }
 }
 
 .map-responsive::before {

@@ -21,6 +21,11 @@
     gap: 11px;
     position: relative;
 
+    @media (min-width: $tablet-width) {
+      align-items: baseline;
+      max-width: 628px;
+    }
+
     @media (min-width: $desktop-width) {
       width: 100%;
     }
@@ -30,17 +35,22 @@
     text-align: center;
     text-wrap: nowrap;
     font: $font-sms-hn-ff2;
+
+    @media (min-width: $tablet-width) {
+      font: $font-sml-hxh-ff2;
+    }
   }
 
   &__value {
     width: 100%;
-    font: $font-ss-hnl-ff2;
+    font: $font-sms-hn-ff2;
     text-transform: uppercase;
     padding: 14px 45px 14px 14px;
     border: 1px solid #cdcdcd;
 
     @media (min-width: $tablet-width) {
       font: $font-sml-hxh-ff2;
+      padding: 12px 45px 12px 20px;
     }
   }
 
@@ -67,6 +77,14 @@
     right: 8px;
     top: 50%;
     transform: translateY(-50%);
+
+    @media (min-width: $tablet-width) {
+      right: 12px;
+    }
+
+    @media (min-width: $desktop-width) {
+      right: 15px;
+    }
   }
 
   &__tel-icon {
@@ -76,5 +94,9 @@
     right: 8px;
     top: 50%;
     transform: translateY(-50%);
+
+    @media (min-width: $desktop-width) {
+      right: 13px;
+    }
   }
 }

@@ -2,7 +2,7 @@
 
 .entry {
   position: relative;
-  margin-bottom: 20px;
+  margin-bottom: 24px;
   background: linear-gradient(rgba(104, 183, 56, 0.85) 302px, rgba(255, 255, 255, 0.85) 302px),
     url("../img/entry-background.png") no-repeat;
 
@@ -41,13 +41,12 @@
     text-align: center;
     background-repeat: no-repeat;
     position: relative;
-    padding: 27px 20px 2px;
+    padding: 27px 30px 2px;
 
     @media (min-width: $tablet-width) {
       background-color: $background-body;
       color: $color-text-special;
-      padding-left: 90px;
-      padding-top: 0;
+      padding: 0;
       text-align: left;
       display: flex;
       flex-direction: column;
@@ -62,14 +61,13 @@
       width: 706px;
       height: 609px;
       order: 4;
-      margin-left: -40px;
-      margin-top: -60px;
+      inset: -83px 0 0 -85px;
     }
 
     @media (min-width: $desktop-width) {
-      padding-top: 50px;
       width: 720px;
-      height: 750px;
+      height: 694px;
+      inset: 0;
     }
   }
 
@@ -82,7 +80,7 @@
 
     @media (min-width: $tablet-width) {
       color: $color-text-special;
-      width: 416px;
+      width: 510px;
       font: $font-s3xl-h3xh-ff2;
       margin-bottom: 40px;
     }
@@ -116,13 +114,19 @@
   }
 
   &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
     @media (min-width: $tablet-width) {
-      display: flex;
-      flex-direction: column;
+      align-items: start;
+      padding-left: 120px;
     }
   }
 
   &__button {
+    max-width: 280px;
+
     @media (min-width: $tablet-width) {
       margin: 0;
       padding: 14px 26px;
