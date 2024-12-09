@@ -9,10 +9,10 @@
     justify-content: space-between;
     position: relative;
     align-items: center;
-    padding: 13px 20px;
+    padding: 9px 20px;
 
     @media (min-width: $tablet-width) {
-      padding: 25px 30px 65px;
+      padding: 28px 30px 61px;
       justify-content: left;
       position: relative;
       gap: 13px;
@@ -21,8 +21,8 @@
     @media (min-width: $desktop-width) {
       padding: 55px 110px 64px;
       z-index: 1;
-      top: 0;
-      left: 0;
+      position: relative;
+      inset: 0;
       width: 100%;
     }
   }
@@ -34,7 +34,7 @@
       height: 499px;
       position: absolute;
       background-image: url("../img/index-can-desktop.png");
-      top: 143px;
+      top: 110px;
       right: 331px;
       z-index: 5;
 
@@ -48,6 +48,7 @@
   &__wrapper-index {
     @media (min-width: $desktop-width) {
       position: absolute;
+      top: 33px;
     }
   }
 

@@ -9,13 +9,19 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 74px;
+    position: relative;
+    top: -60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 0;
   }
 
   &__subtitle-wrapper {
     display: flex;
     gap: 20px;
     align-items: center;
-    margin-bottom: 18px;
+    margin-bottom: 26px;
 
     @media (min-width: $desktop-width) {
       margin-bottom: 43px;
@@ -24,6 +30,8 @@
   }
 
   &__subtitle {
+    font: $font-sl-hxh-ff2;
+
     @media (min-width: $tablet-width) {
       font: $font-sxxl-hxxh-ff2;
     }
@@ -32,12 +40,11 @@
   &__list {
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
+    gap: 26px;
+    padding: 0 20px;
 
     @media (min-width: $tablet-width) {
-      gap: 30px;
+      gap: 60px;
     }
 
     @media (min-width: $desktop-width) {
@@ -58,7 +65,7 @@
 
     @media (min-width: $desktop-width) {
       width: 570px;
-      padding: 50px 52px 55px;
+      padding: 45px 51px 55px;
     }
   }
 
@@ -73,6 +80,8 @@
       font: $font-sms-hh-ff1;
       max-width: 340px;
       border: none;
+      margin-bottom: 50px;
+      padding-bottom: 0;
     }
 
     @media (min-width: $desktop-width) {
@@ -178,16 +187,14 @@
       object-fit: cover;
       width: 140px;
       position: relative;
-      top: 50%;
-      left: 50%;
+      inset: 40% 0 0 50%;
       transform: translate(-50%, -50%);
     }
 
     @media (min-width: $desktop-width) {
       width: 70px;
       position: absolute;
-      top: 50%;
-      left: 50%;
+      inset: 50% 0 0 50%;
       transform: translate(-50%, -50%);
     }
   }
@@ -197,16 +204,14 @@
       object-fit: cover;
       width: 268px;
       position: relative;
-      top: 50%;
-      left: 50%;
+      inset: 50% 0 0 52%;
       transform: translate(-50%, -50%);
     }
 
     @media (min-width: $desktop-width) {
       width: 134px;
       position: absolute;
-      top: 50%;
-      left: 50%;
+      inset: 50% 0 0 50%;
       transform: translate(-50%, -50%);
     }
   }

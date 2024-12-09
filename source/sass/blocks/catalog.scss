@@ -15,9 +15,6 @@
   }
 
   &__list {
-    display: flex;
-    flex-direction: column;
-
     @media (min-width: $tablet-width) {
       display: flex;
       flex-direction: row;
@@ -30,7 +27,7 @@
     @media (min-width: $desktop-width) {
       row-gap: 63px;
       column-gap: 82px;
-      margin-bottom: 51px;
+      margin-bottom: 77px;
     }
   }
 
@@ -45,7 +42,7 @@
     @media (min-width: $tablet-width) {
       width: 200px;
       height: 210px;
-      margin-bottom: 22px;
+      margin-bottom: 15px;
     }
 
     @media (min-width: $desktop-width) {
@@ -56,6 +53,7 @@
 
   &__subtitle {
     width: 76px;
+    font: $font-sms-hnh-ff2;
 
     @media (min-width: $tablet-width) {
       font: $font-sml-hh-ff2;
@@ -102,8 +100,7 @@
 
   &__content-wrapper {
     display: flex;
-    padding: 20px 0 20px;
-    justify-content: space-between;
+    padding: 18px 0;
 
     @media (min-width: $tablet-width) {
       flex-direction: column;
@@ -133,6 +130,7 @@
   }
 
   &__item--all-icon {
+    display: block;
     margin-bottom: 23px;
 
     @media (min-width: $tablet-width) {
@@ -145,9 +143,10 @@
   }
 
   &__subtitle--all {
-    font: $font-ss-hnh-ff2;
+    font: $font-sms-hnh-ff2;
     color: $color-subtitle-special;
     margin-bottom: 8px;
+    width: auto;
 
     @media (min-width: $tablet-width) {
       font: $font-sml-hh-ff2;
@@ -199,10 +198,16 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    min-width: 140px;
+    padding-top: 5px;
 
     @media (min-width: $tablet-width) {
-      gap: 27px;
+      gap: 19px;
       align-items: center;
+    }
+
+    @media (min-width: $desktop-width) {
+      gap: 22px;
     }
   }
 }

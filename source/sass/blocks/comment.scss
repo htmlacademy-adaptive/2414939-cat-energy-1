@@ -21,6 +21,11 @@
     height: 100%;
     padding: 14px;
 
+    @media (min-width: $tablet-width) {
+      font: $font-sml-hxh-ff2;
+      padding: 11px 20px;
+    }
+
     @media (min-width: $desktop-width) {
       font: $font-sml-hxh-ff2;
       padding: 9px 20px;

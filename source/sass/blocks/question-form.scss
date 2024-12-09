@@ -12,12 +12,12 @@
   &__title {
     font: $font-ss-hn-ff2;
     text-transform: uppercase;
-    margin-bottom: 28px;
+    margin-bottom: 36px;
 
     @media (min-width: $tablet-width) {
       font: $font-sml-hxh-ff2;
       max-width: 323px;
-      margin-bottom: 66px;
+      margin-bottom: 63px;
     }
   }
 
@@ -27,7 +27,7 @@
     @media (min-width: $desktop-width) {
       display: flex;
       gap: 80px;
-      margin-bottom: 72px;
+      margin-bottom: 70px;
     }
   }
 
@@ -52,7 +52,7 @@
     position: relative;
     font: $font-sl-hh-ff2;
     text-transform: none;
-    padding-right: 20px;
+    padding-right: 70px;
     isolation: isolate;
 
     @media (min-width: $tablet-width) {
@@ -79,11 +79,11 @@
     margin-bottom: 44px;
 
     @media (min-width: $tablet-width) {
-      margin-bottom: 87px;
+      margin-bottom: 64px;
     }
 
     @media (min-width: $desktop-width) {
-      margin-bottom: 66px;
+      margin-bottom: 70px;
     }
   }
 
@@ -108,7 +108,7 @@
     }
 
     @media (min-width: $desktop-width) {
-      margin-bottom: 65px;
+      margin-bottom: 70px;
     }
   }
 
@@ -140,23 +140,36 @@
     }
   }
 
+  &__subtitle-contacts::after {
+    content: "";
+    position: absolute;
+    width: 300px;
+    height: 2px;
+    background-color: #68b738;
+    top: 32%;
+    transform: translateY(-50%);
+    left: 0;
+    z-index: -1;
+  }
+
   &__program-choice {
     display: flex;
     flex-direction: column;
     padding-bottom: 19px;
-    margin-bottom: 30px;
+    margin-bottom: 27px;
     border-bottom: $border-block;
 
     @media (min-width: $tablet-width) {
       border: $border-block;
-      padding: 27px;
-      margin-bottom: 65px;
+      padding: 30px;
+      margin-bottom: 60px;
     }
 
     @media (min-width: $desktop-width) {
       min-width: 570px;
       margin-bottom: 0;
       justify-content: center;
+      padding: 25px 28px;
     }
   }
 
@@ -178,12 +191,13 @@
     @media (min-width: $tablet-width) {
       margin: 0;
       width: 284px;
+      font: $font-sml-hhh-ff2;
+      padding: 14px;
     }
 
     @media (min-width: $desktop-width) {
       width: 570px;
       font: $font-sml-hhh-ff2;
-      padding: 14px;
     }
   }
 
@@ -191,16 +205,24 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: $ff1;
+    font: $font-ss-hln-ff1;
     text-transform: none;
     text-align: center;
+
+    @media (min-width: $tablet-width) {
+      font: $font-sms-hmn-ff1;
+    }
   }
 
   &__footer {
     @media (min-width: $tablet-width) {
       display: flex;
-      align-items: baseline;
+      align-items: center;
       gap: 60px;
+    }
+
+    @media (min-width: $desktop-width) {
+      gap: 80px;
     }
   }
 }

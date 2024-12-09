@@ -2,13 +2,13 @@
 
 .contacts {
   &__container {
-    padding: 40px 20px;
+    padding: 36px 20px;
 
     @media (min-width: $tablet-width) {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 55px 30px;
+      padding: 59px 30px;
     }
 
     @media (min-width: $desktop-width) {
@@ -24,10 +24,6 @@
     @media (min-width: $tablet-width) {
       margin: 0;
     }
-
-    @media (min-width: $desktop-width) {
-      margin-right: 35px;
-    }
   }
 
   &__social-list {
@@ -35,7 +31,7 @@
     padding: 20px 0;
     border-top: $border-block;
     border-bottom: $border-block;
-    margin-bottom: 20px;
+    margin-bottom: 14px;
     gap: 24px;
     align-items: center;
     justify-content: center;
@@ -43,7 +39,11 @@
     @media (min-width: $tablet-width) {
       border: none;
       margin: 0;
-      padding: 0;
+      padding: 0 0 0 33px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-left: 40px;
     }
   }
 
