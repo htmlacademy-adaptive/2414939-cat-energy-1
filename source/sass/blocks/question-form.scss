@@ -190,13 +190,13 @@
 
     @media (min-width: $tablet-width) {
       margin: 0;
-      width: 284px;
+      max-width: 284px;
       font: $font-sml-hhh-ff2;
       padding: 14px;
     }
 
     @media (min-width: $desktop-width) {
-      width: 570px;
+      min-width: 570px;
       font: $font-sml-hhh-ff2;
     }
   }

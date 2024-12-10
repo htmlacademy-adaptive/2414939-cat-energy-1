@@ -36,7 +36,7 @@
     @media (min-width: $desktop-width) {
       display: flex;
       flex-direction: column;
-      width: 245px;
+      min-width: 245px;
       min-height: 288px;
       padding: 56px 42px 43px;
       background-image: url("../img/promo-image.png");
