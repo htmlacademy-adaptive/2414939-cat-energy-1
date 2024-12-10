@@ -1,7 +1,7 @@
 @import "../variables";
 
 .main-form {
-  width: $block-width;
+  min-width: $block-width;
   margin: 0 auto;
   padding: 27px 20px 32px;
   background-color: $background-body;

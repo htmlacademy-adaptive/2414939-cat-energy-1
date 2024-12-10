@@ -16,10 +16,10 @@
   }
 
   @media (min-width: $desktop-width) {
-    border: none;
     padding: 0 110px;
     margin-bottom: 0;
     top: 0;
+    border: 0;
   }
 
   &__title {
@@ -61,10 +61,10 @@
     @media (min-width: $desktop-width) {
       display: flex;
       flex-direction: row;
-      flex-wrap: nowrap;
+      flex-wrap: wrap;
       justify-content: space-between;
       margin-bottom: 69px;
-      column-gap: 76px;
+      column-gap: 74px;
     }
   }
 
