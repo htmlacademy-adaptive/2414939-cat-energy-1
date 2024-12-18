@@ -4,6 +4,14 @@
   background-color: $background-footer;
   position: relative;
 
+  @media (min-width: $tablet-width) {
+    top: -64px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 0;
+  }
+
   &__academy-logo-text {
     font: $font-sms-hnh-ff1;
     color: $color-text-primary;

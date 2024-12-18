@@ -5,16 +5,16 @@
   padding: 25px 20px 40px;
 
   @media (min-width: $tablet-width) {
-    background-color: $background-body;
     position: relative;
     top: -67px;
-    padding: 25px 30px 40px;
+    padding: 25px 30px 103px;
+    background: linear-gradient(#ffffff 0 598px, #f2f2f2 136px 598px);
   }
 
   @media (min-width: $desktop-width) {
     padding: 0 110px 75px;
     top: 0;
-    background: linear-gradient(#FFFFFF 0 136px, #f2f2f2 136px 598px);
+    background: linear-gradient(#ffffff 0 136px, #f2f2f2 136px 598px);
   }
 
   &__title {

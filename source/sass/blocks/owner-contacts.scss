@@ -46,12 +46,16 @@
     font: $font-sms-hn-ff2;
     text-transform: uppercase;
     padding: 14px 45px 14px 14px;
-    border: 1px solid #cdcdcd;
+    border: 1px solid #e7e7e7;
 
     @media (min-width: $tablet-width) {
       font: $font-sml-hxh-ff2;
       padding: 12px 45px 12px 20px;
     }
+  }
+
+  &__value:active ~ svg {
+    fill: #68b738;
   }
 
   &__wrapper {
