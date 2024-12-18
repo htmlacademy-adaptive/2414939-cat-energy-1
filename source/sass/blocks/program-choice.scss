@@ -48,9 +48,10 @@
     }
   }
 
-  &__radio label::before {
-    content: "";
-    display: block;
+  &__radio-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 30px;
     height: 30px;
     position: absolute;
@@ -62,12 +63,6 @@
     @media (min-width: $tablet-width) {
       width: 40px;
       height: 40px;
-      left: -6px;
-    }
-
-    @media (min-width: $desktop-width) {
-      left: -1px;
-      top: -10px;
     }
   }
 
@@ -75,15 +70,12 @@
     border: $border-program-choice-hover;
   }
 
-  &__radio label::after {
+  &__radio-icon::after {
     content: "";
-    position: absolute;
     width: 13px;
     height: 13px;
     border-radius: 50%;
     background-color: $background-button;
-    top: 2px;
-    left: 11px;
     visibility: hidden;
 
     @media (min-width: $tablet-width) {
@@ -99,7 +91,7 @@
     }
   }
 
-  &__radio input[type="radio"]:checked + label::after {
+  &__radio input[type="radio"]:checked + label span::after {
     visibility: visible;
   }
 

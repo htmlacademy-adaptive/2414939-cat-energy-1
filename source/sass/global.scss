@@ -10,9 +10,9 @@
   outline-offset: -1px;
 }
 
-svg {
-  fill: currentColor;
-}
+//svg {
+//  fill: currentColor;
+//}
 
 .visually-hidden {
   position: absolute;
@@ -113,6 +113,15 @@ input:user-invalid {
 
 input:focus {
   border: $border-input-focus;
+  border-radius: 0;
+}
+
+input:focus ~ svg {
+  fill: #68b738;
+}
+
+input:hover {
+  border: $border-input-hover;
   border-radius: 0;
 }
 

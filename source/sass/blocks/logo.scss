@@ -8,8 +8,12 @@
     }
   }
 
-  &__text:hover svg {
-    fill: #3e3e3e;
+  &__text:hover {
+    opacity: 80%;
+  }
+
+  &__text:active {
+    opacity: 60%;
   }
 
   &__image-tablet,
