@@ -8,7 +8,7 @@
 
   @media (min-width: $tablet-width) {
     min-width: 768px;
-    padding: 0 70px 63px;
+    padding: 0 70px 56px;
   }
 
   @media (min-width: $desktop-width) {
@@ -22,6 +22,20 @@
     @media (min-width: $tablet-width) {
       margin-bottom: 54px;
       padding: 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 57px;
+    }
+  }
+
+  &__title-wrapper {
+    @media (min-width: $tablet-width) {
+      padding-top: 38px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-top: 2px;
     }
   }
 }

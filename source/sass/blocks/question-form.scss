@@ -19,6 +19,10 @@
       max-width: 323px;
       margin-bottom: 63px;
     }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 65px;
+    }
   }
 
   &__header {
@@ -71,7 +75,7 @@
     }
 
     @media (min-width: $desktop-width) {
-      margin-bottom: 78px;
+      margin-bottom: 76px;
     }
   }
 
@@ -83,7 +87,7 @@
     }
 
     @media (min-width: $desktop-width) {
-      margin-bottom: 70px;
+      margin-bottom: 62px;
     }
   }
 
@@ -104,11 +108,11 @@
     margin-bottom: 35px;
 
     @media (min-width: $tablet-width) {
-      margin-bottom: 76px;
+      margin-bottom: 73px;
     }
 
     @media (min-width: $desktop-width) {
-      margin-bottom: 70px;
+      margin-bottom: 74px;
     }
   }
 
@@ -137,6 +141,7 @@
       position: absolute;
       width: 1440px;
       left: -70px;
+      top: 62%;
     }
   }
 

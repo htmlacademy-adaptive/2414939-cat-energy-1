@@ -3,6 +3,11 @@
 .table-property {
   font: $font-sxs-hnl-ff1;
   color: $color-text-primary;
+  grid-column: 2;
+  grid-row: 2;
+  margin: 0 0 5px;
+  padding: 0;
+  list-style: none;
 
   @media (min-width: $tablet-width) {
     font: $font-sms-hnh-ff1;
@@ -12,25 +17,26 @@
     width: 100%;
   }
 
+  @media (min-width: $desktop-width) {
+    gap: 13px;
+  }
+
   &__row {
     display: flex;
     justify-content: space-between;
+    position: relative;
+  }
 
+  &__row::after {
     @media (min-width: $tablet-width) {
-      border-bottom: 1px solid #cdcdcd;
+      content: "";
+      position: absolute;
+      left: 50%;
+      bottom: -5px;
+      transform: translateX(-50%);
+      width: 100%;
+      height: 1px;
+      background-color: #cdcdcd;
     }
-  }
-
-  &__property--extra {
-    font: $font-ss-hl-ff1;
-    color: $color-text-primary;
-
-    @media (min-width: $desktop-width) {
-      width: 243px;
-    }
-  }
-
-  &__value--extra {
-    text-align: right;
   }
 }

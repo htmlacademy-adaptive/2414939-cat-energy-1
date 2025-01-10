@@ -3,16 +3,20 @@
 .contacts {
   &__container {
     padding: 36px 20px;
+    max-width: 765px;
+    margin-left: auto;
+    margin-right: auto;
 
     @media (min-width: $tablet-width) {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 59px 30px;
+      padding: 47px 30px;
     }
 
     @media (min-width: $desktop-width) {
-      padding: 69px 110px;
+      padding: 66px 29px;
+      max-width: 1270px;
     }
   }
 
@@ -39,7 +43,11 @@
     @media (min-width: $tablet-width) {
       border: none;
       margin: 0;
-      padding: 0 0 0 33px;
+      padding: 0 0 0 39px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 0 0 0 47px;
     }
   }
 
@@ -70,6 +78,6 @@
   }
 
   &__promo-wrapper:hover svg {
-    fill: #68b738;
+    fill: $color-icon-hover;
   }
 }

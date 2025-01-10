@@ -32,7 +32,7 @@
   &__item {
     display: flex;
     flex-direction: column;
-    gap: 6px;
+    gap: 7px;
     padding: 13px 0 19px;
     border-top: $border-extra-products;
 
@@ -122,7 +122,7 @@
     @media (min-width: $tablet-width) {
       border: none;
       gap: 10px;
-      margin-bottom: 81px;
+      margin-bottom: 78px;
       padding-bottom: 0;
     }
 
@@ -181,5 +181,17 @@
       justify-content: space-between;
       align-items: flex-start;
     }
+  }
+
+  &-property {
+    color: $color-text-primary;
+
+    @media (min-width: $desktop-width) {
+      width: 243px;
+    }
+  }
+
+  &-value {
+    text-align: right;
   }
 }
