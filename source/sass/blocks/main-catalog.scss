@@ -4,7 +4,7 @@
   min-width: $block-width;
   margin: 0 auto;
   border-top: $border-block;
-  padding: 27px 20px 38px;
+  padding: 70px 20px 38px;
   background-color: $background-body;
 
   @media (min-width: $tablet-width) {
@@ -19,13 +19,24 @@
     margin: 0;
   }
 
-  &__catalog-title {
+  &__container {
     @media (min-width: $tablet-width) {
-      margin-bottom: 81px;
+      padding-top: 39px;
+      padding-bottom: 40px;
     }
 
     @media (min-width: $desktop-width) {
-      margin-bottom: 84px;
+      padding: 0;
+    }
+  }
+
+  &__catalog-title {
+    @media (min-width: $tablet-width) {
+      margin-bottom: 40px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 88px;
     }
   }
 }

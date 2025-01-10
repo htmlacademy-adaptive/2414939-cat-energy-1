@@ -1,18 +1,18 @@
 @import "../variables.scss";
 
 .logo {
-  &__text {
+  &-text {
     @media (min-width: $desktop-width) {
       width: 118px;
       height: 24px;
     }
   }
 
-  &__text:hover {
+  &-text:hover {
     opacity: 80%;
   }
 
-  &__text:active {
+  &-text:active {
     opacity: 60%;
   }
 

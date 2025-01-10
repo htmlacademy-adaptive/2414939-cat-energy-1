@@ -1,16 +1,14 @@
 @import "../variables.scss";
 
 .footer {
-  background-color: $background-footer;
+  background-color: $background-body;
   position: relative;
-
-  @media (min-width: $tablet-width) {
-    top: -64px;
-  }
-
-  @media (min-width: $desktop-width) {
-    top: 0;
-  }
+  left: 50%;
+  right: 50%;
+  width: 100vw;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  height: 100%;
 
   &__academy-logo-text {
     font: $font-sms-hnh-ff1;
@@ -25,14 +23,40 @@
     fill: $background-button;
   }
 
+  &__academy-logo-image:focus svg {
+    fill: #68b738;
+  }
+
+  &__academy-logo-image:active svg {
+    opacity: 0.3;
+  }
+
+  &__index-address-wrapper {
+    background-color: $background-body;
+
+    @media (min-width: $tablet-width) {
+      padding: 0 70px 70px;
+    }
+  }
+
+  &__address {
+    @media (min-width: $tablet-width) {
+      max-width: 767px;
+      margin-right: auto;
+      margin-left: auto;
+      background-color: $background-body;
+    }
+  }
+
   &__address-wrapper {
     display: flex;
+    justify-content: space-between;
     padding: 26px 20px;
+    background-color: $background-body;
 
     @media (min-width: $tablet-width) {
       display: flex;
-      justify-content: space-between;
-      padding: 58px 70px;
+      padding: 65px 70px;
     }
 
     @media (min-width: $desktop-width) {
@@ -44,10 +68,6 @@
       background-color: $background-body;
       padding: 60px 72px 60px 83px;
     }
-  }
-
-  &__index-address-wrapper {
-    background-color: $background-body;
   }
 
   &__address-subtitle {
@@ -82,11 +102,15 @@
 
   &__address-text p {
     @media (min-width: $tablet-width) {
-      margin-bottom: 15px;
+      margin-bottom: 21px;
     }
 
     @media (min-width: $desktop-width) {
       margin-bottom: 0;
     }
+  }
+
+  &__contacts {
+    background-color: $background-footer;
   }
 }

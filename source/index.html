@@ -6,12 +6,13 @@
   <title>HTML Academy: CAT ENERGY. Главная страница</title>
   <link rel="stylesheet" href="css/style.min.css">
   <link rel="preload" href="fonts/lato/Lato-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/oswald/oswaldregular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="./img/favicons/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="./img/favicons/180.png" type="image/png">
   <link rel="icon" href="./img/favicons/192.png" type="image/png">
 </head>
-<body class="body page__body">
+<body class="body">
 <div style="display: none">
   <svg xmlns="http://www.w3.org/2000/svg" width="0" height="0" xmlns:xlink="http://www.w3.org/1999/xlink">
     <symbol id="academy__logo-image" viewBox="0 0 27 34">
@@ -79,10 +80,14 @@
               d="M27.844 2.767c-.1-.45-.48-.767-.912-.767h-.005c-4.938.033-16.945.916-21.793 8.38-2.518 3.878-2.735 8.913-.644 14.965.016.047.048.079.07.122-.747 1.973-1.037 3.286-1.044 3.323-.11.54.214 1.072.72 1.188a.88.88 0 0 0 .197.022c.433 0 .822-.321.916-.79.02-.102 2.409-10.373 10.854-16.378.431-.306.547-.927.26-1.387-.288-.46-.87-.585-1.3-.277-4.79 3.405-7.739 8.008-9.473 11.656-1.242-4.578-.916-8.377.986-11.305 3.743-5.764 12.622-7.154 17.982-7.448C23.505 5.872 22.245 9.174 22.245 15c0 3.12-.83 5.522-2.465 7.14-2.62 2.591-6.88 2.834-9.993 2.584-.518-.045-.967.371-1.006.922-.04.55.347 1.03.863 1.072.623.051 1.29.082 1.981.082 3.17 0 6.87-.663 9.43-3.194 2.034-2.011 3.065-4.906 3.065-8.605 0-9.099 3.216-11.096 3.232-11.105.39-.209.594-.677.492-1.129Z"></path>
       </g>
       <defs>
-        <clipPath id="a">
-          <path fill="#fff" d="M0 0h30v32H0z"></path>
-        </clipPath>
       </defs>
+    </symbol>
+
+    <symbol id="slider-control" fill="none" viewBox="0 0 40 40" >
+      <rect x="1" y="1" width="38" height="38" rx="19" fill="white"></rect>
+      <rect x="1" y="1" width="38" height="38" rx="19" stroke="#666666" stroke-width="2"></rect>
+      <path d="M16 11L8 20L16 29V11Z" fill="#666666"></path>
+      <path d="M32 20L24 11V29L32 20Z" fill="#666666"></path>
     </symbol>
     <symbol id="logo-img-mobile" fill="none" viewBox="0 0 33 38">
       <g clip-path="url(#a)">
@@ -100,9 +105,6 @@
               d="M25.988 19.116a58.7 58.7 0 0 0-5.021 5.244 31.579 31.579 0 0 1-5.24 4.94c-.217-.535-1.604-1.525-1.604-1.525s-3.1-2.162-5.13-3.86a34.1 34.1 0 0 1-3.1-3.03l-1.98-.112c2.861 4.25 7.05 7.384 11.884 8.892.852-.142 3.238-1.88 5.021-3.294a58.146 58.146 0 0 0 5.883-5.951c.498-.596.88-1.281 1.13-2.021-1.09.394-1.843.717-1.843.717Z"></path>
       </g>
       <defs>
-        <clipPath id="a">
-          <path fill="#fff" d="M0 0h33v38H0z"></path>
-        </clipPath>
       </defs>
     </symbol>
     <symbol id="logo-text-mobile" fill="none" viewBox="0 0 101 18">
@@ -111,9 +113,6 @@
           d="M1.264 16.538A6.865 6.865 0 0 1 0 12.231V5.846a6.95 6.95 0 0 1 1.185-4.384C2.055.462 3.398 0 5.374 0s3.24.462 4.03 1.308a5.422 5.422 0 0 1 1.186 3.769v1.538H6.718V4.846a3.693 3.693 0 0 0-.238-1.538 1.12 1.12 0 0 0-.456-.473 1.163 1.163 0 0 0-.65-.143c-.553 0-.948.154-1.106.539a4.846 4.846 0 0 0-.237 1.692v8.23a3.111 3.111 0 0 0 .316 1.616c.158.385.553.539 1.106.539s.87-.154 1.027-.539c.18-.52.26-1.067.238-1.615v-1.846h3.872v1.538a5.775 5.775 0 0 1-1.185 3.846c-.79.923-2.134 1.385-4.031 1.385-1.897-.077-3.32-.539-4.11-1.539ZM15.253.23h4.504l3.32 17.54H19.44l-.632-3.693h-2.608l-.632 3.692h-3.715L15.253.231Zm3.24 11.54-.948-6.847-.949 6.846h1.897ZM25.843 3.154h-2.687V.23h9.404v2.846h-2.687v14.692h-4.03V3.154ZM39.752.23h6.955v1.847h-4.505v5.77h3.635v1.768h-3.635v6.462h4.505v1.77h-7.034V.23h.079ZM48.761.23H50.5l5.137 11.616V.231h2.055v17.538h-1.58l-5.217-12v12h-2.134V.231ZM60.063.23h6.954v1.847h-4.504v5.77h3.635v1.768h-3.635v6.462h4.504v1.77h-6.954V.23ZM69.072.23h3.635a6.451 6.451 0 0 1 4.03 1.078c.87.692 1.265 1.923 1.265 3.538 0 2.23-.71 3.616-2.212 4.077l2.528 8.77h-2.45l-2.37-8.231h-1.976v8.23h-2.529V.231h.079Zm3.477 7.54a3.524 3.524 0 0 0 2.292-.616c.474-.385.711-1.154.711-2.308a4.848 4.848 0 0 0-.237-1.692 1.975 1.975 0 0 0-.869-.923 3.69 3.69 0 0 0-1.739-.308h-1.106v5.77h.948v.076ZM81.163 16.462A7.613 7.613 0 0 1 80.058 12V6.154a12.26 12.26 0 0 1 .395-3.308 3.916 3.916 0 0 1 1.502-2c.882-.508 1.9-.75 2.924-.692 1.66 0 2.845.384 3.556 1.23a5.77 5.77 0 0 1 1.107 3.847v.615H87.17v-.538a11.04 11.04 0 0 0-.158-1.923 1.533 1.533 0 0 0-.633-1A2.493 2.493 0 0 0 84.878 2a2.416 2.416 0 0 0-1.58.462c-.187.152-.338.34-.447.551a1.701 1.701 0 0 0-.186.68 14.01 14.01 0 0 0-.158 2.076v6.539a6.816 6.816 0 0 0 .474 2.923c.316.615.949.846 1.897.846.374.045.754-.018 1.092-.182.337-.165.617-.422.805-.741a6.908 6.908 0 0 0 .553-3.077v-1.23h-2.292v-1.77h4.584v8.692h-1.58l-.238-2a3.143 3.143 0 0 1-1.226 1.658 3.288 3.288 0 0 1-2.014.573 4.046 4.046 0 0 1-1.899-.352 3.932 3.932 0 0 1-1.5-1.186ZM94.678 11.615 90.805.308h2.371l2.766 8.461L98.63.308H101l-3.872 11.307v6.154h-2.371v-6.154h-.08Z"></path>
       </g>
       <defs>
-        <clipPath id="a">
-          <path fill="#fff" d="M0 0h101v18H0z"></path>
-        </clipPath>
       </defs>
     </symbol>
     <symbol id="phone-icon" fill="none" viewBox="0 0 20 20">
@@ -198,8 +197,9 @@
   </svg>
 </div>
 <header class="header body-header">
-  <div class="container header__wrapper header__wrapper-index">
-    <div class="logo__image-wrapper"><a class="link logo-link header__logo" href="#"
+  <div class="container">
+  <div class="header__wrapper header__wrapper-index">
+    <div class="logo logo-image-wrapper"><a class="link logo-link header__logo" href="index.html"
                                         title="Перейти на главную страницу">
       <svg class="icon logo__image-mobile" width="33" viewBox="0 0 33 38">
         <use xlink:href="#logo-img-mobile"></use>
@@ -211,15 +211,14 @@
         <use xlink:href="#logo-img-desktop"></use>
       </svg>
     </a></div>
-    <div class="logo__text-wrapper"><a class="link logo-link header__logo" href="#" title="Перейти на главную страницу">
-      <svg class="icon logo__text" width="101" viewBox="0 0 101 18">
+    <div class="logo-text-wrapper"><a class="link logo-link header__logo" href="#" title="Перейти на главную страницу">
+      <svg class="icon logo-text" width="101" viewBox="0 0 101 18">
         <use xlink:href="#logo-text-mobile"></use>
       </svg>
     </a></div>
-    <div class="header-navigation__wrapper">
-      <nav class="header-navigation navigation header-navigation-closed">
+    <div class="header-navigation-wrapper">
+      <nav class="header-navigation header-navigation-closed">
         <button class="header-navigation__toggle" type="button"></button>
-        <div class="header-navigation__list-wrapper">
           <ul class="list header-navigation__list" id="header-navigation__list">
             <li class="header-navigation__item"><a
               class="link header-navigation__link header-navigation__link--index header-navigation__link--active header-navigation__link--active-index"
@@ -231,20 +230,22 @@
                                                     href="form.html" title="Перейти страницу подбора программы">Подбор
               программы</a></li>
           </ul>
-        </div>
       </nav>
     </div>
   </div>
+  </div>
 </header>
 <main class="main-index body__main">
-  <section class="entry__desktop">
+  <section class="entry entry-desktop">
     <div class="entry__title-wrapper"><h1 class="title entry__title">Функциональное питание для котов</h1>
       <p class="text entry__tagline">Занялся собой? Займись котом!</p><a class="button entry__button" href="form.html"
                                                                           title="Перейти страницу подбора программы">Подобрать
         программу</a></div>
-    <div class="entry__image-wrapper"><img class="entry__image" src="./img/index-background-desktop.png"
-                                            srcset="./img/index-background-desktop@2x.png 2x" height="694" width="720"
-                                            alt="Довольная рожа"></div>
+    <div class="entry__image-container">
+      <img class="entry__image" src="./img/index-background-desktop.jpg"
+                                            srcset="./img/index-background-desktop@2x.jpg 2x" height="694" width="720"
+                                            alt="Довольная рожа кота">
+    </div>
   </section>
   <section class="entry main-index__entry">
     <div class="entry__container">
@@ -260,7 +261,7 @@
           <source type="image/webp" srcset="./img/index-can-mobile.webp, ./img/index-can-mobile@2x.webp 2x">
           <source media="(min-width: 1200px)" srcset="./img/index-can-desktop.png, ./img/index-can-desktop@2x.png 2x">
           <source media="(min-width: 768px)" srcset="./img/index-can-tablet.png, ./img/index-can-tablet@2x.png 2x">
-          <img class="image entry__image" src="./img/index-can-mobile.png" srcset="./img/index-can-mobile@2x.png 2x"
+          <img class="image entry__image-product" src="./img/index-can-mobile.png" srcset="./img/index-can-mobile@2x.png 2x"
                 alt="Банка кошачих консервов Cat Energy с курицей"></picture>
       <a class="button entry__button" href="form.html" title="Перейти страницу подбора программы">Подобрать
         программу</a>
@@ -284,7 +285,6 @@
               <svg class="icon programs__icon-slim" width="36" viewBox="0 0 36 50">
                 <use xlink:href="#cat-slim"></use>
               </svg>
-<!--              <span class="programs__link-icon"></span>-->
             </div>
             <div class="programs__text-wrapper">Ваш кот весит больше собаки и почти утратил способность лазить по
               деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.
@@ -324,7 +324,7 @@
     </ul>
   </section>
   <section class="advantages main-index__advantages">
-    <div class="container"><h2 class="title advantages__title">Как это работает</h2>
+      <h2 class="title advantages__title">Как это работает</h2>
       <ul class="list advantages__list">
         <li class="advantages__item">
           <div class="advantages__icon">
@@ -360,14 +360,13 @@
               <use xlink:href="#time"></use>
             </svg>
           </div>
-          <div class="advantages__text-wrapper">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!
+          <div class="advantages__text-wrapper">Уже через месяц наслаждайтесь изменениями к лучшему <br> вашего питомца!
           </div>
         </li>
       </ul>
-    </div>
   </section>
   <section class="example main-index__example">
-    <div class="container example__wrapper">
+    <div class="example__wrapper">
       <header class="example__header"><h2 class="title example__title">Живой пример</h2></header>
       <div class="example__text-wrapper">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy
         Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16
@@ -384,18 +383,46 @@
             <dd class="example__description">затрачено времени</dd>
           </div>
         </dl>
-        <p class="example__legend"><span>Затраты на питание:</span> <span>15 000 РУБ.</span></p></div>
-      <div class="example__slider">
-        <picture>
-          <source media="(min-width: 768px)" srcset="./img/cat-slider-tablet.png">
-          <img class="example__slider-image" src="./img/cat-slider-mobile.png" alt="слайдер"></picture>
+        <p class="example__legend">
+          <span class="example__legend-text">Затраты на питание:</span>
+          <span class="example__legend-value">15 000 РУБ.</span>
+        </p>
+      </div>
+      <div class="example__slider slider">
+        <div class="slider__before">
+          <picture>
+            <source type="image/webp" media="(min-width: 1200px)" srcset="img/before-tablet@1x.webp, img/before-tablet@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/before-tablet@1x.webp, img/before-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/before-mobile@1x.webp, img/before-mobile@2x.webp 2x">
+            <source media="(min-width: 1200px)" srcset="img/before-tablet@1x.png, img/before-tablet@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png, img/before-tablet@2x.png 2x">
+            <img class="slider__img slider__img--before" src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" alt="Полный кот">
+          </picture>
+        </div>
+          <div class="slider__button-delimiter">
+            <div class="slider__after">
+              <picture>
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/after-tablet@1x.webp, img/after-tablet@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/after-tablet@1x.webp, img/after-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/after-mobile@1x.webp, img/after-mobile@2x.webp 2x">
+                <source media="(min-width: 1200px)" srcset="img/after-tablet@1x.png, img/after-tablet@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png, img/after-tablet@2x.png 2x">
+                <img class="slider__img slider__img--after" src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png 2x" alt="Худой кот">
+              </picture>
+            </div>
+            <button class="slider__toggle slider__button" type="button" aria-label="Сравнить изображения">
+                <svg class="icon" width="40" fill="currentColor">
+                <use xlink:href="#slider-control"></use>
+                </svg>
+            </button>
+          </div>
       </div>
     </div>
   </section>
-  <footer class="footer body__footer footer__index">
+  <footer class="footer body__footer footer-index">
     <section class="address footer__address"><h2 class="visually-hidden">Адрес Cat Energy</h2>
-      <div class="container footer__address-wrapper footer__index-address-wrapper"><strong
-        class="subtitle footer__address-subtitle">приглашаем к сотрудничеству дилеров!</strong>
+      <div class="footer__address-wrapper footer-index-address-wrapper"><strong
+        class="subtitle footer__address-subtitle">приглашаем <br> к сотрудничеству дилеров!</strong>
         <address class="footer__address-text"><p>ул. Большая Конюшенная, д. 19/8</p> <span>Санкт-Петербург</span>
         </address>
       </div>
@@ -403,15 +430,17 @@
         <div class="map-responsive">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2376.7911718081027!2d30.322840644430162!3d59.93819566504276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1725202403860!5m2!1sru!2sru"
-            width="600" height="450" style="border:0;" allowfullscreen=""
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy">
+          </iframe>
         </div>
       </section>
     </section>
     <section class="contacts footer__contacts"><h2 class="visually-hidden">Контактная информация</h2>
-      <div class="container contacts__container"><a class="link logo-text contacts__logo" href="#"
+      <div class="contacts__container"><a class="link logo-text contacts__logo" href="#"
                                                     title="Контактная информация">
-        <svg class="icon logo__text" width="128" viewBox="0 0 128 24">
+        <svg class="icon logo-text" width="128" viewBox="0 0 128 24">
           <use xlink:href="#logo-text-mobile"></use>
         </svg>
       </a>
@@ -435,9 +464,9 @@
             </svg>
             <span class="visually-hidden">мы в Telegram</span></a></li>
         </ul>
-        <div class="contacts__promo-wrapper"><a class="link footer__academy-logo-text" href="https://htmlacademy.ru/"
+        <div class="contacts__promo-wrapper"><a class="link footer__academy-logo-text" href="https://htmlacademy.ru/intensive/adaptive"
                                                 title="Перейти в HTML Academy">HTML Academy</a> <a
-          class="link footer__academy-logo-image" href="https://htmlacademy.ru/" title="Перейти в HTML Academy">
+          class="link footer__academy-logo-image" href="https://htmlacademy.ru/intensive/adaptive" title="Перейти в HTML Academy">
           <svg class="icon" width="27" height="34" fill="currentColor">
             <use xlink:href="#academy__logo-image"></use>
           </svg>

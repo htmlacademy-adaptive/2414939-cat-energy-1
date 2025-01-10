@@ -1,7 +1,15 @@
 @import "../variables.scss";
 
 .header-navigation {
-  &__wrapper {
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    margin: 0;
+    width: auto;
+  }
+
+  &-wrapper {
     width: 24px;
     display: flex;
 
@@ -43,6 +51,7 @@
       width: 100%;
       gap: 33px;
       position: static;
+      margin-right: 5px;
     }
   }
 
@@ -110,52 +119,62 @@
       z-index: 2;
     }
   }
-}
 
-.header-navigation-closed .header-navigation__toggle::before {
-  content: "";
-  position: absolute;
-  top: 2px;
-  left: 7px;
-  width: 24px;
-  height: 2px;
-  background-color: #000000;
-  box-shadow: 0 6px 0 0 #000000, 0 12px 0 0 #000000;
-}
-
-.header-navigation-opened .header-navigation__list {
-  @media (max-width: $mobile-width-only) {
-    visibility: visible;
+  &-closed .header-navigation__toggle::before {
+    content: "";
     position: absolute;
-    top: 66px;
-    right: 0;
-    z-index: 10;
+    top: 2px;
+    left: 2px;
+    width: 24px;
+    height: 2px;
+    background-color: #000000;
+    box-shadow: 0 6px 0 0 #000000, 0 12px 0 0 #000000;
   }
-}
 
-.header-navigation-opened .header-navigation__toggle::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%) rotate(45deg);
-  left: 0;
-  width: 24px;
-  height: 2px;
-  background-color: #000000;
-  box-shadow: none;
-}
+  &-opened .header-navigation__list {
+    @media (max-width: $mobile-width-only) {
+      visibility: visible;
+      position: absolute;
+      top: 58px;
+      right: 0;
+      z-index: 10;
+    }
+  }
 
-.header-navigation-opened .header-navigation__toggle::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%) rotate(-45deg);
-  left: 0;
-  width: 24px;
-  height: 2px;
-  background-color: #000000;
-}
+  &-opened .header-navigation__toggle::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg);
+    left: 0;
+    width: 24px;
+    height: 2px;
+    background-color: #000000;
+    box-shadow: none;
+  }
 
-.header-navigation-nojs .header-navigation__toggle {
-  display: none;
+  &-opened .header-navigation__toggle::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) rotate(-45deg);
+    left: 0;
+    width: 24px;
+    height: 2px;
+    background-color: #000000;
+  }
+
+  &--nojs .header-navigation__toggle {
+    display: none;
+  }
+
+  &--nojs .header-navigation__list {
+    position: static;
+    min-height: 0;
+    display: block;
+  }
+
+  &--nojs .header-navigation__item {
+    display: block;
+  }
 }

@@ -1,0 +1,26 @@
+@import "../variables.scss";
+
+.map-responsive {
+  position: relative;
+  left: 50%;
+  right: 50%;
+  width: 100vw;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  height: 362px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 400px;
+    height: 400px;
+  }
+}
+
+.map-responsive iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  border: none;
+  display: block;
+}

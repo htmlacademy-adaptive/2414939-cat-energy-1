@@ -3,31 +3,43 @@
 .catalog {
   &__item {
     border-top: $border-catalog-item;
-    margin-bottom: 25px;
+    margin-bottom: 24px;
 
     @media (min-width: $tablet-width) {
       border: none;
       margin: 0;
-      padding: 10px 37px 40px 37px;
+      padding: 15px 37px 40px;
       position: relative;
-      background-image: linear-gradient($background-body 81px, $background-block 81px);
+      background-image: linear-gradient($background-body 81px, $background-block 81px 100%);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 10px 37px 40px;
     }
   }
 
   &__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    column-gap: 25px;
+    margin: 0;
+    padding: 0;
+
     @media (min-width: $tablet-width) {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      gap: 60px;
       margin-bottom: 70px;
-      align-items: flex-end;
+      grid-template-columns: repeat(auto-fit, minmax(324px, 1fr));
+      gap: 60px;
     }
 
     @media (min-width: $desktop-width) {
-      row-gap: 63px;
-      column-gap: 82px;
       margin-bottom: 77px;
+      grid-template-columns: repeat(auto-fit, minmax(245px, 1fr));
+      column-gap: 80px;
+      row-gap: 63px;
     }
   }
 
@@ -47,7 +59,7 @@
 
     @media (min-width: $desktop-width) {
       width: 169px;
-      margin-bottom: 12px;
+      margin-bottom: 9px;
     }
   }
 
@@ -66,7 +78,7 @@
     }
   }
 
-  &__link {
+  &-link {
     background-color: $background-button;
     color: $color-text-secondary;
     font: $font-sms-hnh-ff2;
@@ -90,11 +102,11 @@
     }
   }
 
-  &__link:hover {
+  &-link:hover {
     background-color: $background-button-hover;
   }
 
-  &__link:active {
+  &-link:active {
     color: $color-text-secondary-hover;
   }
 
@@ -105,7 +117,11 @@
     @media (min-width: $tablet-width) {
       flex-direction: column;
       padding: 0;
-      margin-bottom: 41px;
+      margin-bottom: 35px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 35px;
     }
   }
 
@@ -122,6 +138,8 @@
       padding: 50px 37px 40px;
       background-image: none;
       outline: $border-catalog-item-all;
+      height: calc(100% - 82px);
+      top: 82px;
     }
 
     @media (min-width: $desktop-width) {
@@ -129,12 +147,12 @@
     }
   }
 
-  &__item--all-icon {
+  &__item-all-icon {
     display: block;
     margin-bottom: 23px;
 
     @media (min-width: $tablet-width) {
-      margin-bottom: 50px;
+      margin-bottom: 48px;
     }
 
     @media (min-width: $desktop-width) {
@@ -150,8 +168,12 @@
 
     @media (min-width: $tablet-width) {
       font: $font-sml-hh-ff2;
-      margin-bottom: 23px;
+      margin-bottom: 22px;
       max-width: 134px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 23px;
     }
   }
 
@@ -168,25 +190,25 @@
     margin-bottom: 21px;
 
     @media (min-width: $tablet-width) {
-      margin-bottom: 79px;
+      margin-bottom: 81px;
       max-width: 170px;
     }
 
     @media (min-width: $desktop-width) {
-      margin-bottom: 92px;
+      margin-bottom: 90px;
     }
   }
 
-  &__link--all {
+  &-link--all {
     color: $color-text-primary;
     background-color: $background-button-show-all;
   }
 
-  &__link--all:hover {
+  &-link--all:hover {
     background-color: $background-button-show-all-hover;
   }
 
-  &__link--all:active {
+  &-link--all:active {
     color: $color-text-primary;
   }
 

@@ -1,0 +1,104 @@
+@import "../variables.scss";
+
+.slider {
+  position: relative;
+  width: 280px;
+  height: 256px;
+
+  @media (min-width: $tablet-width) {
+    width: 560px;
+    height: 512px;
+  }
+
+  &__before,
+  &__img--before {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  &__before {
+    overflow: hidden;
+    width: 50%;
+    height: 100%;
+  }
+
+  &__img {
+    display: block;
+    min-width: 280px;
+    max-width: 280px;
+    height: 256px;
+
+    @media (min-width: $tablet-width) {
+      max-width: 560px;
+      height: 512px;
+    }
+  }
+
+  &__button-delimiter {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+  }
+
+  &__after {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__after,
+  &__img--after {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  &__toggle {
+    z-index: 1;
+    position: relative;
+    top: 1px;
+    left: 0;
+    transform: translateX(-50%);
+    width: 40px;
+    height: 256px;
+    padding: 0;
+    border: 0;
+    color: $color-icon;
+    background-color: transparent;
+    cursor: pointer;
+
+    @media (min-width: $tablet-width) {
+      height: 512px;
+    }
+  }
+
+  &__toggle::before {
+    content: "";
+    z-index: -1;
+    display: block;
+    position: absolute;
+    top: calc(50% - 1px);
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 4px;
+    height: 100%;
+    border-radius: 2px;
+    background-color: $color-icon;
+  }
+
+  &__toggle:hover svg {
+    fill: $color-icon-hover;
+  }
+
+  &__toggle:hover::before {
+    background-color: $color-icon-hover;
+  }
+
+  &__toggle:active {
+    color: #5eaa2f;
+    opacity: 0.6;
+  }
+}

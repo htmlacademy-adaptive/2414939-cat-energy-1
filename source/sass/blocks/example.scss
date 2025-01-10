@@ -3,11 +3,16 @@
 .example {
   background-color: $background-block-example;
   padding: 25px 20px 40px;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  width: 100vw;
+  margin-left: -50vw;
+  margin-right: -50vw;
 
   @media (min-width: $tablet-width) {
     position: relative;
-    top: -67px;
-    padding: 25px 30px 103px;
+    padding: 42px 30px 95px;
     background: linear-gradient(#ffffff 0 598px, #f2f2f2 136px 598px);
   }
 
@@ -21,7 +26,7 @@
     margin-bottom: 40px;
 
     @media (min-width: $tablet-width) {
-      margin-bottom: 63px;
+      margin-bottom: 59px;
     }
 
     @media (min-width: $desktop-width) {
@@ -38,11 +43,12 @@
     @media (min-width: $tablet-width) {
       font: $font-sms-hh-ff1;
       margin-bottom: 54px;
+      text-align: left;
     }
 
     @media (min-width: $desktop-width) {
       width: 436px;
-      margin-bottom: 65px;
+      margin-bottom: 70px;
     }
   }
 
@@ -55,7 +61,7 @@
       flex-direction: row;
       justify-content: space-between;
       align-items: center;
-      margin-bottom: 99px;
+      margin-bottom: 106px;
     }
 
     @media (min-width: $desktop-width) {
@@ -98,8 +104,17 @@
     @media (min-width: $desktop-width) {
       flex-direction: row;
       margin: 0;
-      padding-left: 4px;
       gap: 66px;
+    }
+  }
+
+  &__legend-text {
+    @media (min-width: $tablet-width) {
+      margin-bottom: 8px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 0;
     }
   }
 
@@ -151,16 +166,41 @@
   }
 
   &__wrapper {
+    @media (min-width: $tablet-width) {
+      max-width: 768px;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 0 30px;
+    }
+
     @media (min-width: $desktop-width) {
       display: flex;
       align-content: space-between;
       flex-direction: column;
       flex-wrap: wrap;
       max-height: 598px;
+      max-width: 1220px;
+      margin-left: auto;
+      margin-right: auto;
     }
   }
 
   &__slider {
-    text-align: center;
+    position: relative;
+    right: 3px;
+    justify-self: center;
+
+    @media (min-width: $tablet-width) {
+      right: 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      grid-column: 2;
+      grid-row: 1/4;
+      justify-self: center;
+      margin-top: 1px;
+      align-self: end;
+      margin-bottom: 10px;
+    }
   }
 }
