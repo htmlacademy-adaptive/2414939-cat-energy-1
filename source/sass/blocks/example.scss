@@ -2,7 +2,7 @@
 
 .example {
   background-color: $background-block-example;
-  padding: 25px 20px 40px;
+  padding: 16px 20px 40px;
   position: relative;
   left: 50%;
   right: 50%;
@@ -171,7 +171,7 @@
     max-width: 768px;
     margin-left: auto;
     margin-right: auto;
-    padding: 0 30px;
+    padding: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -183,7 +183,6 @@
     max-width: 1220px;
     margin-left: auto;
     margin-right: auto;
-    padding: 0;
   }
 }
 

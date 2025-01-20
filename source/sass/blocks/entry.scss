@@ -2,7 +2,6 @@
 
 .entry {
   position: relative;
-  margin-bottom: 24px;
   background: linear-gradient(rgba(104, 183, 56, 0.85) 302px, rgba(255, 255, 255, 0.85) 302px), url("../img/index-background-desktop-mobile.jpg") no-repeat;
 
   @media (min-resolution: 2dppx) {
@@ -11,7 +10,6 @@
   }
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 0;
     background: none;
   }
 
@@ -134,7 +132,6 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  padding-top: 27px;
   padding-bottom: 20px;
 
   @media (min-width: $tablet-width) {
