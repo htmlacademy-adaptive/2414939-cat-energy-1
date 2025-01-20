@@ -9,108 +9,115 @@
   margin-left: -50vw;
   margin-right: -50vw;
   height: 100%;
+}
 
-  &__academy-logo-text {
-    font: $font-sms-hnh-ff1;
-    color: $color-text-primary;
-  }
+.footer__academy-logo-text {
+  font: $font-sms-hnh-ff1;
+  color: $color-text-primary;
+}
 
-  &__academy-logo-image {
-    color: $color-icon;
-  }
+.footer__academy-logo-image {
+  color: $color-icon;
 
-  &__academy-logo-image:hover {
+  &:hover {
     fill: $background-button;
   }
 
-  &__academy-logo-image:focus svg {
+  &:focus svg {
     fill: #68b738;
   }
 
-  &__academy-logo-image:active svg {
+  &:active svg {
     opacity: 0.3;
   }
+}
 
-  &__index-address-wrapper {
+.footer__index-address-wrapper {
+  background-color: $background-body;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 70px 70px;
+  }
+}
+
+.footer__address {
+  @media (min-width: $tablet-width) {
+    max-width: 767px;
+    margin-right: auto;
+    margin-left: auto;
     background-color: $background-body;
-
-    @media (min-width: $tablet-width) {
-      padding: 0 70px 70px;
-    }
   }
 
-  &__address {
-    @media (min-width: $tablet-width) {
-      max-width: 767px;
-      margin-right: auto;
-      margin-left: auto;
-      background-color: $background-body;
-    }
+  @media (min-width: $desktop-width) {
+    max-width: 1200px;
+    position: relative;
   }
+}
 
-  &__address-wrapper {
+.footer__address-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 26px 20px;
+  background-color: $background-body;
+
+  @media (min-width: $tablet-width) {
     display: flex;
-    justify-content: space-between;
-    padding: 26px 20px;
+    padding: 65px 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 95px;
+
+    z-index: 2;
+    max-width: 565px;
+    height: 199px;
     background-color: $background-body;
+    padding: 60px 72px 60px 70px;
+    gap: 87px;
+  }
+}
 
-    @media (min-width: $tablet-width) {
-      display: flex;
-      padding: 65px 70px;
-    }
+.footer__address-subtitle {
+  font: $font-sms-hnh-ff2;
+  max-width: 140px;
+  color: $color-subtitle-special;
 
-    @media (min-width: $desktop-width) {
-      position: absolute;
-      inset: 95px 0 0 110px;
-      z-index: 2;
-      max-width: 565px;
-      height: 199px;
-      background-color: $background-body;
-      padding: 60px 72px 60px 83px;
-    }
+  @media (min-width: $tablet-width) {
+    font: $font-sml-hhh-ff2;
+    max-width: 160px;
+  }
+}
+
+.footer__address-text {
+  font: $font-ss-hnh-ff1;
+  color: $color-text-primary;
+  max-width: 140px;
+
+  @media (min-width: $tablet-width) {
+    font: $font-sms-hnh-ff1;
+    max-width: 160px;
+    text-align: right;
   }
 
-  &__address-subtitle {
-    font: $font-sms-hnh-ff2;
-    max-width: 140px;
-    color: $color-subtitle-special;
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: column;
+    gap: 19px;
+    text-align: left;
+  }
+}
 
-    @media (min-width: $tablet-width) {
-      font: $font-sml-hhh-ff2;
-      max-width: 160px;
-    }
+.footer__address-text p {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 21px;
   }
 
-  &__address-text {
-    font: $font-ss-hnh-ff1;
-    color: $color-text-primary;
-    max-width: 140px;
-
-    @media (min-width: $tablet-width) {
-      font: $font-sms-hnh-ff1;
-      max-width: 160px;
-      text-align: right;
-    }
-
-    @media (min-width: $desktop-width) {
-      display: flex;
-      flex-direction: column;
-      gap: 19px;
-      text-align: left;
-    }
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
   }
+}
 
-  &__address-text p {
-    @media (min-width: $tablet-width) {
-      margin-bottom: 21px;
-    }
-
-    @media (min-width: $desktop-width) {
-      margin-bottom: 0;
-    }
-  }
-
-  &__contacts {
-    background-color: $background-footer;
-  }
+.footer__contacts {
+  background-color: $background-footer;
 }

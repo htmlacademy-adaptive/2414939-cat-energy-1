@@ -1,45 +1,43 @@
 @import "../variables.scss";
 
-.logo {
-  &-text {
-    @media (min-width: $desktop-width) {
-      width: 118px;
-      height: 24px;
-    }
+.logo-text {
+  @media (min-width: $desktop-width) {
+    width: 118px;
+    height: 24px;
   }
 
-  &-text:hover {
+  &:hover {
     opacity: 80%;
   }
 
-  &-text:active {
+  &:active {
     opacity: 60%;
   }
+}
 
-  &__image-tablet,
-  &__image-desktop {
+.logo__image-tablet,
+.logo__image-desktop {
+  display: none;
+}
+
+.logo__image-mobile {
+  @media (min-width: $tablet-width) {
     display: none;
   }
+}
 
-  &__image-mobile {
-    @media (min-width: $tablet-width) {
-      display: none;
-    }
+.logo__image-tablet {
+  @media (min-width: $tablet-width) {
+    display: block;
   }
 
-  &__image-tablet {
-    @media (min-width: $tablet-width) {
-      display: block;
-    }
-
-    @media (min-width: $desktop-width) {
-      display: none;
-    }
+  @media (min-width: $desktop-width) {
+    display: none;
   }
+}
 
-  &__image-desktop {
-    @media (min-width: $desktop-width) {
-      display: block;
-    }
+.logo__image-desktop {
+  @media (min-width: $desktop-width) {
+    display: block;
   }
 }

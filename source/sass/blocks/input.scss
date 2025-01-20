@@ -1,0 +1,21 @@
+@import "../variables.scss";
+
+.input {
+  &:user-invalid {
+    border: $border-input-invalid;
+  }
+
+  &:focus {
+    border: $border-input-focus;
+    border-radius: 0;
+  }
+
+  &:focus ~ svg {
+    fill: #68b738;
+  }
+
+  &:hover {
+    border: $border-input-hover;
+    border-radius: 0;
+  }
+}

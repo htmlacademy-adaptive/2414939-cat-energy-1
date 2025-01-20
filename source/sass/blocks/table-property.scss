@@ -20,14 +20,14 @@
   @media (min-width: $desktop-width) {
     gap: 13px;
   }
+}
 
-  &__row {
-    display: flex;
-    justify-content: space-between;
-    position: relative;
-  }
+.table-property__row {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
 
-  &__row::after {
+  &::after {
     @media (min-width: $tablet-width) {
       content: "";
       position: absolute;

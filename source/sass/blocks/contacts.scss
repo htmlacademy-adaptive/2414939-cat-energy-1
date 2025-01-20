@@ -1,76 +1,74 @@
 @import "../variables.scss";
 
-.contacts {
-  &__container {
-    padding: 36px 20px;
-    max-width: 765px;
-    margin-left: auto;
-    margin-right: auto;
+.contacts__container {
+  padding: 36px 20px;
+  max-width: 765px;
+  margin-left: auto;
+  margin-right: auto;
 
-    @media (min-width: $tablet-width) {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 47px 30px;
-    }
-
-    @media (min-width: $desktop-width) {
-      padding: 66px 29px;
-      max-width: 1270px;
-    }
-  }
-
-  &__logo {
-    display: block;
-    margin-bottom: 20px;
-    text-align: center;
-
-    @media (min-width: $tablet-width) {
-      margin: 0;
-    }
-  }
-
-  &__social-list {
-    display: flex;
-    padding: 20px 0;
-    border-top: $border-block;
-    border-bottom: $border-block;
-    margin-bottom: 14px;
-    gap: 24px;
-    align-items: center;
-    justify-content: center;
-
-    @media (min-width: $tablet-width) {
-      border: none;
-      margin: 0;
-      padding: 0 0 0 39px;
-    }
-
-    @media (min-width: $desktop-width) {
-      padding: 0 0 0 47px;
-    }
-  }
-
-  &__social-item {
-    display: flex;
-    width: 28px;
-    height: 22px;
-    align-items: center;
-    justify-content: center;
-  }
-
-  &__social-link {
-    color: $color-icon;
-  }
-
-  &__promo-wrapper {
+  @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 47px 30px;
+  }
 
-    @media (min-width: $tablet-width) {
-      gap: 23px;
-    }
+  @media (min-width: $desktop-width) {
+    padding: 66px 29px;
+    max-width: 1270px;
+  }
+}
+
+.contacts__logo {
+  display: block;
+  margin-bottom: 20px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
+}
+
+.contacts__social-list {
+  display: flex;
+  padding: 20px 0;
+  border-top: $border-block;
+  border-bottom: $border-block;
+  margin-bottom: 14px;
+  gap: 24px;
+  align-items: center;
+  justify-content: center;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+    margin: 0;
+    padding: 0 0 0 39px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 0 0 47px;
+  }
+}
+
+.contacts__social-item {
+  display: flex;
+  width: 28px;
+  height: 22px;
+  align-items: center;
+  justify-content: center;
+}
+
+.contacts__social-link {
+  color: $color-icon;
+}
+
+.contacts__promo-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    gap: 23px;
   }
 
   &__promo-wrapper:active {
