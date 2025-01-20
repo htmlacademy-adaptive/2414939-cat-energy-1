@@ -54,7 +54,6 @@
 }
 
 .body {
-  background-color: $background-body-1;
   font-family: $ff1, "Arial", sans-serif;
   width: 320px;
   padding: 0;
@@ -62,36 +61,13 @@
   font-weight: normal;
 
   @media (min-width: $tablet-width) {
-    min-width: 768px;
+    width: 768px;
   }
 
   @media (min-width: $desktop-width) {
-    min-width: 1440px;
+    width: 1440px;
     position: relative;
   }
-}
-
-.button {
-  background-color: $background-button;
-  color: $color-text-secondary;
-  font: $font-sms-hnh-ff2;
-  text-align: center;
-  margin: 0 auto;
-  text-decoration: none;
-  display: block;
-  text-transform: uppercase;
-  width: 100%;
-  min-height: 40px;
-  padding: 10px 10px;
-  cursor: pointer;
-}
-
-.button:hover {
-  background-color: $background-button-hover;
-}
-
-.button:active {
-  color: $color-text-secondary-hover;
 }
 
 .image {
@@ -102,34 +78,4 @@
 
 .price::after {
   content: " \20BD";
-}
-
-.input:user-invalid {
-  border: $border-input-invalid;
-}
-
-.input:focus {
-  border: $border-input-focus;
-  border-radius: 0;
-}
-
-.input:focus ~ svg {
-  fill: #68b738;
-}
-
-.input:hover {
-  border: $border-input-hover;
-  border-radius: 0;
-}
-
-.social-button:hover svg {
-  fill: #68b738;
-}
-
-.social-button:focus svg {
-  fill: #68b738;
-}
-
-.social-button:active svg {
-  opacity: 0.3;
 }

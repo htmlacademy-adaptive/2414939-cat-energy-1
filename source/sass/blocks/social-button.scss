@@ -1,0 +1,15 @@
+@import "../variables.scss";
+
+.social-button {
+  &:hover svg {
+    fill: #68b738;
+  }
+
+  &:focus svg {
+    fill: #68b738;
+  }
+
+  &:active svg {
+    opacity: 0.3;
+  }
+}

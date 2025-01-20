@@ -1,93 +1,58 @@
 @import "../variables";
 
-.add-info {
-  &__item {
-    display: grid;
-    grid-template-columns: auto 1fr;
-    position: relative;
-    align-items: center;
-    font: $font-sms-hn-ff2;
+.add-info__item {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  position: relative;
+  align-items: center;
+  font: $font-sms-hn-ff2;
 
-    @media (min-width: $tablet-width) {
-      font: $font-sml-hxh-ff2;
-    }
+  @media (min-width: $tablet-width) {
+    font: $font-sml-hxh-ff2;
   }
 
   &__item:disabled {
     opacity: 0.3;
   }
+}
 
-  &__container {
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-    margin-bottom: 39px;
+.add-info__container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-bottom: 39px;
 
-    @media (min-width: $tablet-width) {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: 1fr 1fr;
-      row-gap: 41px;
-      column-gap: 64px;
-      margin-bottom: 54px;
-    }
-
-    @media (min-width: $desktop-width) {
-      grid-template-columns: repeat(auto-fit, minmax(120px, 245px));
-      column-gap: 80px;
-      margin-bottom: -6px;
-    }
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 41px;
+    column-gap: 64px;
+    margin-bottom: 54px;
   }
 
-  &__checkbox {
-    position: absolute;
-    left: 0;
-    opacity: 0;
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 245px));
+    column-gap: 80px;
+    margin-bottom: -6px;
+  }
+}
+
+.add-info__checkbox {
+  position: absolute;
+  left: 0;
+  opacity: 0;
+}
+
+.add-info__checkbox + label {
+  position: relative;
+  padding-left: 48px;
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 60px;
   }
 
-  &__checkbox + label {
-    position: relative;
-    padding-left: 48px;
-    cursor: pointer;
-
-    @media (min-width: $tablet-width) {
-      padding-left: 60px;
-    }
-  }
-
-  &__icon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    left: 0;
-    top: -8px;
-    width: 30px;
-    height: 30px;
-    border: $border-checkbox;
-
-    @media (min-width: $tablet-width) {
-      width: 40px;
-      height: 40px;
-    }
-
-    @media (min-width: $desktop-width) {
-      top: -5px;
-    }
-  }
-
-  &__icon::after {
-    content: "";
-    width: 18px;
-    height: 14px;
-    background: url("../img/check.svg") no-repeat center;
-    background-size: 100%;
-
-    @media (min-width: $tablet-width) {
-      width: 24px;
-      height: 19px;
-    }
-  }
 
   &__checkbox + label span:hover {
     border: $border-program-choice-hover;
@@ -105,5 +70,40 @@
   &__checkbox:disabled + label::before,
   &__checkbox:disabled + label {
     opacity: 0.3;
+  }
+}
+
+.add-info__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 0;
+  top: -8px;
+  width: 30px;
+  height: 30px;
+  border: $border-checkbox;
+
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    height: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: -5px;
+  }
+
+
+  &__icon::after {
+    content: "";
+    width: 18px;
+    height: 14px;
+    background: url("../img/check.svg") no-repeat center;
+    background-size: 100%;
+
+    @media (min-width: $tablet-width) {
+      width: 24px;
+      height: 19px;
+    }
   }
 }

@@ -1,54 +1,52 @@
 @import "../variables";
 
-.promo {
-  &__image-wrapper {
-    position: relative;
-    height: 290px;
+.promo__image-wrapper {
+  position: relative;
+  height: 290px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 48px;
+  padding: 20px 60px 0;
+  background: $background-block-special url("../img/promo-image.jpg") no-repeat center;
+  background-size: cover;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/promo-image@2x.jpg");
+    background-size: cover;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    height: 200px;
+    background: $background-block-special url("../img/promo-image-tablet.jpg") no-repeat center;
+    background-size: cover;
+    flex-direction: row;
+    padding: 63px 123px 69px 80px;
+    justify-content: space-between;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/promo-image-tablet@2x.jpg");
+      background-size: contain;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 48px;
-    padding: 20px 60px 0;
-    background: $background-block-special url("../img/promo-image.jpg") no-repeat center;
-    background-size: cover;
+    min-width: 245px;
+    min-height: 288px;
+    padding: 56px 42px 43px;
+    background-image: url("../img/promo-image.jpg");
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/promo-image@2x.jpg");
       background-size: cover;
     }
-
-    @media (min-width: $tablet-width) {
-      width: 100%;
-      height: 200px;
-      background: $background-block-special url("../img/promo-image-tablet.jpg") no-repeat center;
-      background-size: cover;
-      flex-direction: row;
-      padding: 63px 123px 69px 80px;
-      justify-content: space-between;
-
-      @media (min-resolution: 2dppx) {
-        background-image: url("../img/promo-image-tablet@2x.jpg");
-        background-size: contain;
-      }
-    }
-
-    @media (min-width: $desktop-width) {
-      display: flex;
-      flex-direction: column;
-      min-width: 245px;
-      min-height: 288px;
-      padding: 56px 42px 43px;
-      background-image: url("../img/promo-image.jpg");
-
-      @media (min-resolution: 2dppx) {
-        background-image: url("../img/promo-image@2x.jpg");
-        background-size: cover;
-      }
-    }
   }
 
-  &__image-wrapper::before {
+  &::before {
     content: "";
     position: absolute;
     inset: 0;
@@ -65,28 +63,28 @@
       height: 288px;
     }
   }
+}
 
-  &__icon-image {
-    z-index: 0;
-    width: 78px;
-    height: 80px;
-    background-image: url("../img/icon-gift.svg");
+.promo__icon-image {
+  z-index: 0;
+  width: 78px;
+  height: 80px;
+  background-image: url("../img/icon-gift.svg");
+}
+
+.promo__text {
+  text-align: center;
+  font: $font-sms-hnh-ff1;
+  color: $color-text-secondary;
+  z-index: 0;
+
+  @media (min-width: $tablet-width) {
+    max-width: 161px;
+    text-align: left;
+    padding-top: 5px;
   }
 
-  &__text {
+  @media (min-width: $desktop-width) {
     text-align: center;
-    font: $font-sms-hnh-ff1;
-    color: $color-text-secondary;
-    z-index: 0;
-
-    @media (min-width: $tablet-width) {
-      max-width: 161px;
-      text-align: left;
-      padding-top: 5px;
-    }
-
-    @media (min-width: $desktop-width) {
-      text-align: center;
-    }
   }
 }

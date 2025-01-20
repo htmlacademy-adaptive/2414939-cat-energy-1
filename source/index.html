@@ -83,7 +83,7 @@
       </defs>
     </symbol>
 
-    <symbol id="slider-control" fill="none" viewBox="0 0 40 40" >
+    <symbol id="slider-control" fill="none" viewBox="0 0 40 40">
       <rect x="1" y="1" width="38" height="38" rx="19" fill="white"></rect>
       <rect x="1" y="1" width="38" height="38" rx="19" stroke="#666666" stroke-width="2"></rect>
       <path d="M16 11L8 20L16 29V11Z" fill="#666666"></path>
@@ -198,28 +198,29 @@
 </div>
 <header class="header body-header">
   <div class="container">
-  <div class="header__wrapper header__wrapper-index">
-    <div class="logo logo-image-wrapper"><a class="link logo-link header__logo" href="index.html"
+    <div class="header__wrapper header__wrapper-index">
+      <div class="logo logo-image-wrapper"><a class="link logo-link header__logo" href="index.html"
+                                              title="Перейти на главную страницу">
+        <svg class="icon logo__image-mobile" width="33" viewBox="0 0 33 38">
+          <use xlink:href="#logo-img-mobile"></use>
+        </svg>
+        <svg class="icon logo__image-tablet" width="60" viewBox="0 0 60 50">
+          <use xlink:href="#logo-img-tablet"></use>
+        </svg>
+        <svg class="icon logo__image-desktop" width="70" viewBox="0 0 70 69">
+          <use xlink:href="#logo-img-desktop"></use>
+        </svg>
+      </a></div>
+      <div class="logo-text-wrapper"><a class="link logo-link header__logo" href="#"
                                         title="Перейти на главную страницу">
-      <svg class="icon logo__image-mobile" width="33" viewBox="0 0 33 38">
-        <use xlink:href="#logo-img-mobile"></use>
-      </svg>
-      <svg class="icon logo__image-tablet" width="60" viewBox="0 0 60 50">
-        <use xlink:href="#logo-img-tablet"></use>
-      </svg>
-      <svg class="icon logo__image-desktop" width="70" viewBox="0 0 70 69">
-        <use xlink:href="#logo-img-desktop"></use>
-      </svg>
-    </a></div>
-    <div class="logo-text-wrapper"><a class="link logo-link header__logo" href="#" title="Перейти на главную страницу">
-      <svg class="icon logo-text" width="101" viewBox="0 0 101 18">
-        <use xlink:href="#logo-text-mobile"></use>
-      </svg>
-    </a></div>
-    <div class="header-navigation-wrapper">
-      <nav class="header-navigation header-navigation-closed">
-        <button class="header-navigation__toggle" type="button"></button>
-          <ul class="list header-navigation__list" id="header-navigation__list">
+        <svg class="icon logo-text" width="101" viewBox="0 0 101 18">
+          <use xlink:href="#logo-text-mobile"></use>
+        </svg>
+      </a></div>
+      <div class="header-navigation-wrapper">
+        <nav class="header-navigation header-navigation--closed header-navigation--nojs">
+          <button class="header-navigation__toggle" type="button"></button>
+          <ul class="list header-navigation__list">
             <li class="header-navigation__item"><a
               class="link header-navigation__link header-navigation__link--index header-navigation__link--active header-navigation__link--active-index"
               href="#" title="Перейти на главную страницу">Главная</a></li>
@@ -230,39 +231,42 @@
                                                     href="form.html" title="Перейти страницу подбора программы">Подбор
               программы</a></li>
           </ul>
-      </nav>
+        </nav>
+      </div>
     </div>
-  </div>
   </div>
 </header>
 <main class="main-index body__main">
-  <section class="entry entry-desktop">
-    <div class="entry__title-wrapper"><h1 class="title entry__title">Функциональное питание для котов</h1>
-      <p class="text entry__tagline">Занялся собой? Займись котом!</p><a class="button entry__button" href="form.html"
-                                                                          title="Перейти страницу подбора программы">Подобрать
-        программу</a></div>
-    <div class="entry__image-container">
-      <img class="entry__image" src="./img/index-background-desktop.jpg"
-                                            srcset="./img/index-background-desktop@2x.jpg 2x" height="694" width="720"
-                                            alt="Довольная рожа кота">
-    </div>
-  </section>
+  <div class="entry-desktop-wrapper">
+    <section class="entry entry-desktop">
+      <div class="entry__title-wrapper"><h1 class="title entry__title">Функциональное питание для котов</h1>
+        <p class="text entry__tagline">Занялся собой? Займись котом!</p><a class="button entry__button" href="form.html"
+                                                                            title="Перейти страницу подбора программы">Подобрать
+          программу</a></div>
+      <div class="entry__image-container">
+        <img class="entry__image" src="./img/index-background-desktop.jpg"
+              srcset="./img/index-background-desktop@2x.jpg 2x" height="694"
+              alt="Довольный кот">
+      </div>
+    </section>
+  </div>
   <section class="entry main-index__entry">
     <div class="entry__container">
       <header class="entry__header entry__header-wrapper"><h1 class="title entry__title">Функциональное питание для
         котов</h1>
         <p class="text entry__tagline">Занялся собой? Займись котом!</p>
       </header>
-        <picture class="entry__image-wrapper">
-          <source type="image/webp" media="(min-width: 1200px)"
-                  srcset="./img/index-can-desktop.webp, ./img/index-can-desktop@2x.webp 2x">
-          <source type="image/webp" media="(min-width: 768px)"
-                  srcset="./img/index-can-tablet.webp, ./img/index-can-tablet@2x.webp 2x">
-          <source type="image/webp" srcset="./img/index-can-mobile.webp, ./img/index-can-mobile@2x.webp 2x">
-          <source media="(min-width: 1200px)" srcset="./img/index-can-desktop.png, ./img/index-can-desktop@2x.png 2x">
-          <source media="(min-width: 768px)" srcset="./img/index-can-tablet.png, ./img/index-can-tablet@2x.png 2x">
-          <img class="image entry__image-product" src="./img/index-can-mobile.png" srcset="./img/index-can-mobile@2x.png 2x"
-                alt="Банка кошачих консервов Cat Energy с курицей"></picture>
+      <picture class="entry__image-wrapper">
+        <source type="image/webp" media="(min-width: 1200px)"
+                srcset="./img/index-can-desktop.webp, ./img/index-can-desktop@2x.webp 2x">
+        <source type="image/webp" media="(min-width: 768px)"
+                srcset="./img/index-can-tablet.webp, ./img/index-can-tablet@2x.webp 2x">
+        <source type="image/webp" srcset="./img/index-can-mobile.webp, ./img/index-can-mobile@2x.webp 2x">
+        <source media="(min-width: 1200px)" srcset="./img/index-can-desktop.png, ./img/index-can-desktop@2x.png 2x">
+        <source media="(min-width: 768px)" srcset="./img/index-can-tablet.png, ./img/index-can-tablet@2x.png 2x">
+        <img class="image entry__image-product" src="./img/index-can-mobile.png"
+              srcset="./img/index-can-mobile@2x.png 2x"
+              alt="Банка кошачих консервов Cat Energy с курицей"></picture>
       <a class="button entry__button" href="form.html" title="Перейти страницу подбора программы">Подобрать
         программу</a>
     </div>
@@ -316,7 +320,7 @@
               Pro поможет вашему коту нарастить необходимые мышцы!
             </div>
             <div class="programs__link-wrapper"><a class="link programs__link" href="#"
-                                                    title="Перейти к товарам для набора веса">каталог pro</a> <span
+                                                        title="Перейти к товарам для набора веса">каталог pro</a> <span
               class="programs__link-icon"></span></div>
           </div>
         </article>
@@ -324,46 +328,46 @@
     </ul>
   </section>
   <section class="advantages main-index__advantages">
-      <h2 class="title advantages__title">Как это работает</h2>
-      <ul class="list advantages__list">
-        <li class="advantages__item">
-          <div class="advantages__icon">
-            <svg class="icon" width="30" viewBox="0 0 30 32">
-              <use xlink:href="#leaf"></use>
-            </svg>
-          </div>
-          <div class="advantages__text-wrapper">Функциональное питание содержит только полезные питательные вещества.
-          </div>
-        </li>
-        <li class="advantages__item">
-          <div class="advantages__icon">
-            <svg class="icon" width="27" viewBox="0 0 27 29">
-              <use xlink:href="#water"></use>
-            </svg>
-          </div>
-          <div class="advantages__text-wrapper">Выпускается в виде порошка, который нужно лишь залить кипятком и
-            готово.
-          </div>
-        </li>
-        <li class="advantages__item">
-          <div class="advantages__icon">
-            <svg class="icon" width="26" viewBox="0 0 26 30">
-              <use xlink:href="#food"></use>
-            </svg>
-          </div>
-          <div class="advantages__text-wrapper">Замените один-два приема обычной еды на наше функциональное питание.
-          </div>
-        </li>
-        <li class="advantages__item">
-          <div class="advantages__icon">
-            <svg class="icon" width="27" viewBox="0 0 27 31">
-              <use xlink:href="#time"></use>
-            </svg>
-          </div>
-          <div class="advantages__text-wrapper">Уже через месяц наслаждайтесь изменениями к лучшему <br> вашего питомца!
-          </div>
-        </li>
-      </ul>
+    <h2 class="title advantages__title">Как это работает</h2>
+    <ul class="list advantages__list">
+      <li class="advantages__item">
+        <div class="advantages__icon">
+          <svg class="icon" width="30" viewBox="0 0 30 32">
+            <use xlink:href="#leaf"></use>
+          </svg>
+        </div>
+        <div class="advantages__text-wrapper">Функциональное питание содержит только полезные питательные вещества.
+        </div>
+      </li>
+      <li class="advantages__item">
+        <div class="advantages__icon">
+          <svg class="icon" width="27" viewBox="0 0 27 29">
+            <use xlink:href="#water"></use>
+          </svg>
+        </div>
+        <div class="advantages__text-wrapper">Выпускается в виде порошка, который нужно лишь залить кипятком и
+          готово.
+        </div>
+      </li>
+      <li class="advantages__item">
+        <div class="advantages__icon">
+          <svg class="icon" width="26" viewBox="0 0 26 30">
+            <use xlink:href="#food"></use>
+          </svg>
+        </div>
+        <div class="advantages__text-wrapper">Замените один-два приема обычной еды на наше функциональное питание.
+        </div>
+      </li>
+      <li class="advantages__item">
+        <div class="advantages__icon">
+          <svg class="icon" width="27" viewBox="0 0 27 31">
+            <use xlink:href="#time"></use>
+          </svg>
+        </div>
+        <div class="advantages__text-wrapper">Уже через месяц наслаждайтесь изменениями к лучшему <br> вашего питомца!
+        </div>
+      </li>
+    </ul>
   </section>
   <section class="example main-index__example">
     <div class="example__wrapper">
@@ -391,31 +395,37 @@
       <div class="example__slider slider">
         <div class="slider__before">
           <picture>
-            <source type="image/webp" media="(min-width: 1200px)" srcset="img/before-tablet@1x.webp, img/before-tablet@2x.webp 2x">
-            <source type="image/webp" media="(min-width: 768px)" srcset="img/before-tablet@1x.webp, img/before-tablet@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 1200px)"
+                    srcset="img/before-tablet@1x.webp, img/before-tablet@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)"
+                    srcset="img/before-tablet@1x.webp, img/before-tablet@2x.webp 2x">
             <source type="image/webp" srcset="img/before-mobile@1x.webp, img/before-mobile@2x.webp 2x">
             <source media="(min-width: 1200px)" srcset="img/before-tablet@1x.png, img/before-tablet@2x.png 2x">
             <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png, img/before-tablet@2x.png 2x">
-            <img class="slider__img slider__img--before" src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" alt="Полный кот">
+            <img class="slider__img slider__img--before" src="img/before-mobile@1x.png"
+                  srcset="img/before-mobile@2x.png 2x" alt="Полный кот">
           </picture>
         </div>
-          <div class="slider__button-delimiter">
-            <div class="slider__after">
-              <picture>
-                <source type="image/webp" media="(min-width: 1200px)" srcset="img/after-tablet@1x.webp, img/after-tablet@2x.webp 2x">
-                <source type="image/webp" media="(min-width: 768px)" srcset="img/after-tablet@1x.webp, img/after-tablet@2x.webp 2x">
-                <source type="image/webp" srcset="img/after-mobile@1x.webp, img/after-mobile@2x.webp 2x">
-                <source media="(min-width: 1200px)" srcset="img/after-tablet@1x.png, img/after-tablet@2x.png 2x">
-                <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png, img/after-tablet@2x.png 2x">
-                <img class="slider__img slider__img--after" src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png 2x" alt="Худой кот">
-              </picture>
-            </div>
-            <button class="slider__toggle slider__button" type="button" aria-label="Сравнить изображения">
-                <svg class="icon" width="40" fill="currentColor">
-                <use xlink:href="#slider-control"></use>
-                </svg>
-            </button>
+        <div class="slider__button-delimiter">
+          <div class="slider__after">
+            <picture>
+              <source type="image/webp" media="(min-width: 1200px)"
+                      srcset="img/after-tablet@1x.webp, img/after-tablet@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)"
+                      srcset="img/after-tablet@1x.webp, img/after-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/after-mobile@1x.webp, img/after-mobile@2x.webp 2x">
+              <source media="(min-width: 1200px)" srcset="img/after-tablet@1x.png, img/after-tablet@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png, img/after-tablet@2x.png 2x">
+              <img class="slider__img slider__img--after" src="img/after-mobile@1x.png"
+                    srcset="img/after-mobile@2x.png 2x" alt="Худой кот">
+            </picture>
           </div>
+          <button class="slider__toggle slider__button" type="button" aria-label="Сравнить изображения">
+            <svg class="icon" width="40" fill="currentColor">
+              <use xlink:href="#slider-control"></use>
+            </svg>
+          </button>
+        </div>
       </div>
     </div>
   </section>
@@ -439,14 +449,14 @@
     </section>
     <section class="contacts footer__contacts"><h2 class="visually-hidden">Контактная информация</h2>
       <div class="contacts__container"><a class="link logo-text contacts__logo" href="#"
-                                                    title="Контактная информация">
+                                          title="Контактная информация">
         <svg class="icon logo-text" width="128" viewBox="0 0 128 24">
           <use xlink:href="#logo-text-mobile"></use>
         </svg>
       </a>
         <ul class="list contacts__social-list">
           <li class="contacts__social-item"><a class="link social-button contacts__social-link contacts__social-vk"
-                                                href="#" title="Мы в VK">
+                                                  href="#" title="Мы в VK">
             <svg class="icon" width="28" height="22" fill="currentColor">
               <use xlink:href="#vkontakte"></use>
             </svg>
@@ -464,9 +474,11 @@
             </svg>
             <span class="visually-hidden">мы в Telegram</span></a></li>
         </ul>
-        <div class="contacts__promo-wrapper"><a class="link footer__academy-logo-text" href="https://htmlacademy.ru/intensive/adaptive"
+        <div class="contacts__promo-wrapper"><a class="link footer__academy-logo-text"
+                                                href="https://htmlacademy.ru/intensive/adaptive"
                                                 title="Перейти в HTML Academy">HTML Academy</a> <a
-          class="link footer__academy-logo-image" href="https://htmlacademy.ru/intensive/adaptive" title="Перейти в HTML Academy">
+          class="link footer__academy-logo-image" href="https://htmlacademy.ru/intensive/adaptive"
+          title="Перейти в HTML Academy">
           <svg class="icon" width="27" height="34" fill="currentColor">
             <use xlink:href="#academy__logo-image"></use>
           </svg>
@@ -475,6 +487,7 @@
     </section>
   </footer>
   <script src="./js/script.js"></script>
+
 </main>
 </body>
 </html>

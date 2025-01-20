@@ -1,12 +1,10 @@
 @import "../variables";
 
-.program-choice {
-  &__radio {
-    display: flex;
-    padding: 6px 0 6px;
-  }
+.program-choice__radio {
+  display: flex;
+  padding: 6px 0 6px;
 
-  &__radio:not(:last-child) {
+  &:not(:last-child) {
     margin-bottom: 12px;
 
     @media (min-width: $tablet-width) {
@@ -21,92 +19,92 @@
     }
   }
 
-  &__radio:disabled {
+  &:disabled {
     opacity: 0.3;
   }
+}
 
-  &__radio input[type="radio"] {
-    display: none;
+.program-choice__radio input[type="radio"] {
+  display: none;
+}
+
+.program-choice__radio label {
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+  padding-left: 45px;
+  margin-right: 0;
+  line-height: 18px;
+  user-select: none;
+
+  @media (min-width: $tablet-width) {
+    font: $font-sml-hh-ff2;
+    padding-left: 55px;
   }
 
-  &__radio label {
-    display: inline-block;
-    cursor: pointer;
-    position: relative;
-    padding-left: 45px;
-    margin-right: 0;
-    line-height: 18px;
-    user-select: none;
+  @media (min-width: $desktop-width) {
+    padding-left: 60px;
+  }
+}
 
-    @media (min-width: $tablet-width) {
-      font: $font-sml-hh-ff2;
-      padding-left: 55px;
-    }
+.program-choice__radio-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  border-radius: 50%;
+  border: $border-program-choice;
+  left: 2px;
+  bottom: -5px;
 
-    @media (min-width: $desktop-width) {
-      padding-left: 60px;
-    }
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    height: 40px;
+    left: -3px;
+    bottom: -8px;
   }
 
-  &__radio-icon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 30px;
-    height: 30px;
-    position: absolute;
-    border-radius: 50%;
-    border: $border-program-choice;
-    left: 2px;
-    bottom: -5px;
+  @media (min-width: $desktop-width) {
+    left: 0;
+    bottom: -4px;
+  }
+}
 
-    @media (min-width: $tablet-width) {
-      width: 40px;
-      height: 40px;
-      left: -3px;
-      bottom: -8px;
-    }
+.program-choice__radio-icon:hover {
+  border: $border-program-choice-hover;
+}
 
-    @media (min-width: $desktop-width) {
-      left: 0;
-      bottom: -4px;
-    }
+.program-choice__radio-icon::after {
+  content: "";
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background-color: $background-button;
+  visibility: hidden;
+
+  @media (min-width: $tablet-width) {
+    width: 18px;
+    height: 18px;
+    left: 5px;
+    top: 1px;
   }
 
-  &__radio-icon:hover {
-    border: $border-program-choice-hover;
+  @media (min-width: $desktop-width) {
+    left: 10px;
+    top: 1px;
   }
+}
 
-  &__radio-icon::after {
-    content: "";
-    width: 13px;
-    height: 13px;
-    border-radius: 50%;
-    background-color: $background-button;
-    visibility: hidden;
+.program-choice__radio input[type="radio"]:checked + label span::after {
+  visibility: visible;
+}
 
-    @media (min-width: $tablet-width) {
-      width: 18px;
-      height: 18px;
-      left: 5px;
-      top: 1px;
-    }
+.program-choice__radio label:hover::before {
+  border: 1px solid #bababa;
+}
 
-    @media (min-width: $desktop-width) {
-      left: 10px;
-      top: 1px;
-    }
-  }
-
-  &__radio input[type="radio"]:checked + label span::after {
-    visibility: visible;
-  }
-
-  &__radio label:hover::before {
-    border: 1px solid #bababa;
-  }
-
-  &__radio input[type="radio"]:disabled + label {
-    opacity: 0.3;
-  }
+.program-choice__radio input[type="radio"]:disabled + label {
+  opacity: 0.3;
 }

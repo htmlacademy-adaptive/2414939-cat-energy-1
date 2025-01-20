@@ -2,52 +2,75 @@
 
 .extra-products {
   position: relative;
+}
 
-  &__title {
-    font: $font-sl-hh-ff2;
-    color: $color-text-special;
-    text-wrap: nowrap;
-    padding-right: 20px;
-    background-color: $background-body;
-    z-index: 1;
+.extra-products__title {
+  font: $font-sl-hh-ff2;
+  color: $color-text-special;
+  text-wrap: nowrap;
+  background-color: $background-body;
+  z-index: 1;
 
-    @media (min-width: $tablet-width) {
-      font: $font-sxxl-hxxh-ff2;
-      padding: 0 40px 0 40px;
-      margin-bottom: 0;
-    }
-
-    @media (min-width: $desktop-width) {
-      position: relative;
-      left: -41px;
-    }
+  @media (min-width: $tablet-width) {
+    font: $font-sxxl-hxxh-ff2;
+    position: relative;
+    margin-bottom: 0;
   }
 
-  &__subtitle {
-    @media (min-width: $desktop-width) {
-      width: 325px;
-    }
+  @media (min-width: $desktop-width) {
+    left: -40px;
+  }
+}
+
+.extra-products__title::after,
+.extra-products__title::before {
+  content: "";
+  position: absolute;
+  width: 100vw;
+  height: 2px;
+  background-color: $background-title-decor;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: -1;
+}
+
+.extra-products__title::before {
+  right: 0;
+}
+
+.extra-products__title span {
+  background-color: $background-body;
+  padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 40px;
+  }
+}
+
+.extra-products__subtitle {
+  @media (min-width: $desktop-width) {
+    width: 325px;
+  }
+}
+
+.extra-products__item {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  padding: 13px 0 19px;
+  border-top: $border-extra-products;
+
+  @media (min-width: $tablet-width) {
+    padding: 26px 38px;
+    gap: 25px;
   }
 
-  &__item {
-    display: flex;
-    flex-direction: column;
-    gap: 7px;
-    padding: 13px 0 19px;
-    border-top: $border-extra-products;
-
-    @media (min-width: $tablet-width) {
-      padding: 26px 38px;
-      gap: 25px;
-    }
-
-    @media (min-width: $desktop-width) {
-      flex-direction: row;
-      padding: 15px 1px;
-      width: 894px;
-      justify-content: space-between;
-      align-items: center;
-    }
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    padding: 15px 1px;
+    width: 894px;
+    justify-content: space-between;
+    align-items: center;
   }
 
   &__item:not(:last-child) {
@@ -63,135 +86,109 @@
       border-bottom: $border-extra-products;
     }
   }
+}
 
-  &__content {
-    display: flex;
-    flex-direction: column;
-    gap: 13px;
+.extra-products__content {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
 
-    @media (min-width: $tablet-width) {
-      flex-direction: row;
-      justify-content: space-between;
-    }
-
-    @media (min-width: $desktop-width) {
-      gap: 0;
-    }
-  }
-
-  &__row {
-    display: flex;
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
     justify-content: space-between;
-
-    @media (min-width: $tablet-width) {
-      font: $font-sms-hnh-ff1;
-      align-items: center;
-      gap: 55px;
-    }
-
-    @media (min-width: $desktop-width) {
-      gap: 0;
-      align-items: end;
-    }
   }
 
-  &__list {
-    border-bottom: $border-extra-products;
-    margin-bottom: 35px;
-
-    @media (min-width: $tablet-width) {
-      border: $border-extra-products;
-      margin-bottom: 70px;
-    }
-
-    @media (min-width: $desktop-width) {
-      padding-bottom: 0;
-      display: grid;
-      margin: 0;
-      border: none;
-    }
+  @media (min-width: $desktop-width) {
+    gap: 0;
   }
+}
 
-  &__title-wrapper {
-    display: flex;
+.extra-products__row {
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    font: $font-sms-hnh-ff1;
     align-items: center;
-    padding-bottom: 36px;
-    border-top: $border-extra-products__title;
-    position: relative;
-
-    @media (min-width: $tablet-width) {
-      border: none;
-      gap: 10px;
-      margin-bottom: 78px;
-      padding-bottom: 0;
-    }
-
-    @media (min-width: $desktop-width) {
-      gap: 0;
-      margin-bottom: 78px;
-    }
+    gap: 55px;
   }
 
-  &__title-wrapper::before {
-    content: "";
-    position: absolute;
-    width: 280px;
-    height: 2px;
-    background-color: $background-title-decor;
+  @media (min-width: $desktop-width) {
+    gap: 0;
+    align-items: end;
+    min-width: 284px;
+  }
+}
 
-    @media (min-width: $tablet-width) {
-      content: "";
-      position: absolute;
-      width: 768px;
-      left: -30px;
-      top: 60%;
-      transform: translateY(-50%);
-    }
+.extra-products__list {
+  border-bottom: $border-extra-products;
+  margin-bottom: 35px;
 
-    @media (min-width: $desktop-width) {
-      content: "";
-      position: absolute;
-      width: 1440px;
-      left: -110px;
-    }
+  @media (min-width: $tablet-width) {
+    border: $border-extra-products;
+    margin-bottom: 70px;
   }
 
-  &__promo {
-    position: relative;
+  @media (min-width: $desktop-width) {
+    padding-bottom: 0;
+    display: grid;
+    margin: 0;
+    border: none;
+  }
+}
 
-    @media (min-width: $tablet-width) {
-      padding-bottom: 75px;
-    }
+.extra-products__title-wrapper {
+  display: inline-block;
+  padding-bottom: 36px;
+  border-top: $border-extra-products__title;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+    margin-bottom: 78px;
+    padding-bottom: 0;
   }
 
-  &__link {
-    @media (min-width: $tablet-width) {
-      width: 100%;
-    }
+  @media (min-width: $desktop-width) {
+    margin-bottom: 80px;
+  }
+}
 
-    @media (min-width: $desktop-width) {
-      width: 244px;
-    }
+.extra-products__promo {
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 75px;
+  }
+}
+
+.extra-products__link {
+  @media (min-width: $tablet-width) {
+    width: 100%;
   }
 
-  &__wrapper {
-    @media (min-width: $desktop-width) {
-      display: flex;
-      gap: 80px;
-      justify-content: space-between;
-      align-items: flex-start;
-    }
+  @media (min-width: $desktop-width) {
+    width: 244px;
   }
+}
 
-  &-property {
-    color: $color-text-primary;
-
-    @media (min-width: $desktop-width) {
-      width: 243px;
-    }
+.extra-products__wrapper {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    gap: 80px;
+    justify-content: space-between;
+    align-items: flex-start;
   }
+}
 
-  &-value {
-    text-align: right;
+.extra-products-property {
+  color: $color-text-primary;
+
+  @media (min-width: $desktop-width) {
+    width: 243px;
   }
+}
+
+.extra-products-value {
+  text-align: right;
 }

@@ -18,25 +18,25 @@
     padding: 0 110px 12px;
     margin: 0;
   }
+}
 
-  &__container {
-    @media (min-width: $tablet-width) {
-      padding-top: 39px;
-      padding-bottom: 40px;
-    }
-
-    @media (min-width: $desktop-width) {
-      padding: 0;
-    }
+.main-catalog__container {
+  @media (min-width: $tablet-width) {
+    padding-top: 39px;
+    padding-bottom: 40px;
   }
 
-  &__catalog-title {
-    @media (min-width: $tablet-width) {
-      margin-bottom: 40px;
-    }
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
+}
 
-    @media (min-width: $desktop-width) {
-      margin-bottom: 88px;
-    }
+.main-catalog__catalog-title {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 88px;
   }
 }
